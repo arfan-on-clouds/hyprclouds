@@ -20,7 +20,7 @@ Lockscreen: hyorlock
 
 GTK Theme: gruvbox
 
-𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓𝐒
+🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
 ![20240724_14h49m38s_grim](https://github.com/user-attachments/assets/ebf249f5-b4ec-471b-9238-f23f027edd74)
 ![20240724_15h12m14s_grim](https://github.com/user-attachments/assets/ba82bd81-a663-446a-9f3c-f2fa55e79928)
 ![20240725_11h03m36s_grim](https://github.com/user-attachments/assets/dbefa294-69a7-4058-80d2-6d03e9df9a0d)
@@ -31,8 +31,12 @@ GTK Theme: gruvbox
 
 
 
-Note: FIREFOX THEME & HOMETAB:
-THEME
+Note: 
+
+FIREFOX THEME & HOMETAB:
+
+THEME👉
 https://github.com/RemylsCool/Animate dFox If you want to know the Home tab of Firefox, then use the Nightab extension, you can customize it on the GUI and if you want to use the my JSON file then check on github and will get it
-Spotify theme
+
+Spotify theme👉
 https://spicetify.app/
