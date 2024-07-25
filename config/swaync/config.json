@@ -1,0 +1,88 @@
+{
+  	"$schema": "/etc/xdg/swaync/configSchema.json",
+  	"positionX": "right",
+  	"positionY": "top",
+  	"layer": "overlay",
+  	"control-center-layer": "top",
+  	"layer-shell": true,
+ 	"cssPriority": "application",
+   
+    "control-center-width": 400,
+    "control-center-height": 690, 
+    "control-center-margin-top": 2,
+    "control-center-margin-bottom": 2,
+    "control-center-margin-right": 1,
+    "control-center-margin-left": 0,
+  	
+    "notification-2fa-action": true,
+  	"notification-inline-replies": false,
+    "notification-window-width": 400,
+    "notification-icon-size": 50,
+    "notification-body-image-height":  160,
+    "notification-body-image-width": 200,
+    
+    "timeout": 6,
+    "timeout-low": 3,
+    "timeout-critical": 0,
+    "fit-to-screen": false,
+    "keyboard-shortcuts": true,
+    "image-visibility": "when available",
+    "transition-time": 200,
+    "hide-on-clear": false,
+    "hide-on-action": true,
+    "script-fail-notify": true,
+    "widgets": [
+        "buttons-grid",
+    	"volume", 
+   	"backlight",
+        "mpris",
+        "dnd",
+        "title",
+        "notifications"
+    ],
+    "widget-config": {
+        "title": {
+            "text": "Notifications",
+            "clear-all-button": true,
+            "button-text": "Clear"
+        },
+        "dnd": {
+            "text": "Do Not Disturb"
+        },
+        "label": {
+            "max-lines":3,
+            "text": "Notification"
+        },
+        "mpris": {
+            "image-size": 60,
+            "image-radius": 10
+        },
+        "volume": {
+            "label": "󰕾"
+        },
+        "backlight": {
+            "label": "󰃟"
+        },
+        "buttons-grid": {
+            "actions": [
+                {
+                    "label": "",
+                    "command": "/home/alien/.config/hypr/scripts/rofi-wifi-menu"
+                },
+                {
+                    "label": "󰕾",
+                    "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+        
+                },
+                {
+                    "label": "󰂯",
+                    "command": "blueman-manager"
+                },
+                {
+                    "label": "󰐥",
+                    "command": "wlogout"
+                }
+            ]
+        }
+    }
+}

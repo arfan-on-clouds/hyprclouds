@@ -1,0 +1,51 @@
+* {
+    font-family: 'GohuFont 11 Nerd Font Mono';
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+#window {
+    margin: 0px;
+    border: 2px solid;
+    border-color: #83a598;
+    border-radius: 20px;
+    background-color: #1d2021;
+    color:  /*rgb(235, 77, 129)*/ #83a598;
+}
+
+#input {
+    margin: 15px;
+    background-color: #3c3836;
+    color: #d5c4a1;
+    border-radius: 25px;
+    border: 0px solid #83a598;
+}
+
+#scroll {
+    margin-bottom: 15px;
+}
+
+#entry {
+    margin: 0px 15px;
+}
+
+#entry:selected {
+    /*background-color: /*rgb(245, 98, 36);*/
+    background-color: #3c3836;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#entry > box {
+    margin-left: 16px;
+}
+
+
+#entry image {
+    padding-right: 10px;
+}
+
+
+

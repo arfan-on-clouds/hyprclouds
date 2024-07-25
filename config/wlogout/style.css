@@ -1,0 +1,62 @@
+
+
+window {
+    font-family: Fira Code Medium;
+    font-size: 16pt;
+    color: #cdd6f4; /* text */
+    background-color: rgba(30, 30, 46, 0.6);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-color: rgba(200, 220, 255, 0);
+    animation: gradient_f 20s ease-in infinite;
+    border-radius: 50px; /* Increased border radius for a more rounded look */
+}
+
+button:focus {
+    background-size: 25%;
+	border: 0px;
+    background-color: rgb(80, 106, 70);
+
+}
+
+button:hover {
+    background-color:rgb(80, 106, 70);
+    color: #1e1e2e;
+    background-size: 40%;
+    border-radius: 60px; 
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.3s ease-in-out; 
+	
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
+
+#lock {
+    background-image: image(url("./lock.png"));
+}
+
+#logout {
+    background-image: image(url("./logout.png"));
+}
+
+#suspend {
+    background-image: image(url("./sleep.png"));
+}
+
+#shutdown {
+    background-image: image(url("./power.png"));
+}
+
+#reboot {
+    background-image: image(url("./restart.png"));
+}
+#windows {
+    background-image: image(url("./windows.png"));
+}

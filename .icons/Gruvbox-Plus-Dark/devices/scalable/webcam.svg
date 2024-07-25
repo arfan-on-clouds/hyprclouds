@@ -1,0 +1,60 @@
+<svg width="256" height="256" style="isolation:isolate" version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="linearGradient31" x1=".5002" x2=".5002" y2="1" gradientTransform="matrix(244,0,0,228,5.986,12)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#928374" offset="0"/>
+      <stop stop-color="#928374" stop-opacity=".09804" offset=".1"/>
+      <stop stop-opacity=".09804" offset=".9"/>
+      <stop stop-opacity=".498" offset="1"/>
+    </linearGradient>
+    <linearGradient id="b" x1=".5002" x2=".5002" y2="1" gradientTransform="matrix(244,0,0,228,5.981,12.12)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#504945" offset="0"/>
+      <stop stop-color="#3c3836" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(.005 -.16)" filter="url(#a)" style="isolation:isolate">
+    <path d="m165 12.12c72 0 85 15 85 87v56c0 70-13 85-85 85h-74c-72 0-85-15-85-85v-56c0-72 13-87 85-87z" fill="url(#b)"/>
+  </g>
+  <g filter="url(#QHfzoLBCkXpgUOGOMIoTsNCw9K0CqagE)" opacity=".4">
+    <circle cx="131.2" cy="129.6" r="88.66" fill="#282828" vector-effect="non-scaling-stroke"/>
+  </g>
+  <linearGradient id="_lgradient_22" x1=".906" x2=".188" y1=".844" y2=".125" gradientTransform="matrix(177.3 0 0 177.3 39.5 36.92)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#d5c4a1" offset="0"/>
+    <stop stop-color="#ebdbb2" offset="1"/>
+  </linearGradient>
+  <circle cx="128.2" cy="125.6" r="88.66" fill="url(#_lgradient_22)" vector-effect="non-scaling-stroke"/>
+  <linearGradient id="_lgradient_23" x1=".988" x2=".193" y1=".007" y2=".998" gradientTransform="matrix(-155.2 0 0 -155.2 205.8 203.2)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#3c3836" offset="0"/>
+    <stop stop-color="#665c54" offset="1"/>
+  </linearGradient>
+  <path d="m50.59 125.6c0-42.85 34.73-77.58 77.58-77.58 42.85 0 77.58 34.73 77.58 77.58 0 20.58-8.174 40.31-22.72 54.86-14.55 14.55-34.28 22.72-54.86 22.72-20.58 0-40.31-8.173-54.86-22.72-14.55-14.55-22.72-34.28-22.72-54.86" fill="url(#_lgradient_23)"/>
+  <circle cx="128.2" cy="125.6" r="60.96" fill="#282828" vector-effect="non-scaling-stroke"/>
+  <linearGradient id="_lgradient_25" x1="-.109" x2="-.109" y1="1.031" y2=".039" gradientTransform="matrix(110.8 0 0 110.8 72.75 70.17)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#8f3f71" offset="0"/>
+    <stop stop-color="#b16286" offset="1"/>
+  </linearGradient>
+  <circle cx="128.2" cy="125.6" r="55.42" fill="url(#_lgradient_25)" vector-effect="non-scaling-stroke"/>
+  <g fill="#ebdbb2" opacity=".2">
+    <circle cx="128.2" cy="125.6" r="44.33" vector-effect="non-scaling-stroke"/>
+    <circle cx="128.2" cy="125.6" r="33.25" vector-effect="non-scaling-stroke"/>
+  </g>
+  <g opacity=".9">
+    <linearGradient id="_lgradient_26" x1=".143" x2=".857" y1="37.24" y2="37.95" gradientTransform="matrix(44.33 0 0 44.33 106 103.4)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3c3836" offset="0"/>
+      <stop stop-color="#645a53" offset="1"/>
+    </linearGradient>
+    <circle cx="128.2" cy="125.6" r="22.17" fill="url(#_lgradient_26)" vector-effect="non-scaling-stroke"/>
+  </g>
+  <path transform="translate(.005 -.16)" d="m6.333 81.41c-0.2372 5.524-0.3324 11.32-0.3324 17.71v56c0 5.341 0.0711 10.26 0.2429 14.98l11.08-0.0215c6.137 0 11.08-4.947 11.08-11.08v-66.5c0-6.137-4.947-11.08-11.08-11.08zm232.7 2e-3c-6.137 0-11.08 4.947-11.08 11.08v66.5c0 6.137 4.947 11.08 11.08 11.08h10.77c0.1712-4.712 0.2438-9.622 0.2438-14.96v-56c0-6.393-0.0969-12.19-0.334-17.71z" fill="#ebdbb2" style="isolation:isolate"/>
+  <linearGradient id="_lgradient_29" x1=".516" x2=".52" y1="1.651" y2=".098" gradientTransform="matrix(11.08 0 0 11.08 233.5 97.88)" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#458588" offset="0"/>
+    <stop stop-color="#8ec07c" offset="1"/>
+  </linearGradient>
+  <circle cx="239" cy="103.4" r="5.541" fill="url(#_lgradient_29)" vector-effect="non-scaling-stroke"/>
+  <g fill="#ebdbb2" opacity=".7">
+    <circle cx="111.5" cy="109" r="5.541" vector-effect="non-scaling-stroke"/>
+    <circle cx="100.5" cy="97.88" r="8.312" vector-effect="non-scaling-stroke"/>
+  </g>
+  <g transform="translate(.009996 -.156)" opacity=".4" style="isolation:isolate">
+    <path transform="translate(-.004996 .116)" d="m91 12c-72 0-85 15-85 87v56c0 70 13 85 85 85h74c72 0 85-15 85-85v-56c0-72-13-87-85-87zm0 4h74c68 0 80 15 80 83v56c0 66-12 81-80 81h-74c-68 0-80-15-80-81v-56c0-68 12-83 80-83z" fill="url(#linearGradient31)" opacity="1"/>
+  </g>
+</svg>

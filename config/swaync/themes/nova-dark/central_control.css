@@ -1,0 +1,180 @@
+
+@define-color background    rgba(50, 48, 47, 1);
+@define-color background-alt rgba(189, 174, 147, 1);
+@define-color foreground    rgba(211, 134, 155, 1);
+@define-color selected      rgba(251, 241, 199, 1);
+@define-color active      rgba(251, 73, 52, 1);
+@define-color urgent        rgba(69, 133, 136, 1);
+
+
+.testing {
+  background-color: red;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.8;
+}
+
+/* Window behind control center and on all other monitors */
+.blank-window {
+  background: transparent;
+}
+
+/*** Widgets ***/
+
+/* Title widget */
+.widget-title {
+  margin: 8px;
+  font-size: 1.5rem;
+}
+.widget-title > button {
+  font-size: initial;
+  color: white;
+  text-shadow: none;
+  background:  #3c3836;
+  border: 1px solid @noti-border-color;
+  box-shadow: none;
+  border-radius: 12px;
+}
+.widget-title > button:hover {
+  background: @noti-bg-hover;
+}
+
+ /* DND widget */
+ .widget-dnd {
+  margin: 8px;
+  font-size: 1.1rem;
+}
+.widget-dnd > switch {
+  font-size: initial;
+  border-radius: 14px;
+  background: @noti-bg;
+  border: 2px solid @noti-border-color;
+  box-shadow: none;
+}
+.widget-dnd > switch:checked {
+  background: rgba(177, 98, 134, 1);
+}
+.widget-dnd > switch slider {
+  background: @noti-bg-hover;
+  border-radius: 12px;
+}
+
+
+/* Label widget */
+.widget-label {
+  margin: 8px;
+}
+.widget-label > label {
+  font-size: 1.1rem;
+}
+
+/* Mpris widget */
+.widget-mpris {
+  /* The parent to all players */
+}
+.widget-mpris-player {
+  padding: 14px;
+  margin: 14px;
+  background-color: @mpris-album-art-overlay;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.widget-mpris-album-art {
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+.widget-mpris-player button:hover {
+  /* The media player buttons (play, pause, next, etc...) */
+  background: @noti-bg-hover;
+}
+.widget-mpris > box > button {
+  /* Change player side buttions */
+}
+.widget-mpris > box > button:disabled {
+  /* Change player side buttions insensitive */
+}
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.widget-mpris-subtitle {
+  font-size: 1.1rem;
+}
+/*imp1 */
+/* Buttons widget */
+.widget-buttons-grid {
+ /* height: 30px; */
+ font-size: 1rem;  
+  /* padding: 1; */
+  margin: 1px;
+  border-radius: 20px;
+  background-color:  transparent;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button{
+  padding: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  background:  rgba(104, 157, 106, 1);
+  border-radius: 20px;
+  border: 0px solid #28282b;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: rgba(142, 192, 124, 1);
+}
+
+/* Menubar widget */
+.widget-menubar>box>.menu-button-bar>button {
+  border: none;
+  background: transparent;
+  background: red;
+}
+
+
+.topbar-buttons>button { /* Name defined in config after # */
+  border: none;
+  background: transparent;
+  background: rgba(69, 133, 136, 1);
+}
+
+/* Volume widget */
+
+.widget-volume {
+  background-color: transparent;
+  padding: 2px;
+  margin: 4px;
+  border-radius: 12px;
+  border: 0px solid #28282b;
+}
+.widget-backlight {
+  background-color:  transparent;
+  padding: 2px;
+  margin: 4px;
+  border-radius: 12px;
+  border: 0px solid #28282b;
+}
+
+/* Title widget */
+.widget-inhibitors {
+  margin: 8px;
+  font-size: 1.5rem;
+}
+.widget-inhibitors > button {
+  font-size: initial;
+  color: white;
+  text-shadow: none;
+  background: @noti-bg;
+  border: 1px solid @noti-border-color;
+  box-shadow: none;
+  border-radius: 12px;
+}
+.widget-inhibitors > button:hover {
+  background: @noti-bg-hover;
+}

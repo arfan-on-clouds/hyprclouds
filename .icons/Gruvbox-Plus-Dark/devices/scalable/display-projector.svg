@@ -1,0 +1,29 @@
+<svg width="256" height="256" style="isolation:isolate" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0 -.1185)" filter="url(#a)">
+    <linearGradient id="b" x1=".5002" x2=".5002" y2="1" gradientTransform="matrix(244,0,0,228,5.981,12.12)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#83a598" offset="0"/>
+      <stop stop-color="#458588" offset="1"/>
+    </linearGradient>
+    <path d="m165 12.12c72 0 85 15 85 87v56c0 70-13 85-85 85h-74c-72 0-85-15-85-85v-56c0-72 13-87 85-87z" fill="url(#b)"/>
+  </g>
+  <defs>
+    <linearGradient id="linearGradient31" x1=".5002" x2=".5002" y2="1" gradientTransform="matrix(244,0,0,228,5.988,12.12)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d5c4a1" offset="0"/>
+      <stop stop-color="#d5c4a1" stop-opacity=".09804" offset=".1"/>
+      <stop stop-color="#282828" stop-opacity=".1" offset=".9"/>
+      <stop stop-color="#282828" stop-opacity=".4" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(.0005039 -.1185)" opacity=".5">
+    <path d="m91 12.12c-72 0-85 15-85 87v56c0 70 13 85 85 85h74c72 0 85-15 85-85v-56c0-72-13-87-85-87zm0 4h74c68 0 80 15 80 83v56c0 66-12 81-80 81h-74c-68 0-80-15-80-81v-56c0-68 12-83 80-83z" fill="url(#linearGradient31)" opacity="1"/>
+  </g>
+  <g transform="matrix(3.146 0 0 3.146 50.86 47.98)" style="isolation:isolate">
+    <path d="m5.038 14.13c-2.2 0-4 1.8-4 4v14c0 2.2 1.8 4 4 4h1v1.741h6v-1.741h26v1.741h6v-1.741h1c2.2 0 4-1.8 4-4v-14c0-2.2-1.8-4-4-4z" fill="#282828" opacity=".3" style="isolation:isolate"/>
+    <path d="m5 34v3h6v-3zm32 0v3h6v-3z" fill="#504945" style="isolation:isolate"/>
+    <path d="m44 35h-40c-2.2 0-4-1.8-4-4v-14c0-2.2 1.8-4 4-4h40c2.2 0 4 1.8 4 4v14c0 2.2-1.8 4-4 4z" fill="#ebdbb2"/>
+    <path d="m5 19v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-16 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-16 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z" fill="#3c3836" style="isolation:isolate"/>
+    <circle cx="37" cy="24" r="8" fill="#3c3836"/>
+    <circle cx="37" cy="24" r="6" fill="#8f3f71"/>
+    <path d="m40.7 21.7c-1-1.1-2.3-1.7-3.7-1.7s-2.8 0.6-3.7 1.7c-0.4 0.4-0.3 1 0.1 1.4s1 0.3 1.4-0.1c1.2-1.3 3.3-1.3 4.5 0 0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.3 0.4-0.9 0-1.3z" fill="#d3869b"/>
+  </g>
+</svg>

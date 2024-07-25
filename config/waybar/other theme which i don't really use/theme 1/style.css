@@ -1,0 +1,384 @@
+* {
+    font-family: Iosevka, Material Design Icons;
+    font-size: 14px;
+}
+
+@define-color dark                  #3c3836;
+@define-color blue                  #458588;
+@define-color green                 #98971A;
+@define-color green2                #B8BB26;
+@define-color yellow                #FABD2F;
+@define-color red                   #FB4934;
+@define-color magenta               #D3869B;
+@define-color aqua                  #689D6A;
+@define-color lightblue             #83A598;
+@define-color white                 #EBDBB2;
+@define-color black                 #282828;
+
+
+
+window#waybar {
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#workspaces {
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+}
+
+#workspaces button {
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    background-color: rgba(29, 32, 33, 0.7);
+    border-radius: 15px;
+    margin-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    font-weight: bolder;
+    color: #fbf1c7;
+    opacity:0.9;
+    
+}
+#workspaces button.active {
+    padding-right: 20px;
+    text-shadow: transparent;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    background: linear-gradient(118deg, rgba(80, 73, 69, 0.7), rgba(102, 92, 84, 0.7), rgba(124, 111, 100, 0.7), rgba(146, 131, 116, 0.7), rgba(168, 153, 132, 0.7));
+    background-size: 400% 400%;
+    animation: gradient_f 20s ease-in-out infinite, gradient 10s ease infinite;
+    font-weight: bolder;
+}
+#workspaces button:hover {
+    background: @wb-hvr-bg;
+    color: @wb-hvr-fg;
+    padding-left: 2px;
+    padding-right: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#custom-weather,
+#custom-audio_idle_inhibitor,
+#custom-spotify,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#custom-expand,
+#custom-cycle_wall,
+#custom-ss,
+#custom-dynamic_pill,
+#mpd {
+    padding: 0 10px;
+    border-radius: 15px;
+    background-color: @green;
+    color: @black;
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+#custom-cycle_wall {
+    background: linear-gradient(118deg, 
+            rgba(235, 219, 178, 0.7), 
+            rgba(213, 196, 161, 0.7), 
+            rgba(168, 153, 132, 0.7), 
+            rgba(146, 131, 116, 0.7), 
+            rgba(235, 219, 178, 0.7), 
+            rgba(168, 153, 132, 0.7), 
+            rgba(235, 219, 178, 0.7));
+background-size: 500% 500%;
+animation: gradient 10s ease infinite;
+    color: #fbf1c7;
+}
+
+
+#custom-expand {
+    background-color: rgba(29, 32, 33, 0.7);
+    color: #fbf1c7;
+}
+#custom-ss {
+    background-color: rgba(29, 32, 33, 0.7);
+    color: #fbf1c7;
+}    
+
+
+
+#custom-audio_idle_inhibitor {
+ background: @yellow;
+}
+
+#custom-weather {
+    background: @aqua
+}
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+    color: @black;
+}
+
+#custom-weather.clearNight {
+    color: @black;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: @black;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: @black;
+}
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: @black;
+}
+
+#custom-weather.default {
+    color: @black;
+}
+
+
+#clock {
+    background: rgb(168, 153, 132);
+    background: linear-gradient(118deg, rgba(168, 153, 132, 0.7) 5%, rgba(29, 32, 33, 0.7) 5%, rgba(29, 32, 33, 0.7) 20%, rgba(168, 153, 132, 0.7) 20%, rgba(168, 153, 132, 0.7) 40%, rgba(29, 32, 33, 0.7) 40%, rgba(29, 32, 33, 0.7) 60%, rgba(168, 153, 132, 0.7) 60%, rgba(168, 153, 132, 0.7) 80%, rgba(29, 32, 33, 0.7) 80%, rgba(29, 32, 33, 0.7) 95%, rgba(168, 153, 132, 0.7) 95%);
+    margin-right: 25px;
+    color: #fbf1c7;
+    background-size: 300% 300%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.577);
+    animation: gradient 20s ease infinite;
+    font-size: 16px;
+    padding-top: 2px;
+    padding-right: 21px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font";
+  }
+  
+
+#battery.charging {
+    background-color: rgba(29, 32, 33, 0.7);
+    color: #fbf1c7;
+
+}
+#battery.plugged {
+    background-color: rgba(29, 32, 33, 0.7);
+    color: #fbf1c7;
+}
+
+#battery {
+    background-color: rgba(29, 32, 33, 0.7);
+    color: #fbf1c7;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@keyframes blink {
+    to {
+        background-color: @red;
+        color: @black;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @yellow;
+    color: @black;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    background: linear-gradient(118deg, rgba(80, 73, 69, 0.7), rgba(102, 92, 84, 0.7), rgba(124, 111, 100, 0.7), rgba(146, 131, 116, 0.7), rgba(168, 153, 132, 0.7));
+    background-size: 500% 500%;
+    animation: gradient 10s ease infinite;
+    text-shadow: #fbf1c7;
+    margin-left: 10px;
+    /* background-color: #b4befe; */
+    color: #fbf1c7;
+}
+
+#memory {
+    background-color: #fecb53;
+    color: #32302f;
+    font-weight: bolder;
+}
+
+#disk {
+    color: #964b00;
+}
+
+#backlight {
+    color: #fbf1c7;
+    background-color:rgba(29, 32, 33, 0.7);
+    font-weight: bolder;
+}
+
+#network {
+    color:#fbf1c7;
+    font-weight: bolder;
+
+}
+
+#network.disabled {
+    background-color: @aqua;
+}
+
+#network.disconnected {
+    background: @aqua;
+    color: @black;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-right: 11px;
+}
+
+#network.linked,
+#network.wifi {
+    background-color: rgba(29, 32, 33, 0.7);
+    color:#fbf1c7;
+
+}
+
+#network.ethernet {
+    background-color: #f9e2af;
+}
+
+ #pulseaudio {
+        background-color: rgba(29, 32, 33, 0.7); /* Use rgba for semi-transparent background */
+        color: #fbf1c7;
+        font-weight: bolder;
+}
+      
+
+#pulseaudio.muted {
+    background: linear-gradient(118deg, rgb(183, 80, 191), rgb(184, 105, 139), rgb(134, 186, 164), rgb(40, 130, 118), rgb(28, 148, 98));
+    background-size: 500% 500%;
+    background-size: 500% 500%;
+    animation: gradient 20s ease infinite;
+    color: @dark;
+    font-weight: bolder;
+    
+}
+
+#custom-media {
+    color: #66cc99;
+    font-weight: bolder;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+    font-weight: bolder;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    background-color: #f9e2af;
+    color: #96804e;
+}
+
+#temperature.critical {
+    background-color: #f38ba8;
+    color: #bf5673;
+}
+
+#tray {
+    background-color: @black;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @red;
+}
+
+#idle_inhibitor {
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
