@@ -16,7 +16,7 @@ Terminal: kitty
 
 file-manager: nautilus
 
-Lockscreen: hyorlock
+Lockscreen: hyprlock
 
 GTK Theme: gruvbox
 
