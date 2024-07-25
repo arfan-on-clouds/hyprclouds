@@ -1,0 +1,1 @@
+.x-settings-row{display:grid;gap:8px 24px;grid-template-columns:2fr 1fr}.x-settings-firstColumn,.x-settings-secondColumn{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.x-settings-secondColumn{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;position:relative}

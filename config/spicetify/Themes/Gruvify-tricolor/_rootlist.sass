@@ -1,0 +1,71 @@
+// More to the left
+// .main-rootlist-rootlist
+// 	--left-sidebar-padding-left: 10px
+// 	--left-sidebar-item-indentation-width: 15px
+// 	--left-sidebar-item-height: 27px
+
+// Lightens bg when hovering
+// .main-rootlist-rootlistItem:hover
+// 	background-color: var(--spice-selected-row)
+// 	border-radius: 0 8px 8px 0
+
+// Removes arrows, changes width
+// .main-rootlist-expandArrow,
+// .main-rootlist-expandArrow:active,
+// .main-rootlist-expandArrow:focus-within,
+// .main-rootlist-expandArrow:hover
+// 	color: transparent
+// 	background-color: var(--spice-text)
+// 	width: 15px
+// 	height: 15px
+// 	margin-top: auto
+// 	margin-bottom: auto
+
+// Don't display images
+.HeaderSideArea
+	display: none
+
+// Don't show cross
+button[aria-label="Clear filters"]
+	display: none
+
+// Highlight and press is not visible
+span[class^="ChipInner"]
+	--background-highlight: var(--spice-text) !important
+	--background-press: var(--spice-text) !important
+	--decorative-subdued: var(--spice-text) !important
+
+// Don't show useless info
+.main-yourLibraryX-listRowSubtitle
+	display: none
+// .main-yourLibraryX-libraryFilter
+// 	display: none !important
+.main-yourLibraryX-collapseButton > *:not(button[aria-label="Go back"])
+	display: none
+button.main-useDropTarget-playlistV2[aria-label="Create playlist or folder"]
+	display: none
+
+// Put useful info in line
+.main-yourLibraryX-header
+	position: absolute
+	top: 46px
+	right: 5px
+	padding: 0
+button.main-yourLibraryX-button[aria-label="Go back"]
+	left: 10px
+
+.BoxComponent-group-naked-card-isInteractive-paddingBlockStart_8px-paddingBlockEnd_8px-paddingInlineStart_8px-paddingInlineEnd_8px-padding_12px > div.MainArea
+	display: none
+// Grid view text align and
+.BoxComponent-group-naked-card-isInteractive-paddingBlockStart_8px-paddingBlockEnd_8px-paddingInlineStart_8px-paddingInlineEnd_8px-padding_12px , .Box-group-tinted-card-isInteractive-hasFocus-paddingBlockStart_8px-paddingBlockEnd_8px-paddingInlineStart_8px-paddingInlineEnd_8px-padding_12px , .Box-group-tinted-card-isInteractive-paddingBlockStart_8px-paddingBlockEnd_8px-paddingInlineStart_8px-paddingInlineEnd_8px-padding_12px , .Box-group-card-isInteractive-hasFocus-paddingBlockStart_8px-paddingBlockEnd_8px-paddingInlineStart_8px-paddingInlineEnd_8px-padding_12px
+	text-align: center
+	padding: 0
+// Grid view no row gap
+.Box-group-card-isInteractive-paddingBlockStart_8px-paddingBlockEnd_8px-paddingInlineStart_8px-paddingInlineEnd_8px-padding_12px
+	row-gap: 0
+// Grid view max image size
+.main-cardImage-imageWrapper > div > img
+	border-radius: 0
+// Grid view font size
+.TypeElement-gridcell-ballad-textBase-type
+	font-size: 14px

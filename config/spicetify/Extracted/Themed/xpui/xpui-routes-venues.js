@@ -1,0 +1,2 @@
+"use strict";(("undefined"!=typeof self?self:global).webpackChunkclient_web=("undefined"!=typeof self?self:global).webpackChunkclient_web||[]).push([[7241],{92241:(e,l,n)=>{n.r(l),n.d(l,{default:()=>s});var f=n(13274);const s=e=>(0,f.jsx)("div",{children:"venue"})}}]);
+//# sourceMappingURL=xpui-routes-venues.js.map
