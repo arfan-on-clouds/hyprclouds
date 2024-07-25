@@ -38,7 +38,7 @@ FIREFOX THEME & HOMETAB:
 THEME👉
 https://github.com/RemylsCool/Animate
  
-If you want to know the Home tab of Firefox, then use the Nightab extension, you can customize it on the GUI and if you want to use the my JSON file then check on github and will get it
+If you want to know the Home tab of Firefox, then use the Nightab extension, you can customize it on the GUI and if you want to use the my JSON file then check on github you will get it
 
 Spotify theme👉
 https://spicetify.app/
