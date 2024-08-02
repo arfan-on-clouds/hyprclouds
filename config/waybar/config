@@ -1,10 +1,12 @@
 {
+    "reload_style_on_change": true,
     "layer": "top",
-    "modules-left": ["disk","custom/expand", "custom/cycle_wall","custom/ss"],
+    "modules-left": ["disk","custom/expand", "custom/cycle_wall","custom/ss","nm-applet"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [  "tray", "group/networking" ,"cpu","clock","custom/media"],
-    
-   "pulseaudio": {
+
+
+"pulseaudio": {
     "tooltip": false,
     "scroll-step": 5,
     "format": "{icon}",
@@ -24,15 +26,14 @@
         "default": ["奄", "奔", "墳", ""]
 
         }
-    },
-    "custom/dynamic_pill": {
+},
+"custom/dynamic_pill": {
         "return-type": "json",
         // "format":"{}",
         "exec": "~/.config/hypr/scripts/tools/start_dyn",
         "escape":true
-    },
-
-    "custom/notification": {
+},
+"custom/notification": {
   "tooltip": false,
   "format": "{icon}",
   "format-icons": {
@@ -64,56 +65,20 @@
       "backlight",
       "pulseaudio"
     ]
-  },
-
-    "custom/waybar-mpris": {
-        "return-type": "json",
-        "max-length": 40,
-        "exec": "waybar-mpris --position --autofocus --pause 󰏤 --play 󰐊",
-        "on-click": "sleep 0.1; waybar-mpris --send toggle",
-        // This option will switch between players on right click.
-            "on-click-right": "sleep 0.1; playerctl next",
-        // The options below will switch the selected player on scroll
-            // "on-scroll-up": "waybar-mpris --send player-next",
-            // "on-scroll-down": "waybar-mpris --send player-prev",
-        // The options below will go to next/previous track on scroll
-            // "on-scroll-up": "waybar-mpris --send next",
-            // "on-scroll-down": "waybar-mpris --send prev",
-        "escape": true,
-    },
-
-    
-"group/group-power": {
-    "orientation": "inherit",
-    "drawer": {
-        "transition-duration": 500,
-        "children-class": "not-power",
-        "transition-left-to-right": false,
-    },
-    "modules": [
-       "temperature", // First element is the "group leader" and won't ever be hidden
-        "custom/quit",
-        "custom/lock",
-        "custom/reboot",
-    ]
-    
 },
 "custom/ss":{
         "format":"{}",
         "exec":"~/.config/hypr/scripts/tools/expand ss-icon",
-        "on-click":  "grim -g \"$(slurp)\" ~/Pictures/$(date +'%Y-%m-%d_%H-%M-%S').png"
-    },
-
-
+        "on-click": "/home/alien/.config/hypr/scripts/screenshot"
+},
 "temperature": {
     // "thermal-zone": 2,
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
+    "exec": "~/.config/hypr/scripts/tools/expand wall",
     "format": "{temperatureC}°C "
 },
-
-
 "custom/weather": {
     "format": "{}",
     "tooltip": true,
@@ -121,7 +86,6 @@
     "exec": "/.config/waybar/scripts/wttr.py",
     "return-type": "json"
 },
-
 "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
@@ -134,20 +98,17 @@
     }
 },
 "custom/cycle_wall":{
-    "format": " 󰌽 "
-},
-    "custom/cycle_wall":{
         "format": " 󰌽 ",
         "exec": "~/.config/hypr/scripts/tools/expand wall",
         "on-click": "~/.config/hypr/scripts/tools/expand cycle"
     },
-    "custom/expand":{
+"custom/expand":{
         "on-click":"~/.config/hypr/scripts/expand_toolbar",
         "format":"{}",
         "exec":"~/.config/hypr/scripts/tools/expand arrow-icon"
     },
 
-    "network": {
+"network": {
         "tooltip": true,
         "exec": "~/.config/hypr/scripts/tools/expand wall",
         "format-wifi": "",
@@ -159,8 +120,7 @@
         "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
         "interval": 2,
     },
-    
-    "bluetooth": {
+"bluetooth": {
 	"format": " {status}",
     "exec": "~/.config/hypr/scripts/tools/expand wall",
 	"format-connected": " {device_alias}",
@@ -171,25 +131,15 @@
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
 },
-    "custom/wallchange": {
-        "format": "{}",
-        "rotate": 0,
-        "exec": "echo ; echo 󰆊 switch wallpaper",
-        "on-click": "swwwallpaper.sh -n",
-        "on-click-right": "swwwallpaper.sh -p",
-        "on-click-middle": "sleep 0.1 && swwwallselect.sh",
-        "interval" : 86400, // once every day
-        "tooltip": true
-    },
 
-    // System tray
-    "tray": {
+// System tray
+"tray": {
         "icon-size": 19,
         "margin":10,
        "show-passive-items": true
       },
     
-     "clock": {
+"clock": {
         "format": "{:%I:%M}",
         "format-alt": "{:%R 󰃭 %d·%m·%y}",
         "tooltip-format": "<tt>{calendar}</tt>",
@@ -232,49 +182,27 @@
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
    
     },
-    "custom/icon1": {
+"custom/icon1": {
     "format": "  ",
     "exec": "~/.config/hypr/scripts/tools/expand wall",
     "tooltip": false,
     "on-click": "flatpak run com.spotify.Client",
   
-},    "custom/icon2": {
+},   
+"custom/icon2": {
     "format": " 󰈹 ",
     "exec": "~/.config/hypr/scripts/tools/expand wall",
     "tooltip": false,
     "on-click": "firefox",
   
-},    "custom/icon3": {
+},   
+"custom/icon3": {
     "format": "  ",
     "exec": "~/.config/hypr/scripts/tools/expand wall",
     "tooltip": false,
     "on-click": "nautilus",
   
 },
-
-
-    "custom/notification": {
-    "tooltip": false,
-    "format": "{icon}",
-    "format-icons": {
-    "notification": "<span foreground='red'><sup></sup></span>",
-    "none": "",
-    "dnd-notification": "<span foreground='red'><sup></sup></span>",
-    "dnd-none": "",
-    "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-    "inhibited-none": "",
-    "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-    "dnd-inhibited-none": ""
-  
-},
-  "return-type": "json",
-  "exec-if": "which swaync-client",
-  "exec": "swaync-client -swb",
-  "on-click": "swaync-client -t -sw",
-  "on-click-right": "swaync-client -d -sw",
-  "escape": true
-},
-
      "cpu": {
         "interval":1,
         "format": "{icon0} {icon1} {icon2} {icon3}",
@@ -336,21 +264,6 @@
             "Firefox Web Browser": "Firefox",
             "Foot Server": "Terminal"
         },
-
-        // modules for padding //
-
-    "custom/left": {
-        "format": " ",
-        "interval" : "once",
-        "tooltip": false
-    },
-
-    "custom/right": {
-        "format": " ",
-        "interval" : "once",
-        "tooltip": false
-    },
-
 }
 
 }

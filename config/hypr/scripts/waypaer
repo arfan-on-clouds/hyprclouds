@@ -1,11 +1,5 @@
 #!/usr/bin/bash
 
-# Initialize swww
-swww init
-
-# Set the wallpaper with swww
-swww img "$1" --transition-type grow --transition-pos 0.100,0.965 --transition-duration 2
-
 # Update terminal colors with Pywal
 wal -i "$1"
 

@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 TEMP=/tmp/current_wall
 
-files=(/home/alien/Documents/colorswall/Rosepine/*)
+files=(/home/alien/Documents/WALPPAERS/*)
 
 hypr=~/.config/hypr
 scripts=$hypr/scripts
@@ -24,9 +24,16 @@ do
             ;;
         "arrow-icon")
             if $scripts/toolbar_state; then
-                echo " "
+                echo ""
             else
-                echo " "
+                echo ""
+            fi
+            ;;
+        "arrow-icon2")
+            if $scripts/toolbar_state; then
+                echo ""
+            else
+                echo ""
             fi
             ;;
         "ss-icon")

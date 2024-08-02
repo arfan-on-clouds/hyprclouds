@@ -95,18 +95,17 @@ window#waybar {
 }
 #custom-cycle_wall {
     background: linear-gradient(118deg, 
-    @color5, 
-    @color7, 
-    @color5, 
-    @color7, 
-    @color5, 
-    @color7, 
-    @color5, 
-    @color7, 
-    @color5);
+            rgba(235, 219, 178, 0.7), 
+            rgba(213, 196, 161, 0.7), 
+            rgba(168, 153, 132, 0.7), 
+            rgba(146, 131, 116, 0.7), 
+            rgba(235, 219, 178, 0.7), 
+            rgba(168, 153, 132, 0.7), 
+            rgba(235, 219, 178, 0.7));
 background-size: 500% 500%;
 animation: gradient 10s ease infinite;
     color:@foreground;
+    border: 2px  @foreground solid;
 }
 
 
@@ -118,10 +117,12 @@ animation: gradient 10s ease infinite;
 
 #custom-notification {
     padding-right: 15px;
+    border: 2px  @foreground solid;
 }
 #custom-ss {
     background-color: @background;
     color:@foreground;
+    border: 2px @foreground solid;
 }    
 
 
@@ -174,6 +175,7 @@ animation: gradient 10s ease infinite;
     font-size: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    border: 2px  @foreground solid;
 }
 #custom-notification {
     font-family: "NotoSansMono Nerd Font";
@@ -189,6 +191,7 @@ animation: gradient 10s ease infinite;
 #battery.plugged {
     background-color:@background;
     color:@foreground;
+    border: 2px  @foreground solid;
   
 }
 
@@ -226,6 +229,7 @@ animation: gradient 10s ease infinite;
     margin-left: 10px;
     /* background-color: #b4befe; */
     color:@foreground;
+    border: 2px  @foreground solid;
 }
 
 #memory {
@@ -243,6 +247,7 @@ animation: gradient 10s ease infinite;
     background-color:@background;  /* Use rgba for semi-transparent background */
     font-weight: bolder;
     margin-left: 10px;
+    border: 2px @foreground solid;
     color:@foreground;
 }
 
@@ -308,6 +313,7 @@ animation: gradient 10s ease infinite;
     color:@foreground;
     background:@background;
     font-weight: bolder;
+    border: 2px  @foreground solid;
 }
 
 #custom-media.custom-spotify {
@@ -320,9 +326,8 @@ animation: gradient 10s ease infinite;
 }
 
 #temperature {
-    color:@foreground;
-    background:@background;
-    font-weight: bolder;
+    background-color: #f9e2af;
+    color: #96804e;
 }
 
 #temperature.critical {
@@ -332,8 +337,9 @@ animation: gradient 10s ease infinite;
 
 #tray {
     color:@foreground;
-    background-color:@background;
+    background-color:rgba(29, 32, 33, 0.9);
     font-weight: bolder;
+    border: 2px  @foreground solid;
 }
 
 #tray > .passive {
