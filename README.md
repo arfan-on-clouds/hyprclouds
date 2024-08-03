@@ -1,4 +1,4 @@
-![final](https://github.com/user-attachments/assets/be308f6d-06c1-4e47-bf40-c0b14c1effc9)![final](https://github.com/user-attachments/assets/353815ea-4f00-46f1-881a-26611e2f5034)Wm: Hyprland
+Wm: Hyprland
 
 Distro: fedora
 
@@ -22,7 +22,8 @@ GTK Theme: gruvbox
 
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
 ![final(1)](https://github.com/user-attachments/assets/c39fff66-5f0d-43e9-a3bb-1407c7686076)
-![final(1)](https://github.com/user-attachments/assets/94353e4f-b626-46e9-8024-6b5af1387013)
+![final(2)](https://github.com/user-attachments/assets/fac64b7f-c2ae-4900-a3c8-7c653cf85a4d)
+
 Note: 
 
 FIREFOX THEME & HOMETAB:
