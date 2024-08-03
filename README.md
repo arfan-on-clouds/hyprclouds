@@ -21,6 +21,7 @@ Lockscreen: hyprlock
 I have used pywal colors and as Pywal does not support GTK so I use selective wallpapers which match with GTK to maintain color consistency
 
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
+
 GRUVBOX🏞️
 ![final(1)](https://github.com/user-attachments/assets/c39fff66-5f0d-43e9-a3bb-1407c7686076)
 
