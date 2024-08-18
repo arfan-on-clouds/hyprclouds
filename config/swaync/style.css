@@ -1,19 +1,14 @@
+@import url("/home/alien/.cache/wal/colors-waybar.css");
 
-@define-color background    rgba(50, 48, 47, 1);
-@define-color background-alt rgba(189, 174, 147, 1);
-@define-color foreground    rgba(211, 134, 155, 1);
-@define-color selected      rgba(251, 241, 199, 1);
-@define-color active      rgba(251, 73, 52, 1);
-@define-color urgent        rgba(69, 133, 136, 1);
 
 
 .testing {
   background-color: red;
 }
 .control-center {
-  background: alpha(rgb(27, 25, 25), .65);
+  background: alpha(@background, 0.7);
   border-radius: 24px;
-  border: 2px solid @selected;
+  border: 2px solid @foreground;
   margin: 2px;
   padding: 2px;
 }
@@ -42,7 +37,7 @@
   font-size: initial;
   color: white;
   text-shadow: none;
-  background:  #3c3836;
+  background:  @background;
   border: 1px solid @noti-border-color;
   box-shadow: none;
   border-radius: 12px;
@@ -64,7 +59,7 @@
   box-shadow: none;
 }
 .widget-dnd > switch:checked {
-  background:rgb(124, 146, 103);
+  background:@color5;
 }
 .widget-dnd > switch slider {
   background: @noti-bg-hover;
@@ -85,7 +80,7 @@
   /* The parent to all players */
 }
 .widget-mpris-player {
-  padding: 14px;
+  padding: 12px;
   margin: 14px;
   background-color: @mpris-album-art-overlay;
   border-radius: 20px;
@@ -107,10 +102,10 @@
 }
 .widget-mpris-title {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.20rem;
 }
 .widget-mpris-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
 }
 /*imp1 */
 /* Buttons widget */
@@ -124,17 +119,17 @@
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button{
-  padding: 22px;
+  padding: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 5px;
-  background:  rgb(99, 117, 81);
+  background:  @color1;
   border-radius: 20px;
   border: 0px solid #28282b;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-  background:  rgb(173, 203, 144);
+  background:  alpha(@color7,0.7);
 }
 
 /* Menubar widget */
@@ -155,15 +150,15 @@
 
 .widget-volume {
   background-color: transparent;
-  padding: 2px;
-  margin: 4px;
+  padding: 1px;
+  margin: 1px;
   border-radius: 12px;
   border: 0px solid #28282b;
 }
 .widget-backlight {
   background-color:  transparent;
-  padding: 2px;
-  margin: 4px;
+  padding: 1px;
+  margin: 1px;
   border-radius: 12px;
   border: 0px solid #28282b;
 }
@@ -184,4 +179,21 @@
 }
 .widget-inhibitors > button:hover {
   background: @noti-bg-hover;
+}
+.floating-notifications.background .notification-row .notification-background .close-button {
+  margin: 7px;
+  padding: 2px;
+  border-radius: 6.3px;
+  color: @color0;
+  background-color: @color6;
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button:hover {
+  background-color: @color7;
+  color: @color0;
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button:active {
+  background-color: @color7;
+  color: @color0;
 }

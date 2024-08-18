@@ -7,19 +7,19 @@
   	"layer-shell": true,
  	"cssPriority": "application",
    
-    "control-center-width": 400,
-    "control-center-height": 690, 
-    "control-center-margin-top": 2,
+    "control-center-width": 340,
+    "control-center-height": 695, 
+    "control-center-margin-top": 1,
     "control-center-margin-bottom": 2,
     "control-center-margin-right": 1,
     "control-center-margin-left": 0,
   	
     "notification-2fa-action": true,
   	"notification-inline-replies": false,
-    "notification-window-width": 400,
+    "notification-window-width": 300,
     "notification-icon-size": 50,
-    "notification-body-image-height":  160,
-    "notification-body-image-width": 200,
+    "notification-body-image-height":  140,
+    "notification-body-image-width": 180,
     
     "timeout": 6,
     "timeout-low": 3,
@@ -66,7 +66,7 @@
         "buttons-grid": {
             "actions": [
                 {
-                    "label": "",
+                    "label": " ",
                     "command": "/home/alien/.config/hypr/scripts/rofi-wifi-menu"
                 },
                 {
@@ -79,8 +79,10 @@
                     "command": "blueman-manager"
                 },
                 {
-                    "label": "󰐥",
-                    "command": "wlogout"
+                    "label": "󰌁",
+                    "command": "/home/alien/.config/hypr/scripts/colorpicker"
+
+                    
                 }
             ]
         }

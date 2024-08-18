@@ -53,7 +53,7 @@ configuration {
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 10";
-    icon-theme:                  "Rose-Pine";
+    icon-theme:                  "Tela-circle-black-dark";
 }
 
 /*****----- Main Window -----*****/
@@ -144,7 +144,7 @@ button {
     cursor:                      pointer;
 }
 button selected {
-    background-color:            $COLOR2;
+    background-color:            $COLOR1;
     text-color:                  $FOREGROUND;
     padding:                     15px;
     border-radius:               30px;
@@ -183,23 +183,23 @@ element normal.normal {
     text-color:                  inherit;
 }
 element normal.urgent {
-    background-color:            $COLOR2;
+    background-color:            $COLOR1;
     text-color:                  $FOREGROUND;
 }
 element normal.active {
-    background-color:            $COLOR2;
+    background-color:            $COLOR1;
     text-color:                  $FOREGROUND;
 }
 element selected.normal {
-    background-color:            $COLOR2;
+    background-color:            $COLOR1;
     text-color:                  $FOREGROUND;
 }
 element selected.urgent {
-    background-color:            $COLOR2;
+    background-color:            $COLOR1;
     text-color:                  $FOREGROUND;
 }
 element selected.active {
-    background-color:            $COLOR2;
+    background-color:            $COLOR1;
     text-color:                  $FOREGROUND;
 }
 element-icon {
@@ -223,7 +223,7 @@ message {
 textbox {
     padding:                     15px;
     border-radius:               10px;
-    background-color:            $COLOR2;
+    background-color:            $COLOR1;
     text-color:                  $FOREGROUND;
     vertical-align:              0.5;
     horizontal-align:            0.0;
