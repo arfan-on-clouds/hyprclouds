@@ -7,7 +7,7 @@
   	"layer-shell": true,
  	"cssPriority": "application",
    
-    "control-center-width": 340,
+    "control-center-width": 350,
     "control-center-height": 695, 
     "control-center-margin-top": 1,
     "control-center-margin-bottom": 2,
@@ -15,7 +15,7 @@
     "control-center-margin-left": 0,
   	
     "notification-2fa-action": true,
-  	"notification-inline-replies": false,
+  	"notification-inline-replies": true,
     "notification-window-width": 300,
     "notification-icon-size": 50,
     "notification-body-image-height":  140,
@@ -32,12 +32,10 @@
     "hide-on-action": true,
     "script-fail-notify": true,
     "widgets": [
+        "volume", 
+        "backlight",
         "buttons-grid",
-    	"volume", 
-   	"backlight",
         "mpris",
-        "dnd",
-        "title",
         "notifications"
     ],
     "widget-config": {
@@ -47,10 +45,10 @@
             "button-text": "Clear"
         },
         "dnd": {
-            "text": "Do Not Disturb"
+            "text": " "
         },
         "label": {
-            "max-lines":3,
+            "max-lines":2,
             "text": "Notification"
         },
         "mpris": {
@@ -66,21 +64,25 @@
         "buttons-grid": {
             "actions": [
                 {
-                    "label": " ",
-                    "command": "/home/alien/.config/hypr/scripts/rofi-wifi-menu"
+                    "label": " Wi-FI",
+                    "command": "nm-connection-editor"
                 },
                 {
-                    "label": "󰕾",
+                    "label": "󰕾 Mute",
                     "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
         
                 },
                 {
-                    "label": "󰂯",
+                    "label": "󰂯 Bluetooth",
                     "command": "blueman-manager"
                 },
                 {
-                    "label": "󰌁",
+                    "label": "󰌁 Eyedropper",
                     "command": "/home/alien/.config/hypr/scripts/colorpicker"
+                },
+                {
+                    "label": "  Theme",
+                    "command":"~/.config/hypr/scripts/tools/expand wall"
 
                     
                 }

@@ -1,9 +1,9 @@
 {
     "reload_style_on_change": true,
     "layer": "top",
-    "modules-left": ["disk","custom/expand", "custom/cycle_wall","custom/ss","nm-applet"],
+    "modules-left": ["custom/media","memory","temperature","cpu"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": [  "tray", "group/networking" ,"cpu","clock","custom/media"],
+    "modules-right": [   "group/networking","custom/cycle_wall","custom/ss","custom/expand","tray","backlight","pulseaudio","clock","custom/power"],
 
 
 "pulseaudio": {
@@ -61,7 +61,6 @@
     },
     "modules": [
       "battery",
-      "network",
       "backlight",
       "pulseaudio"
     ]
@@ -138,30 +137,18 @@
         "margin":10,
        "show-passive-items": true
       },
-    
-"clock": {
-        "format": "{:%I:%M}",
-        "format-alt": "{:%R 󰃭 %d·%m·%y}",
-        "tooltip-format": "<tt>{calendar}</tt>",
-        "calendar": {
-            "mode": "month",
-            "mode-mon-col": 3,
-            "on-scroll": 1,
-            "on-click-right": "mode",
-            "format": {
-                "months": "<span color='#ffead3'><b>{}</b></span>",
-                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#ff6699'><b>{}</b></span>"
-            }
+
+
+      "hyprland/window":{
+        "format": "{}"
         },
-        "actions": {
-            "on-click-right": "mode",
-            "on-click-forward": "tz_up",
-            "on-click-backward": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
-    },
+    
+
+"clock": {
+  "format": " {:%H:%M}",
+ "on-click": "swaync-client -t"
+},
+
 
 "backlight": {
     // "device": "acpi_video1",
@@ -207,7 +194,6 @@
         "interval":1,
         "format": "{icon0} {icon1} {icon2} {icon3}",
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-        "on-click": "sleep 0.1; foot  htop"
     },
 
     "memory": {
@@ -217,20 +203,19 @@
 
 
     "custom/media": {
-        "format": "  ",
-       "on-click": "swaync-client -t -sw",
+        "format": "  ",
+        "on-click": "wofi",
+        "on-click-right": "killall wofi"
     },
 
 
     "disk": {
-        "format": "",
-        "on-click": "~/.config/rofi/launchers/type-6/launcher.sh",
-        "on-click-right": "killall rofi"
+      
     },
 
     "custom/power": {
-        "format": "  ",
-        "on-click": "~/.local/share/applications/org.mozilla.firefox.desktop"
+        "format": " ⏻ ",
+        "on-click": "wlogout"
     },
 
     "custom/updates": {
@@ -249,8 +234,8 @@
     
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 20,
-        "icon-theme": "Gruvbox-Plus-Dark",
+        "icon-size": 15,
+        "icon-theme": "Tela-circle",
         "tooltip": false,
         "on-click": "activate",
         "on-click-middle": "close",
