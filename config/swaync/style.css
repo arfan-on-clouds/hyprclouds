@@ -5,7 +5,7 @@
 }
 
 .control-center {
-  background: alpha(@background, 0.8);
+  background: alpha(@background, 0.6);
   border-radius: 24px;
   border: 0px solid @foreground;
   margin: 2px;
@@ -31,29 +31,21 @@
 .widget-title {
   margin: 8px;
   font-size: 1.5rem;
-  background: @color0;
-  padding: 20px;
-  padding-bottom: 200px;
-  border-radius: 20px;
+  background: alpha(@color0,0.0);
 }
 .widget-title > button {
   font-size: initial;
-  color: white;
+  color:@color7;
   text-shadow: none;
-  background: @background;
-  border: 1px solid @noti-border-color;
+  background: alpha(@background,0.0);
+  border: 1px solid alpha(@color7,0.5);
   box-shadow: none;
   border-radius: 12px;
 }
 .widget-title > button:hover {
-  background: @noti-bg-hover;
+  background: @color1;
 }
 
-/* Notification widget */
-.widget-title {
-  background: @color0;
-  border-radius: 20px;
-}
 .widget-label {
   background: @color0;
   padding: 20px;
@@ -234,7 +226,7 @@ trough slider:hover {
 
 .notification-row:focus,
 .notification-row:hover {
-  background: alpha(@color14, 0.8); /* @noti-bg-focus */
+  background: alpha(@color14, 0.5); /* @noti-bg-focus */
 }
 
 .notification-row .notification-background {
@@ -243,8 +235,8 @@ trough slider:hover {
 
 .notification-row .notification-background .close-button {
   /* The notification Close Button */
-  background: alpha(@color4, 0.8); /* @noti-close-bg */
-  color: alpha(@color15, 0.8); /* @text-color */
+  background: alpha(@color4, 0.5); /* @noti-close-bg */
+  color: alpha(@color15, 1.0); /* @text-color */
   text-shadow: none;
   padding: 0;
   border-radius: 100%;
@@ -257,17 +249,17 @@ trough slider:hover {
 }
 
 .notification-row .notification-background .close-button:hover {
-  background: alpha(@color12, 0.8); /* @noti-close-bg-hover */
+  background: alpha(@color12, 0.5); /* @noti-close-bg-hover */
   transition: background 0.15s ease-in-out;
 }
 
 .notification-row .notification-background .notification {
   /* The actual notification */
   border-radius: 12px;
-  border: 2px solid alpha(@color8, 0.8); /* @border */
+  border: 2px solid alpha(@color8, 0.5); /* @border */
   padding: 0;
   transition: background 0.15s ease-in-out;
-  background: alpha(@color0, 0.8); /* @noti-bg */
+  background: alpha(@color0, 0.5); /* @noti-bg */
 }
 
 .notification-row .notification-background .notification.low {
@@ -289,13 +281,13 @@ trough slider:hover {
   box-shadow: none;
   background: transparent;
   border: none;
-  color: alpha(@color15, 0.8); /* @text-color */
+  color: alpha(@color15, 1.0); /* @text-color */
   transition: background 0.15s ease-in-out;
 }
 
 .notification-row .notification-background .notification .notification-action:hover,
 .notification-row .notification-background .notification .notification-default-action:hover {
-  background: alpha(@color13, 0.8); /* @noti-bg-hover */
+  background: alpha(@color13, 0.5); /* @noti-bg-hover */
 }
 
 .notification-row .notification-background .notification .notification-default-action {
@@ -333,7 +325,7 @@ trough slider:hover {
   font-size: 16px;
   font-weight: bold;
   background: transparent;
-  color: alpha(@color15, 0.8); /* @text-color */
+  color: alpha(@color15, 1.0); /* @text-color */
   text-shadow: none;
 }
 
@@ -342,7 +334,7 @@ trough slider:hover {
   font-size: 16px;
   font-weight: bold;
   background: transparent;
-  color: alpha(@color15, 0.8); /* @text-color */
+  color: alpha(@color15, 1.0); /* @text-color */
   text-shadow: none;
   margin-right: 30px;
 }
@@ -352,7 +344,7 @@ trough slider:hover {
   font-size: 15px;
   font-weight: normal;
   background: transparent;
-  color: alpha(@color15, 0.8); /* @text-color */
+  color: alpha(@color15, 1.0); /* @text-color */
   text-shadow: none;
 }
 
@@ -364,7 +356,7 @@ trough slider:hover {
 .notification-row .notification-background .notification .notification-default-action .notification-content .body-image {
   /* The "extra" optional bottom notification image */
   margin-top: 4px;
-  background-color: alpha(@color15, 0.8);
+  background-color: alpha(@color15, 0.5);
   border-radius: 12px;
 }
 
@@ -374,37 +366,37 @@ trough slider:hover {
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-entry {
-  background: alpha(@color1, 0.8); /* @noti-bg-darker */
-  color: alpha(@color15, 0.8); /* @text-color */
-  caret-color: alpha(@color15, 0.8); /* @text-color */
-  border: 1px solid alpha(@color8, 0.8); /* @border */
+  background: alpha(@color1, 0.5); /* @noti-bg-darker */
+  color: alpha(@color15, 1.0); /* @text-color */
+  caret-color: alpha(@color15, 1.0); /* @text-color */
+  border: 1px solid alpha(@color8, 0.5); /* @border */
   border-radius: 12px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button {
   margin-left: 4px;
-  background: alpha(@color0, 0.8); /* @noti-bg */
-  border: 1px solid alpha(@color8, 0.8); /* @border */
+  background: alpha(@color0, 0.5); /* @noti-bg */
+  border: 1px solid alpha(@color8, 0.5); /* @border */
   border-radius: 12px;
-  color: alpha(@color15, 0.8); /* @text-color */
+  color: alpha(@color15, 1.0); /* @text-color */
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button:disabled {
   background: initial;
-  color: alpha(@color7, 0.8); /* @text-color-disabled */
-  border: 1px solid alpha(@color8, 0.8); /* @border */
+  color: alpha(@color7, 0.5); /* @text-color-disabled */
+  border: 1px solid alpha(@color8, 0.5); /* @border */
   border-color: transparent;
 }
 
-.notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button:hover {
-  background: alpha(@color13, 0.8); /* @noti-bg-hover */
+.notification-row .notification-background .notification .notification-default-action .inline-reply .inline-reply-button:hover {
+  background: alpha(@color13, 0.5); /* @noti-bg-hover */
 }
 
 .notification-row .notification-background .notification .notification-action {
   /* The alternative actions below the default action */
-  border-top: 1px solid alpha(@color8, 0.8); /* @border */
+  border-top: 1px solid alpha(@color8, 0.5); /* @border */
   border-radius: 0px;
-  border-right: 1px solid alpha(@color8, 0.8); /* @border */
+  border-right: 1px solid alpha(@color8, 0.5); /* @border */
 }
 
 .notification-row .notification-background .notification .notification-action:first-child {
@@ -436,7 +428,7 @@ trough slider:hover {
 .notification-group .notification-group-buttons,
 .notification-group .notification-group-headers {
   margin: 0 16px;
-  color: alpha(@color15, 0.8); /* @text-color */
+  color: alpha(@color15, 1.0); /* @text-color */
 }
 
 .notification-group .notification-group-headers {
@@ -444,11 +436,11 @@ trough slider:hover {
 }
 
 .notification-group .notification-group-headers .notification-group-icon {
-  color: alpha(@color15, 0.8); /* @text-color */
+  color: alpha(@color15, 1.0); /* @text-color */
 }
 
 .notification-group .notification-group-headers .notification-group-header {
-  color: alpha(@color15, 0.8); /* @text-color */
+  color: alpha(@color15, 1.0); /* @text-color */
 }
 
 .notification-group .notification-group-buttons {
@@ -456,7 +448,7 @@ trough slider:hover {
 }
 
 .notification-group.collapsed .notification-row .notification {
-  background-color: alpha(@color0, 0.8); /* @noti-bg-opaque */
+  background-color: alpha(@color0, 0.5); /* @noti-bg-opaque */
 }
 
 .notification-group.collapsed .notification-row:not(:last-child) {
@@ -470,5 +462,5 @@ trough slider:hover {
 }
 
 .notification-group.collapsed:hover .notification-row:not(:only-child) .notification {
-  background-color: alpha(@color13, 0.8); /* @noti-bg-hover-opaque */
+  background-color: alpha(@color13, 0.5); /* @noti-bg-hover-opaque */
 }

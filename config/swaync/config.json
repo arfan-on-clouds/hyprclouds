@@ -1,12 +1,12 @@
 {
-  	"$schema": "/etc/xdg/swaync/configSchema.json",
-  	"positionX": "right",
-  	"positionY": "top",
-  	"layer": "overlay",
-  	"control-center-layer": "top",
-  	"layer-shell": true,
- 	"cssPriority": "application",
-   
+"$schema": "/etc/xdg/swaync/configSchema.json",
+"positionX": "right",
+"positionY": "bottom",
+"layer": "overlay",
+"control-center-layer": "top",
+"layer-shell": true,
+"cssPriority": "application",
+
     "control-center-width": 350,
     "control-center-height": 695, 
     "control-center-margin-top": 1,
@@ -32,11 +32,14 @@
     "hide-on-action": true,
     "script-fail-notify": true,
     "widgets": [
-        "volume", 
-        "backlight",
-        "buttons-grid",
-        "mpris",
-        "notifications"
+        "title",
+         "notifications",
+         "mpris",
+         "buttons-grid",
+         "volume", 
+        "backlight"
+       
+       
     ],
     "widget-config": {
         "title": {
@@ -77,12 +80,8 @@
                     "command": "blueman-manager"
                 },
                 {
-                    "label": "󰌁 Eyedropper",
-                    "command": "/home/alien/.config/hypr/scripts/colorpicker"
-                },
-                {
                     "label": "  Theme",
-                    "command":"~/.config/hypr/scripts/tools/expand wall"
+                    "command":"/home/alien/.config/hypr/scripts/themechanging"
 
                     
                 }
