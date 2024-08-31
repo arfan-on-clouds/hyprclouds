@@ -28,7 +28,6 @@ I have used pywal colors and as Pywal does not support GTK so I use selective wa
 ![20240831_12h57m00s_grim](https://github.com/user-attachments/assets/c926a20c-8444-4289-8d0f-4f1c69b39615)
 ![20240831_12h58m58s_grim](https://github.com/user-attachments/assets/1a7d3014-ef1d-46dc-9279-03f866874a9a)
 ![20240831_12h56m43s_grim](https://github.com/user-attachments/assets/9150727d-240b-4cfe-9b6b-a2dc59a102cc)
-![20240831_12h57m00s_grim](https://github.com/user-attachments/assets/1d17e62c-c4ff-4554-9318-f17dd4af479f)
 ![20240831_12h58m58s_grim](https://github.com/user-attachments/assets/04daddb4-2a02-4442-86e6-77fea3b4f524)
 ![20240831_12h59m43s_grim](https://github.com/user-attachments/assets/3ddc25ea-a273-4706-9cba-eeea063e6329)
 ![20240831_13h02m19s_grim](https://github.com/user-attachments/assets/3cb1cc8c-422c-4448-b2e8-f7bc7f5636ca)
