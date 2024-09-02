@@ -6,45 +6,48 @@
 }
 
 window#waybar {
-    background-color: transparent;
+    background-color: alpha(@color0,0.8);
     transition-property: background-color;
     transition-duration: 0.5s;
 }
 
 #workspaces {
-    background-color: @background;
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color:  alpha(@background,0.0);
+    margin-top: 1px;
+    margin-bottom: 0px;
     margin-right: 5px;
     margin-left: 5px;
+    border-radius: 20px;
 }
 
 #workspaces button {
-    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-    background-color: @background;
-    color: @foreground;
+    padding: 0px 5px;
+    margin: 4px 3px;
     border-radius: 15px;
-    padding-top: 4px;
-    padding-bottom: 2px;
-    padding-right: 10px;
-    font-weight: bolder;
-    opacity: 0.9;
+    border: 0px;
+    color: @color1;
+    background-color: @color1;
     transition: all 0.3s ease-in-out;
+    opacity: 0.5;
 }
 
 #workspaces button.active {
-    padding-right: 20px;
-    text-shadow: transparent;
-    padding-left: 20px;
-    padding-bottom: 3px;
-    background-color:  @color7;
-    color: rgba(29, 32, 33, 0.7);
-    background-size: 400% 400%;
+    color: @color5;
+    background: @color5;
+    border-radius: 15px;
+    min-width: 40px;
     transition: all 0.3s ease-in-out;
-    animation: gradient_f 20s ease-in-out infinite, gradient 10s ease infinite;
-    font-weight: bolder;
+    opacity:1.0;
 }
+
+#workspaces button:hover {
+    color: @color2;
+    background: @color2;
+    border-radius: 15px;
+    opacity:0.7;
+}
+
+
 
 @keyframes gradient {
     0% {
@@ -72,8 +75,15 @@ window#waybar {
 #network,
 #pulseaudio,
 #custom-media,
+#custom-power,
 #launcher,
 #tray,
+#custom-icon1,
+#custom-icon2,
+#custom-icon3,
+#custom-icon4,
+#window,
+#custom-wallpaper,
 #mode,
 #idle_inhibitor,
 #custom-expand,
@@ -82,48 +92,102 @@ window#waybar {
 #custom-ss,
 #custom-dynamic_pill,
 #modules-right,
+#taskbar
+#icon3,
 #mpd {
     padding: 0 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: @green;
     color: @black;
-    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-bottom: 0px;
     margin-right: 10px;
-    font-weight: bolder;
 }
 #custom-cycle_wall {
-    background: linear-gradient(118deg, 
-    @color5, 
-    @color7, 
-    @color5, 
-    @color7, 
-    @color5, 
-    @color7, 
-    @color5, 
-    @color7, 
-    @color5);
-background-size: 500% 500%;
-animation: gradient 10s ease infinite;
-    color:@foreground;
+    color:@color7;
+    padding-right: 14px;
+    padding-left: 12px;
 }
 
+#custom-cycle_wall:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
 
+#taskbar {
+    background-color:alpha(@color0,0.0);
+    margin-top:-4px
+}
+
+#custom-icon1{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon2{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon3{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon4{
+    color:@color7;
+    padding-right:0px;
+}
 #custom-expand {
-    background-color: @foreground;/* Use rgba for semi-transparent background */
-    color: rgba(29, 32, 33, 0.9);
+    background-color: alpha(@color1,0.0);/* Use rgba for semi-transparent background */
+    color: @color7;
+    padding-right: 10px;
+    padding-left: 10px
 }
-#custom-expand2
+
+#custom-expand:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
+
+#custom-wallpaper {
+    color:@color7;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+#custom-wallpaper:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
 
 #custom-notification {
     padding-right: 15px;
 }
 #custom-ss {
-    background-color: @background;
-    color:@foreground;
-}    
+    background-color: alpha(@background,0.0);
+    color:@color7;
+    padding-right: 10px;
+    padding-left: 10px
+}
 
+#custom-ss:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
+
+#custom-power{
+    background-color: alpha(@color1,0.5);
+    color:@color7;
+    
+}
+
+#custom-power:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out; 
+
+}
+#window{
+    background-color: alpha(@color1,0.5);
+    color: @color7;
+}
 
 
 #custom-audio_idle_inhibitor {
@@ -161,19 +225,58 @@ animation: gradient 10s ease infinite;
     color: @black;
 }
 
+#tray:hover {
+background-color: @color1;
+transition: all 0.3s ease-in-out;
+}
+
+#tray {
+    color:@color0;
+    background-color: alpha(@color1,0.5);
+    font-weight: bolder;
+    border-radius: 20px;
+    border:0px @color7 solid;
+}
+
+#tray > .passive {
+    color:@color7;
+    background-color: @color1;
+transition: all 0.3s ease-in-out;
+    background-color: alpha(@background,0.0);
+    font-weight: bolder;
+  
+}
+
+#tray > .needs-attention {
+    color:@color7;
+    background-color: alpha(@background,0.9);
+    font-weight: bolder;
+    background-color: @color1;
+transition: all 0.3s ease-in-out;
+   
+}
+
+#clock:hover,
+#clock:hover ~ #audio,
+#clock:hover ~ #backlight {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out; 
+}
+  
 
 #clock {
-    background: rgb(168, 153, 132);
-    background: @background;
-    color:@foreground;
+    background: alpha(@color1,0.5);
+    color:@color7;
+    border-radius: 0px 20px 20px 0px;
+    border:0px @background solid;
     background-size: 300% 300%;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.677);
     animation: gradient 20s ease infinite;
     font-weight: bolder;
     font-weight: bolder;
     font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left:-0px;
+    padding-left: 1px;
+    padding-right: 10px;
 }
 #custom-notification {
     font-family: "NotoSansMono Nerd Font";
@@ -181,20 +284,20 @@ animation: gradient 10s ease infinite;
   
 
 #battery.charging {
-    background-color:@background;
-    color:@foreground;
+    background-color:@color7;
+    color:@color1;
     
 
 }
 #battery.plugged {
-    background-color:@background;
-    color:@foreground;
+    background-color:@color7;
+    color:@color1;
   
 }
 
 #battery {
     color:@foreground;
-    background:@background;
+    background:@color0;
     font-weight: bolder;
     font-size: 15px;
     padding-left: 15px;
@@ -219,37 +322,51 @@ animation: gradient 10s ease infinite;
 }
 
 #cpu {       
-     background:@background;
+     background: alpha(@background,0.9);
     background-size: 500% 500%;
     animation: gradient 10s ease infinite;
-    text-shadow: #fbf1c7;
-    margin-left: 10px;
+    margin-left: 0px; 
+    border-radius: 20px;
     /* background-color: #b4befe; */
-    color:@foreground;
+    color:@color7;
 }
 
 #memory {
-    background-color: #fecb53;
-    color: @background;
+    background-color:alpha(@background,0.9);
+    color: @color7;
     font-weight: bolder;
+    border-radius: 20px;
 }
 #custom-launcher {
     background-color: #fecb53;
-    color: @background;
+    color: alpha(@background,0.9);
     font-weight: bolder;
+}
+#disk:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
 }
 
 #disk {
-    background-color:@background;  /* Use rgba for semi-transparent background */
+    background-color:alpha(@color1,0.5); /* Use rgba for semi-transparent background */
     font-weight: bolder;
     margin-left: 10px;
-    color:@foreground;
+    color:@color7;
+    border:0px @color7 solid;
 }
 
 #backlight {
     color:@foreground;
-    background-color:@background;
+    background-color: alpha(@color1,0.5);
+    margin-right:-10px;  
+    padding-left: 5px;
+    margin-left:-0px;
+    border-radius:20px 0px 0px 20px;
    
+}
+#backlight:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
 }
 
 #network {
@@ -288,27 +405,44 @@ animation: gradient 10s ease infinite;
 }    
 
 #pulseaudio {
-    background-color: @background;
+    background-color:  alpha(@color1,0.5);
     color:@foreground;
+    padding-right: 10px;
+    margin-right:-0px; 
+    margin-left:-0px; 
+    border-radius:0px 0px 0px 0px;
         font-weight: bolder;
 }
-      
+
+#pulseaudio:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+}     
 
 #pulseaudio.muted {
     background-size: 500% 500%;
     background-size: 500% 500%;
     animation: gradient 20s ease infinite;
     color: rgba(84, 82, 74, 0.7);
-    background: @foreground;
+    background: @;
     font-weight: bolder;
     
 }
 
 #custom-media {
-    color:@foreground;
-    background:@background;
+    background-color:alpha(@color1,0.5); /* Use rgba for semi-transparent background */
     font-weight: bolder;
+    margin-left: 10px;
+    color:@color7;
+    border-radius: 20px;
+    border:0px @color7 solid;
 }
+
+#custom-media:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+}     
+
 
 #custom-media.custom-spotify {
     background-color: #66cc99;
@@ -320,34 +454,15 @@ animation: gradient 10s ease infinite;
 }
 
 #temperature {
-    color:@foreground;
-    background:@background;
+    color:@color7;
+    background: alpha(@background,0.9);
+    border-radius:20px;
     font-weight: bolder;
 }
 
 #temperature.critical {
     background-color: #f38ba8;
     color: #bf5673;
-}
-
-#tray {
-    color:@foreground;
-    background-color:@background;
-    font-weight: bolder;
-}
-
-#tray > .passive {
-    color:@foreground;
-    background-color:rgba(29, 32, 33, 0.7);
-    font-weight: bolder;
-  
-}
-
-#tray > .needs-attention {
-    color:@foreground;
-    background-color:rgba(29, 32, 33, 0.7);
-    font-weight: bolder;
-   
 }
 
 #idle_inhibitor {

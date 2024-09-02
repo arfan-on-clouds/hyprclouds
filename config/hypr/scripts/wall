@@ -4,14 +4,14 @@
 swww init
 
 # Set the wallpaper with swww
-swww img "$1" --transition-type grow --transition-pos 0.100,0.965 --transition-duration 2
+swww img "$1" --transition-type grow --transition-pos 0.780,0. --transition-duration 2
 
 # Update terminal colors with Pywal
 wal -i "$1"
 
 swaync-client -rs "$1"
  
-python3 /home/alien/.config/hypr/scripts/parse_css_to_hyprland.py  "$1"
+python3 /home/alien/.config/hypr/scripts/parse_css_to_hyprland.py "$1"
 
 /home/alien/.config/hypr/scripts/generate_rofi_config.sh "$1"
 

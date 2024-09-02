@@ -1,10 +1,10 @@
-
+@import url("/home/alien/.cache/wal/colors-waybar.css");
 
 window {
     font-family: Fira Code Medium;
     font-size: 16pt;
-    color: #cdd6f4; /* text */
-    background-color: rgba(30, 30, 46, 0.6);
+    color: @color7; /* text */
+    background-color: alpha(@background, 0.1);
 }
 
 button {
@@ -13,28 +13,24 @@ button {
     background-size: 20%;
     background-color: rgba(200, 220, 255, 0);
     animation: gradient_f 20s ease-in infinite;
-    border-radius: 50px; /* Increased border radius for a more rounded look */
+    border-radius: 60px; /* Increased border radius for a more rounded look */
 }
 
 button:focus {
-    background-size: 25%;
+    background-size: 30%;
 	border: 0px;
-    background-color: rgb(80, 106, 70);
+    background-color: alpha(@color2,1.0);
+    color: #1e1e2e;
 
 }
 
 button:hover {
-    background-color:rgb(80, 106, 70);
-    color: #1e1e2e;
+    background-color: @color2;
+    color: @color7;
     background-size: 40%;
     border-radius: 60px; 
     transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.3s ease-in-out; 
 	
-}
-
-/* Adjust the size of the icon or content inside the button */
-button span {
-    font-size: 1.2em; /* Increase the font size */
 }
 
 

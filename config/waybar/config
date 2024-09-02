@@ -1,9 +1,10 @@
 {
     "reload_style_on_change": true,
     "layer": "top",
-    "modules-left": ["custom/media","memory","temperature","cpu"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": [   "group/networking","custom/cycle_wall","custom/ss","custom/expand","tray","backlight","pulseaudio","clock","custom/power"],
+    "position": "bottom",
+    "modules-left": ["disk","hyprland/workspaces","custom/media"],
+    "modules-center": ["wlr/taskbar"],
+    "modules-right": [ "custom/wallpaper","custom/cycle_wall","custom/ss","custom/expand","tray","backlight","pulseaudio","clock","custom/power"],
 
 
 "pulseaudio": {
@@ -60,9 +61,9 @@
       "transition-left-to-right": false
     },
     "modules": [
-      "battery",
-      "backlight",
-      "pulseaudio"
+      "tray",
+    "wlr/taskbar",
+      "wallpaper"
     ]
 },
 "custom/ss":{
@@ -97,7 +98,7 @@
     }
 },
 "custom/cycle_wall":{
-        "format": " 󰌽 ",
+        "format": "󰌽",
         "exec": "~/.config/hypr/scripts/tools/expand wall",
         "on-click": "~/.config/hypr/scripts/tools/expand cycle"
     },
@@ -171,23 +172,26 @@
     },
 "custom/icon1": {
     "format": "  ",
-    "exec": "~/.config/hypr/scripts/tools/expand wall",
     "tooltip": false,
     "on-click": "flatpak run com.spotify.Client",
   
 },   
 "custom/icon2": {
     "format": " 󰈹 ",
-    "exec": "~/.config/hypr/scripts/tools/expand wall",
     "tooltip": false,
     "on-click": "firefox",
   
 },   
 "custom/icon3": {
     "format": "  ",
-    "exec": "~/.config/hypr/scripts/tools/expand wall",
     "tooltip": false,
     "on-click": "nautilus",
+  
+},
+"custom/icon4": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "flatpak run org.telegram.desktop",
   
 },
      "cpu": {
@@ -202,19 +206,27 @@
     },
 
 
-    "custom/media": {
-        "format": "  ",
+"custom/media": {
+    "format": "{icon}{}",
+    "return-type": "json",
+    "format-icons": {
+        "Playing": " ",
+        "Paused": " ",
+    },
+    "max-length":70,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause",
+},
+
+
+    "disk": {
+          "format": "",
         "on-click": "wofi",
         "on-click-right": "killall wofi"
     },
 
-
-    "disk": {
-      
-    },
-
     "custom/power": {
-        "format": " ⏻ ",
+        "format": "⏻",
         "on-click": "wlogout"
     },
 
@@ -228,13 +240,25 @@
 
     "custom/wallpaper": {
        "exec": "~/.config/hypr/scripts/tools/expand wall",
-        "format": "  ",
-        "on-click": "grim -g \"$(slurp)\" ~/Pictures/$(date +'%Y-%m-%d_%H-%M-%S').png"
+        "format": "",
+        "on-click": "/home/alien/.config/hypr/scripts/colorpicker"
     },
     
+    
+"custom/media": {
+    "format": "{icon}{}",
+    "return-type": "json",
+    "format-icons": {
+        "Playing": " ",
+        "Paused": " ",
+    },
+    "max-length":70,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{playerName}}: {{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause",
+},
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 15,
+        "icon-size": 25,
         "icon-theme": "Tela-circle",
         "tooltip": false,
         "on-click": "activate",

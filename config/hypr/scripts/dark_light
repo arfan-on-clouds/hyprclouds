@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Check the current theme
+current_theme=$(gsettings get org.gnome.desktop.interface gtk-theme)
+
+# Toggle between dark and light themes
+if [[ "$current_theme" == "'Graphite-Dark'" ]]; then
+    # Switch to light theme
+    gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-black'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Graphite-Light'
+    gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
+    echo "Switched to light theme"
+else
+    # Switch to dark theme
+    gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-black'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Graphite-Dark'
+    gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+    echo "Switched to dark theme"
+fi
+

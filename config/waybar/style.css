@@ -6,14 +6,13 @@
 }
 
 window#waybar {
-    background-color: alpha(@color0,0.0);
+    background-color: alpha(@color0,0.8);
     transition-property: background-color;
     transition-duration: 0.5s;
-    border-radius:  0px 0px 20px 20px;
 }
 
 #workspaces {
-    background-color:  alpha(@background,0.9);
+    background-color:  alpha(@background,0.0);
     margin-top: 1px;
     margin-bottom: 0px;
     margin-right: 5px;
@@ -29,7 +28,7 @@ window#waybar {
     color: @color1;
     background-color: @color1;
     transition: all 0.3s ease-in-out;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 #workspaces button.active {
@@ -79,7 +78,12 @@ window#waybar {
 #custom-power,
 #launcher,
 #tray,
+#custom-icon1,
+#custom-icon2,
+#custom-icon3,
+#custom-icon4,
 #window,
+#custom-wallpaper,
 #mode,
 #idle_inhibitor,
 #custom-expand,
@@ -88,7 +92,8 @@ window#waybar {
 #custom-ss,
 #custom-dynamic_pill,
 #modules-right,
-#taskbar,
+#taskbar
+#icon3,
 #mpd {
     padding: 0 10px;
     border-radius: 20px;
@@ -99,50 +104,88 @@ window#waybar {
     margin-right: 10px;
 }
 #custom-cycle_wall {
-    background: linear-gradient(118deg, 
-    @color5, 
-    @color7, 
-    @color5, 
-    @color7, 
-    @color5, 
-    @color7, 
-    @color5,  
-    @color7, 
-    @color5);
-background-size: 500% 500%;
-animation: gradient 10s ease infinite;
-    color:@color0;
+    color:@color7;
+    padding-right: 14px;
+    padding-left: 12px;
 }
+
+#custom-cycle_wall:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
 
 #taskbar {
-    background-color:@background;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top:0px;
+    background-color:alpha(@color0,0.0);
+    margin-top:-4px
 }
 
-
+#custom-icon1{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon2{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon3{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon4{
+    color:@color7;
+    padding-right:0px;
+}
 #custom-expand {
-    background-color: alpha(@background,0.9);/* Use rgba for semi-transparent background */
-    color: @color1;
+    background-color: alpha(@color1,0.0);/* Use rgba for semi-transparent background */
+    color: @color7;
+    padding-right: 10px;
+    padding-left: 10px
 }
-#custom-expand2
+
+#custom-expand:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
+
+#custom-wallpaper {
+    color:@color7;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+#custom-wallpaper:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
 
 #custom-notification {
     padding-right: 15px;
 }
 #custom-ss {
-    background-color: alpha(@background,0.9);
-    color:@color1;
-}    
+    background-color: alpha(@background,0.0);
+    color:@color7;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+#custom-ss:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
 
 #custom-power{
-    background-color: alpha(@background,0.9);
+    background-color: alpha(@color1,0.5);
     color:@color7;
+    
+}
+
+#custom-power:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out; 
 
 }
 #window{
-    background-color: @color0;
+    background-color: alpha(@color1,0.5);
     color: @color7;
 }
 
@@ -181,9 +224,15 @@ animation: gradient 10s ease infinite;
 #custom-weather.default {
     color: @black;
 }
+
+#tray:hover {
+background-color: @color1;
+transition: all 0.3s ease-in-out;
+}
+
 #tray {
     color:@color0;
-    background-color: alpha(@background,0.9);
+    background-color: alpha(@color1,0.5);
     font-weight: bolder;
     border-radius: 20px;
     border:0px @color7 solid;
@@ -191,6 +240,8 @@ animation: gradient 10s ease infinite;
 
 #tray > .passive {
     color:@color7;
+    background-color: @color1;
+transition: all 0.3s ease-in-out;
     background-color: alpha(@background,0.0);
     font-weight: bolder;
   
@@ -200,27 +251,32 @@ animation: gradient 10s ease infinite;
     color:@color7;
     background-color: alpha(@background,0.9);
     font-weight: bolder;
+    background-color: @color1;
+transition: all 0.3s ease-in-out;
    
 }
 
-#clock:hover {
-   
-    background: @color0;
-
+#clock:hover,
+#clock:hover ~ #audio,
+#clock:hover ~ #backlight {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out; 
 }
+  
+
 #clock {
-    background:  alpha(@background,0.9);
+    background: alpha(@color1,0.5);
     color:@color7;
-    border-radius: 5px 20px 20px 5px;
+    border-radius: 0px 20px 20px 0px;
     border:0px @background solid;
     background-size: 300% 300%;
     animation: gradient 20s ease infinite;
     font-weight: bolder;
     font-weight: bolder;
     font-size: 15px;
-    margin-left:-2px;
+    margin-left:-0px;
     padding-left: 1px;
-    padding-right: 12px;
+    padding-right: 10px;
 }
 #custom-notification {
     font-family: "NotoSansMono Nerd Font";
@@ -286,9 +342,13 @@ animation: gradient 10s ease infinite;
     color: alpha(@background,0.9);
     font-weight: bolder;
 }
+#disk:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+}
 
 #disk {
-    background-color:@background; /* Use rgba for semi-transparent background */
+    background-color:alpha(@color1,0.5); /* Use rgba for semi-transparent background */
     font-weight: bolder;
     margin-left: 10px;
     color:@color7;
@@ -297,11 +357,16 @@ animation: gradient 10s ease infinite;
 
 #backlight {
     color:@foreground;
-    background-color: alpha(@background,0.9);
-    margin-right:-5px;  
-    margin-left:0px;
+    background-color: alpha(@color1,0.5);
+    margin-right:-10px;  
+    padding-left: 5px;
+    margin-left:-0px;
     border-radius:20px 0px 0px 20px;
    
+}
+#backlight:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
 }
 
 #network {
@@ -340,15 +405,19 @@ animation: gradient 10s ease infinite;
 }    
 
 #pulseaudio {
-    background-color:  alpha(@background,0.9);
+    background-color:  alpha(@color1,0.5);
     color:@foreground;
     padding-right: 10px;
-    margin-right:-1px; 
-    margin-left:-5px; 
+    margin-right:-0px; 
+    margin-left:-0px; 
     border-radius:0px 0px 0px 0px;
         font-weight: bolder;
 }
-      
+
+#pulseaudio:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+}     
 
 #pulseaudio.muted {
     background-size: 500% 500%;
@@ -361,13 +430,19 @@ animation: gradient 10s ease infinite;
 }
 
 #custom-media {
-    background-color:alpha(@background,0.9); /* Use rgba for semi-transparent background */
+    background-color:alpha(@color1,0.5); /* Use rgba for semi-transparent background */
     font-weight: bolder;
     margin-left: 10px;
     color:@color7;
     border-radius: 20px;
     border:0px @color7 solid;
 }
+
+#custom-media:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+}     
+
 
 #custom-media.custom-spotify {
     background-color: #66cc99;

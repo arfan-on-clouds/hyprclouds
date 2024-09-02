@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Check if a theme argument is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <theme>"
+    echo "Available themes: light, dark"
+    exit 1
+fi
+
+THEME=$1
+
+# Directories where the themes are stored
+WAYBAR_LIGHT_THEME_DIR="/home/alien/.config/waybar/themes/light/style.css"
+WAYBAR_DARK_THEME_DIR="/home/alien/.config/waybar/themes/dark/style.css"
+WOFI_LIGHT_THEME_DIR="/home/alien/.config/wofi/themes/light/style.css"
+WOFI_DARK_THEME_DIR="/home/alien/.config/wofi/themes/dark/style.css"
+SWAYNC_LIGHT_THEME_DIR="/home/alien/.config/swaync/themes/light/style.css"
+SWAYNC_DARK_THEME_DIR="/home/alien/.config/swaync/themes/dark/style.css"
+
+# Main configuration directories
+WAYBAR_CONFIG_DIR="/home/alien/.config/waybar/style.css"
+WOFI_CONFIG_DIR="/home/alien/.config/wofi/style.css"
+SWAYNC_CONFIG_DIR="/home/alien/.config/swaync/style.css"
+
+# Function to copy the appropriate theme files
+copy_theme_files() {
+    local theme_dir=$1
+    local config_dir=$2
+    local theme_name=$3
+
+    if [ -f "$theme_dir" ]; then
+        cp "$theme_dir" "$config_dir"
+    else
+        echo "$theme_name theme file not found: $theme_dir"
+    fi
+}
+
+# Switch between themes based on the provided argument
+case "$THEME" in
+    light)
+        copy_theme_files "$WAYBAR_LIGHT_THEME_DIR" "$WAYBAR_CONFIG_DIR" "Waybar light"
+        copy_theme_files "$WOFI_LIGHT_THEME_DIR" "$WOFI_CONFIG_DIR" "Wofi light"
+        copy_theme_files "$SWAYNC_LIGHT_THEME_DIR" "$SWAYNC_CONFIG_DIR" "Swaync light"
+        echo "Switched to light theme"
+        ;;
+    dark)
+        copy_theme_files "$WAYBAR_DARK_THEME_DIR" "$WAYBAR_CONFIG_DIR" "Waybar dark"
+        copy_theme_files "$WOFI_DARK_THEME_DIR" "$WOFI_CONFIG_DIR" "Wofi dark"
+        copy_theme_files "$SWAYNC_DARK_THEME_DIR" "$SWAYNC_CONFIG_DIR" "Swaync dark"
+        echo "Switched to dark theme"
+        ;;
+    *)
+        echo "Invalid theme: $THEME"
+        echo "Available themes: light, dark"
+        exit 1
+        ;;
+esac
+
+# Restart Waybar and other applications if necessary
+pkill waybar && waybar &
+echo "CSS reload success: true"
