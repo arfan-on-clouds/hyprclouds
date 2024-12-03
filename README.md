@@ -1,6 +1,6 @@
-Wm: Hyprland
+Window Manager: Hyprland
 
-Distro: fedora
+Distro(OS): fedora
 
 Wallpaper utility: swww
 
@@ -21,16 +21,9 @@ Lockscreen: hyprlock
 I have used pywal colors and as Pywal does not support GTK so I use selective wallpapers which match with GTK to maintain color consistency
 
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
-![20240831_12h48m15s_grim](https://github.com/user-attachments/assets/d7ff5953-08fc-4761-8052-a9759440f9cb)
-![20240831_12h48m57s_grim](https://github.com/user-attachments/assets/b62ac32b-b4cb-434a-a3c6-99610ecaa344)
-![20240831_12h56m19s_grim](https://github.com/user-attachments/assets/0f80af73-38b1-4cba-b3aa-d565246905f3)
-![20240831_12h56m43s_grim](https://github.com/user-attachments/assets/e64c57d8-fa74-45fa-bc2a-8ae24f05f1de)
-![20240831_12h57m00s_grim](https://github.com/user-attachments/assets/c926a20c-8444-4289-8d0f-4f1c69b39615)
-![20240831_12h58m58s_grim](https://github.com/user-attachments/assets/1a7d3014-ef1d-46dc-9279-03f866874a9a)
-![20240831_12h56m43s_grim](https://github.com/user-attachments/assets/9150727d-240b-4cfe-9b6b-a2dc59a102cc)
-![20240831_12h58m58s_grim](https://github.com/user-attachments/assets/04daddb4-2a02-4442-86e6-77fea3b4f524)
-![20240831_12h59m43s_grim](https://github.com/user-attachments/assets/3ddc25ea-a273-4706-9cba-eeea063e6329)
-![20240831_13h02m19s_grim](https://github.com/user-attachments/assets/3cb1cc8c-422c-4448-b2e8-f7bc7f5636ca)
+![20241126_21h55m19s_grim](https://github.com/user-attachments/assets/21469574-2a9c-408c-ad43-a2772d357146)
+![20241123_23h07m46s_grim](https://github.com/user-attachments/assets/d95d5b53-0013-4f98-b4ba-d7afc03dd4a4)
+
 
 
 
