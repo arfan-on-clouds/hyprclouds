@@ -41,4 +41,4 @@ If you want to know the Home tab of Firefox, then use the Nightab extension, you
 Spotify theme (for colors & minimal theme)👉
 https://spicetify.app/
 
-ENJOYS😁
+ENJOY😁
