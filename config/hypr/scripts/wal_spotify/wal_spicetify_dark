@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Add spicetify directory to PATH
+export PATH=$PATH:/home/alien/.spicetify
+
+# Run the Python script
+python /home/alien/.config/hypr/scripts/wal_spotify/wal_spicetify_dark.py

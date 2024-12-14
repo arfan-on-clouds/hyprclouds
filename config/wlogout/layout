@@ -1,9 +1,4 @@
 {
-    "label" : "logout",
-    "action" : "hyprctl dispatch exit 0",
-    "keybind" : "e"
-}
-{
     "label" : "shutdown",
     "action" : "systemctl poweroff",
     "keybind" : "s"
@@ -14,9 +9,14 @@
     "keybind" : "r"
 }
 {
-    "label" : "suspend",
+    "label" : "logout",
+    "action" : "loginctl kill-session $XDG_SESSION_ID",
+    "keybind" : "e"
+}
+{
+    "label" : "sleep",
     "action" : "systemctl suspend",
-    "keybind" : "u"
+    "keybind" : "h"
 }
 {
     "label" : "lock",
@@ -24,7 +24,8 @@
     "keybind" : "l"
 }
 {
-"label" : "windows",
+    "label" : "hibernate",
 "action" : "swaylock -f",
 "keybind" : "l"
+
 }

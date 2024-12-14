@@ -1,6 +1,6 @@
 import re
 
-css_file = "/home/alien/.cache/wal/colors.css"
+css_file = "/home/alien/.cache/hellwal/colors.css"
 hyprland_conf_file = "/home/alien/.cache/wal/hyprland.conf"
 
 def parse_css(css_file):

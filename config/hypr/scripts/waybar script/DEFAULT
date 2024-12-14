@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Define the source configuration directories
+WAYBAR_CONFIG_DIR="$HOME/.config/waybar/layouts/default"
+SWAYNC_CONFIG_DIR="$HOME/.config/swaync/layouts/default"
+
+# Define the source configuration directories of themes folder
+WAYBAR_CONFIG_DARK="$HOME/.config/waybar/dark/horizontal"
+WAYBAR_CONFIG_LIGHT="$HOME/.config/waybar/light/horizontal"
+SWAYNC_CONFIG_DARK="$HOME/.config/swaync/dark/horizontal"
+SWAYNC_CONFIG_LIGHT="$HOME/.config/swaync/light/horizontal"
+
+# Define the source configuration directories of themes located folder
+WAYBAR_CONFIG_DARK_MAIN="$HOME/.config/waybar/dark"
+WAYBAR_CONFIG_LIGHT_MAIN="$HOME/.config/waybar/light"
+SWAYNC_CONFIG_DARK_MAIN="$HOME/.config/swaync/dark"
+SWAYNC_CONFIG_LIGHT_MAIN="$HOME/.config/swaync/light"
+
+# Define the main configuration locations
+WAYBAR_MAIN_CONFIG="$HOME/.config/waybar"
+SWAYNC_MAIN_CONFIG="$HOME/.config/swaync"
+
+# Function to apply configuration
+apply_config() {
+    # Copy Waybar configuration
+    cp -r "$WAYBAR_CONFIG_DIR/"* "$WAYBAR_MAIN_CONFIG/"
+       cp -r "$WAYBAR_CONFIG_DARK/"* "$WAYBAR_CONFIG_DARK_MAIN/"
+          cp -r "$WAYBAR_CONFIG_LIGHT/"* "$WAYBAR_CONFIG_LIGHT_MAIN/"
+
+    # Copy Swaync configuration
+    cp -r "$SWAYNC_CONFIG_DIR/"* "$SWAYNC_MAIN_CONFIG/"
+       cp -r "$SWAYNC_CONFIG_DARK/"* "$SWAYNC_CONFIG_DARK_MAIN/"
+            cp -r "$SWAYNC_CONFIG_LIGHT/"* "$SWAYNC_CONFIG_LIGHT_MAIN/"
+    # Restart Waybar
+    killall waybar
+    waybar &
+
+    # Restart Swaync
+    swaync-client -rs
+    swaync-client -R
+}
+
+# Apply the configuration
+apply_config

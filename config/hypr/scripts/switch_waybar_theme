@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Paths to the theme directories and configuration files
+waybar_source_dir="/home/alien/.config/waybar"
+swaync_source_dir="/home/alien/.config/swaync"
+wofi_source_dir="/home/alien/.config/wofi"
+current_theme_file="/home/alien/.config/current_theme.txt"
+
+# Check if the current_theme.txt file exists, if not, create it with the default theme
+if [[ ! -f "$current_theme_file" ]]; then
+  echo "light" > "$current_theme_file"
+fi
+
+# Read the current theme from the file
+current_theme=$(cat "$current_theme_file")
+
+function switch_theme() {
+  local theme="$1"
+  
+  # Switch Waybar theme
+  local waybar_theme_dir="$waybar_source_dir/$theme"
+  if [[ -d "$waybar_theme_dir" ]]; then
+    cp "$waybar_theme_dir/style.css" "$waybar_source_dir/style.css"
+    echo "Waybar: Switched to $theme theme"
+    pkill -x waybar
+    sleep 1
+    waybar & disown
+  else
+    echo "Waybar theme $theme not found"
+  fi
+
+  # Switch SwayNC theme
+  local swaync_theme_dir="$swaync_source_dir/$theme"
+  if [[ -d "$swaync_theme_dir" ]]; then
+    cp "$swaync_theme_dir/style.css" "$swaync_source_dir/style.css"
+    echo "SwayNC: Switched to $theme theme"
+    swaync-client -rs
+  else
+    echo "SwayNC theme $theme not found"
+  fi
+
+  # Switch Wofi theme
+  local wofi_theme_dir="$wofi_source_dir/$theme"
+  if [[ -d "$wofi_theme_dir" ]]; then
+    cp "$wofi_theme_dir/style.css" "$wofi_source_dir/style.css"
+    echo "Wofi: Switched to $theme theme"
+  else
+    echo "Wofi theme $theme not found"
+  fi
+
+  # Update the current theme in the file
+  echo "$theme" > "$current_theme_file"
+}
+
+# Toggle the theme for all components
+if [[ "$current_theme" == "light" ]]; then
+  switch_theme "dark"
+else
+  switch_theme "light"
+fi

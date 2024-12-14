@@ -4,26 +4,48 @@
 swww init
 
 # Set the wallpaper with swww
-swww img "$1" --transition-type grow --transition-pos 0.780,0. --transition-duration 2
+cursor=$(hyprctl cursorpos | tr -d ' ')  
+swww img "$1" --transition-type grow --transition-pos "$cursor" --invert-y --transition-duration 2  --fps 120
 
-# Update terminal colors with Pywal
-wal -i "$1"
+# Update terminal colors with Pywal, setting a custom background color
+wal -i "$1" -b "#000000"
 
+# Reload swaync
 swaync-client -rs "$1"
- 
-python3 /home/alien/.config/hypr/scripts/parse_css_to_hyprland.py "$1"
 
-/home/alien/.config/hypr/scripts/generate_rofi_config.sh "$1"
+# Check and run Python scripts
+python_scripts=(
+    "/home/alien/.config/hypr/scripts/parse_css_to_hyprland.py"
+    "/home/alien/.config/hypr/scripts/material-colors/export-colors.py"
+    "/home/alien/.config/hypr/scripts/material-colors/export-colorsW.py"
+    "/home/alien/.config/hypr/scripts/kitty-colors.py"
+)
 
+for script in "${python_scripts[@]}"; do
+    if [ -f "$script" ]; then
+        echo "Running $script"
+        python3 "$script" "$1"
+    else
+        echo "Script $script not found or not executable."
+    fi
+done
+
+# Determine theme from current_theme.txt
+current_theme=$(cat /home/alien/.config/current_theme.txt)
+
+if [ "$current_theme" == "dark" ]; then
+    /home/alien/.config/hypr/scripts/rofi_light_dark/rofi_dark.sh "$1"
+else
+    /home/alien/.config/hypr/scripts/rofi_light_dark/rofi_light.sh "$1"
+fi
+
+# Update PywalFox
 pywalfox update
 
+# Update wal-telegram
 wal-telegram -r
-
-
-# Reload your terminal configuration to apply the new colors
-kitty @ set-colors --all /home/alien/.cache/wal/colors-kitty.conf
-
-#!/usr/bin/bash
+# vesktop wal
+/home/alien/.config/hypr/scripts/Discord/dark.sh
 
 # Define the Rofi wallpaper path
 ROFI_WALLPAPER_PATH="/home/alien/.config/rofi/launchers/type-6/current-wallpaper.png"
@@ -36,10 +58,10 @@ fi
 # Copy the new wallpaper to the Rofi configuration directory
 cp "$1" "$ROFI_WALLPAPER_PATH"
 
-# Verify the symbolic link if needed
-if [ ! -L "$ROFI_WALLPAPER_PATH" ]; then
-    echo "Failed to create the symbolic link for the wallpaper."
+# Check if the file exists
+if [ -f "$ROFI_WALLPAPER_PATH" ]; then
+    echo "Rofi wallpaper updated successfully."
+else
+    echo "Failed to update the Rofi wallpaper."
     exit 1
 fi
-
-echo "Rofi wallpaper updated successfully."

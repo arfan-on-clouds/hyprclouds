@@ -1,58 +1,81 @@
-@import url("/home/alien/.cache/wal/colors-waybar.css");
+
+
+/* Importing pywal colors */
+
+@import url("/home/alien/.cache/hellwal/waybar-colors.css");
 
 window {
     font-family: Fira Code Medium;
-    font-size: 16pt;
-    color: @color7; /* text */
-    background-color: alpha(@background, 0.1);
-}
+    font-size: 10px;
+    color:  @foreground; /* text */
+    background-color: rgba(24, 27, 32, 0.2);
+
+} 
 
 button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
-    background-color: rgba(200, 220, 255, 0);
+    background-color: transparent;
     animation: gradient_f 20s ease-in infinite;
-    border-radius: 60px; /* Increased border radius for a more rounded look */
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0 10px 2px transparent;
+    border-radius: 36px;
+    margin: 10px;
 }
 
 button:focus {
-    background-size: 30%;
-	border: 0px;
-    background-color: alpha(@color2,1.0);
-    color: #1e1e2e;
-
+    box-shadow: none;
+    background-size : 20%;
 }
 
 button:hover {
-    background-color: @color2;
-    color: @color7;
-    background-size: 40%;
-    border-radius: 60px; 
-    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.3s ease-in-out; 
-	
-}
-
-
-#lock {
-    background-image: image(url("./lock.png"));
-}
-
-#logout {
-    background-image: image(url("./logout.png"));
-}
-
-#suspend {
-    background-image: image(url("./sleep.png"));
+    background-size: 35%;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.4);
+    background-color: @color6;
+    color: transparent;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
 }
 
 #shutdown {
-    background-image: image(url("./power.png"));
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+  background-image: image(url("./icons/power-hover.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+
+}
+#logout:hover {
+  background-image: image(url("./icons/logout-hover.png"));
 }
 
 #reboot {
-    background-image: image(url("./restart.png"));
+    background-image: image(url("./icons/restart.png"));
 }
-#windows {
-    background-image: image(url("./windows.png"));
+#reboot:hover {
+  background-image: image(url("./icons/restart-hover.png"));
 }
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+#lock:hover {
+  background-image: image(url("./icons/lock-hover.png"));
+}
+
+#sleep {
+    background-image: image(url("./icons/sleep.png"));
+}
+#sleep:hover {
+  background-image: image(url("./icons/sleep-hover.png"));
+}
+#hibernate {
+  background-image: image(url("./icons/hibernate.png"));
+}
+#hibernate:hover {
+  background-image: image(url("./icons/hibernate_hover.png"));
+}
+

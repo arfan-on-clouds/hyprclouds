@@ -1,0 +1,518 @@
+@import url("/home/alien/.cache/wal/colors-waybar.css");
+
+* {
+    font-family: Iosevka, Material Design Icons;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: alpha(@color7,0.8);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+#workspaces {
+    background-color:  alpha(@background,0.0);
+    margin-top: 1px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @color1;
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+}
+
+#workspaces button.active {
+    color: @color4;
+    background: @color1;
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+    opacity:1.0;
+}
+
+#workspaces button:hover {
+    color: @color2;
+    background: @color2;
+    border-radius: 15px;
+    opacity:0.5;
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Continue with similar corrections for other elements... */
+#custom-weather,
+#custom-audio_idle_inhibitor,
+#custom-spotify,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#custom-power,
+#launcher,
+#tray,
+#custom-icon1,
+#custom-icon2,
+#custom-icon3,
+#custom-icon4,
+#window,
+#custom-wallpaper,
+#mode,
+#idle_inhibitor,
+#custom-expand,
+#custom-expand2,
+#custom-cycle_wall,
+#custom-ss,
+#custom-dynamic_pill,
+#modules-right,
+#taskbar
+#icon3,
+#mpd {
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: @green;
+    color: @black;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+#custom-cycle_wall {
+    color:@color7;
+    padding-right: 14px;
+    padding-left: 12px;
+}
+
+#custom-cycle_wall:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
+
+#taskbar {
+    background-color:alpha(@color0,0.0);
+    margin-top:-4px
+}
+
+#custom-icon1{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon2{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon3{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-icon4{
+    color:@color7;
+    padding-right:0px;
+}
+#custom-expand {
+    background-color: alpha(@color1,0.0);/* Use rgba for semi-transparent background */
+    color: @color7;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+#custom-expand:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
+
+#custom-wallpaper {
+    color:@color7;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+#custom-wallpaper:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
+
+#custom-notification {
+    padding-right: 15px;
+}
+#custom-ss {
+    background-color: alpha(@background,0.0);
+    color:@color7;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+#custom-ss:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+} 
+
+#custom-power{
+    background-color: alpha(@color1,0.5);
+    color:@color7;
+    
+}
+
+#custom-power:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out; 
+
+}
+#window{
+    background-color: alpha(@color1,0.5);
+    color: @color7;
+}
+
+
+#custom-audio_idle_inhibitor {
+ background: @yellow;
+}
+
+#custom-weather {
+    background: @aqua
+}
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+    color: @black;
+}
+
+#custom-weather.clearNight {
+    color: @black;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: @black;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: @black;
+}
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: @black;
+}
+
+#custom-weather.default {
+    color: @black;
+}
+
+#tray:hover {
+background-color: @color1;
+transition: all 0.3s ease-in-out;
+}
+
+#tray {
+    color:@color0;
+    background-color: alpha(@color1,0.5);
+    font-weight: bolder;
+    border-radius: 20px;
+    border:0px @color7 solid;
+}
+
+#tray > .passive {
+    color:@color7;
+    background-color: @color1;
+transition: all 0.3s ease-in-out;
+    background-color: alpha(@background,0.0);
+    font-weight: bolder;
+  
+}
+
+#tray > .needs-attention {
+    color:@color7;
+    background-color: alpha(@background,0.9);
+    font-weight: bolder;
+    background-color: @color1;
+transition: all 0.3s ease-in-out;
+   
+}
+
+#clock:hover,
+#clock:hover ~ #audio,
+#clock:hover ~ #backlight {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out; 
+}
+  
+
+#clock {
+    background: alpha(@color1,0.5);
+    color:@color7;
+    border-radius: 0px 20px 20px 0px;
+    border:0px @background solid;
+    background-size: 300% 300%;
+    animation: gradient 20s ease infinite;
+    font-weight: bolder;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left:-0px;
+    padding-left: 1px;
+    padding-right: 10px;
+}
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font";
+  }
+  
+
+#battery.charging {
+    background-color:@color7;
+    color:@color1;
+    
+
+}
+#battery.plugged {
+    background-color:@color7;
+    color:@color1;
+  
+}
+
+#battery {
+    color:@foreground;
+    background:@color0;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@keyframes blink {
+    to {
+        background-color: @red;
+        color: @black;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @yellow;
+    color: @black;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {       
+     background: alpha(@background,0.9);
+    background-size: 500% 500%;
+    animation: gradient 10s ease infinite;
+    margin-left: 0px; 
+    border-radius: 20px;
+    /* background-color: #b4befe; */
+    color:@color7;
+}
+
+#memory {
+    background-color:alpha(@background,0.9);
+    color: @color7;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+#custom-launcher {
+    background-color: #fecb53;
+    color: alpha(@background,0.9);
+    font-weight: bolder;
+}
+#disk:hover {
+    background-color: @color1;
+    color:@color0;
+    transition: all 0.3s ease-in-out;
+}
+
+#disk {
+    background-color:alpha(@color1,0.5); /* Use rgba for semi-transparent background */
+    font-weight: bolder;
+    margin-left: 10px;
+    color:@color0;
+    border:0px @color7 solid;
+}
+
+#backlight {
+    color:@foreground;
+    background-color: alpha(@color1,0.5);
+    margin-right:-10px;  
+    padding-left: 5px;
+    margin-left:-0px;
+    border-radius:20px 0px 0px 20px;
+   
+}
+#backlight:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+}
+
+#network {
+    color:@foreground;
+    background-color:@background;
+   
+
+}
+
+#network.disabled {
+    color:@foreground;
+    background-color:@background;
+  
+}
+
+#network.disconnected {
+    color:@foreground;
+    background-color:@background;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-right: 11px;
+  
+}
+
+#network.linked,
+#network.wifi {
+    color:@foreground;
+    background-color:@background;
+   
+}
+
+#network.ethernet {
+    background-color:@background;
+    color:@foreground;
+    border: 2px @foreground solid;
+}    
+
+#pulseaudio {
+    background-color:  alpha(@color1,0.5);
+    color:@foreground;
+    padding-right: 10px;
+    margin-right:-0px; 
+    margin-left:-0px; 
+    border-radius:0px 0px 0px 0px;
+        font-weight: bolder;
+}
+
+#pulseaudio:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+}     
+
+#pulseaudio.muted {
+    background-size: 500% 500%;
+    background-size: 500% 500%;
+    animation: gradient 20s ease infinite;
+    color: rgba(84, 82, 74, 0.7);
+    background: @;
+    font-weight: bolder;
+    
+}
+
+#custom-media {
+    background-color:alpha(@color1,0.5); /* Use rgba for semi-transparent background */
+    font-weight: bolder;
+    margin-left: 10px;
+    color:@color0;
+    border-radius: 20px;
+    border:0px @color7 solid;
+}
+
+#custom-media:hover {
+    background-color: @color1;
+    transition: all 0.3s ease-in-out;
+}     
+
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+    font-weight: bolder;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    color:@color7;
+    background: alpha(@background,0.9);
+    border-radius:20px;
+    font-weight: bolder;
+}
+
+#temperature.critical {
+    background-color: #f38ba8;
+    color: #bf5673;
+}
+
+#idle_inhibitor {
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 5px;/*  */
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+

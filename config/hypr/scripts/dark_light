@@ -1,20 +1,106 @@
 #!/bin/bash
 
-# Check the current theme
-current_theme=$(gsettings get org.gnome.desktop.interface gtk-theme)
+# Paths to the theme directories and configuration files
+waybar_source_dir="/home/alien/.config/waybar"
+swaync_source_dir="/home/alien/.config/swaync"
+wofi_source_dir="/home/alien/.config/wofi"
+kitty_source_dir="/home/alien/.config/kitty"
+current_theme_file="/home/alien/.config/kitty/current_theme.txt"
+rofi_dark_script="/home/alien/.config/hypr/scripts/rofi_light_dark/rofi_dark.sh"
+rofi_light_script="/home/alien/.config/hypr/scripts/rofi_light_dark/rofi_light.sh"
+gtk_css_file="/home/alien/.config/gtk-4.0/gtk.css"
+gtk_dark_css_file="/home/alien/.config/gtk-4.0/gtk-dark.css"
 
-# Toggle between dark and light themes
-if [[ "$current_theme" == "'Graphite-Dark'" ]]; then
-    # Switch to light theme
-    gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-black'
-    gsettings set org.gnome.desktop.interface gtk-theme 'Graphite-Light'
-    gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
-    echo "Switched to light theme"
-else
-    # Switch to dark theme
-    gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-black'
-    gsettings set org.gnome.desktop.interface gtk-theme 'Graphite-Dark'
-    gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-    echo "Switched to dark theme"
+# Check if the current_theme.txt file exists, if not, create it with the default theme
+if [[ ! -f "$current_theme_file" ]]; then
+  echo "light" > "$current_theme_file"
 fi
 
+# Read the current theme from the file
+current_theme=$(cat "$current_theme_file")
+
+function switch_theme() {
+  local theme="$1"
+  
+  # Switch Waybar theme
+  local waybar_theme_dir="$waybar_source_dir/$theme"
+  if [[ -d "$waybar_theme_dir" ]]; then
+    cp "$waybar_theme_dir/style.css" "$waybar_source_dir/style.css"
+    echo "Waybar: Switched to $theme theme"
+    pkill -x waybar
+    waybar & disown
+  else
+    echo "Waybar theme $theme not found"
+  fi
+
+  # Switch SwayNC theme
+  local swaync_theme_dir="$swaync_source_dir/$theme"
+  if [[ -d "$swaync_theme_dir" ]]; then
+    cp "$swaync_theme_dir/style.css" "$swaync_source_dir/style.css"
+    echo "SwayNC: Switched to $theme theme"
+  else
+    echo "SwayNC theme $theme not found"
+  fi
+
+  # Switch Wofi theme
+  local wofi_theme_dir="$wofi_source_dir/$theme"
+  if [[ -d "$wofi_theme_dir" ]]; then
+    cp "$wofi_theme_dir/style.css" "$wofi_source_dir/style.css"
+    echo "Wofi: Switched to $theme theme"
+  else
+    echo "Wofi theme $theme not found"
+  fi
+
+  # Switch Kitty theme
+  local kitty_main_config="$kitty_source_dir/kitty.conf"
+  local kitty_color_config
+  if [[ "$theme" == "light" ]]; then
+    kitty_color_config="$kitty_source_dir/light/kitty.conf"
+  else
+    kitty_color_config="$kitty_source_dir/dark/kitty.conf"
+  fi
+
+  if [[ -f "$kitty_main_config" && -f "$kitty_color_config" ]]; then
+    # Remove existing color configuration (assumes color config is marked with #BEGIN_COLORS and #END_COLORS)
+    sed -i '/#BEGIN_COLORS/,/#END_COLORS/d' "$kitty_main_config"
+    # Append new color configuration
+    echo -e "\n#BEGIN_COLORS\n$(cat $kitty_color_config)\n#END_COLORS" >> "$kitty_main_config"
+    echo "Kitty: Switched to $theme theme"
+  else
+    echo "Kitty configuration files not found"
+  fi
+
+  # Switch GTK theme
+  if [[ "$theme" == "light" ]]; then
+    gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-light'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Material-wally'
+    gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'
+    sed -i 's|@import.*|@import '\''./colors.css'\'';|' "$gtk_css_file"
+    sed -i 's|@import.*|@import '\''./colors.css'\'';|' "$gtk_dark_css_file"
+    echo "GTK: Switched to light theme"
+    bash "$rofi_light_script"
+  else
+    gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-dark'
+    gsettings set org.gnome.desktop.interface gtk-theme 'Material-wal'
+    gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+    sed -i 's|@import.*|@import '\''./colors1.css'\'';|' "$gtk_css_file"
+    sed -i 's|@import.*|@import '\''./colors1.css'\'';|' "$gtk_dark_css_file"
+    echo "GTK: Switched to dark theme"
+    bash "$rofi_dark_script"
+  fi
+
+  # Restart SwayNC every time the theme is switched
+  pkill -x swaync
+  sleep 1
+  swaync & disown
+
+  # Update the current theme in the file
+  echo "$theme" > "$current_theme_file"
+}
+
+# Toggle the theme for all components
+if [[ "$current_theme" == "light" ]]; then
+  switch_theme "dark"
+else
+  switch_theme "light"
+fi
