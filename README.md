@@ -23,12 +23,12 @@ I have used HELLWAL colors and for material you it will generate colors from cur
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
 ![20241126_21h55m19s_grim](https://github.com/user-attachments/assets/21469574-2a9c-408c-ad43-a2772d357146)
 ![20241123_23h07m46s_grim](https://github.com/user-attachments/assets/d95d5b53-0013-4f98-b4ba-d7afc03dd4a4)
-![20241203_18h31m40s_grim](https://github.com/user-attachments/assets/8f9a3a88-d8ab-409c-ae05-b187081735f9)
-![20241203_18h41m24s_grim](https://github.com/user-attachments/assets/3a103c45-d7e0-4989-ae02-e8ba5378c042)
-![20241203_18h46m18s_grim](https://github.com/user-attachments/assets/8a68b37b-86d3-40fe-836c-b1c75ec398ae)
-![20241203_18h43m03s_grim](https://github.com/user-attachments/assets/937e5a44-a1af-4aa8-b892-942198ef3424)
-![20241203_18h36m32s_grim](https://github.com/user-attachments/assets/6b026e6b-a9e6-418b-bfe6-af6f53ce5753)
-![20241203_18h44m05s_grim](https://github.com/user-attachments/assets/7150969d-dc3d-4172-9f26-a332306ff44e)
+![20241214_20h08m47s_grim](https://github.com/user-attachments/assets/f560c5e6-019e-4f6a-9a41-c729e925846b)
+![20241214_20h07m30s_grim](https://github.com/user-attachments/assets/a7118740-d8d8-4afd-bf74-a6aa7d85e30b)
+![20241214_20h05m44s_grim](https://github.com/user-attachments/assets/dcb13f3d-fcd6-46fa-9fcb-d2e3f16af2b9)
+![20241214_20h04m01s_grim](https://github.com/user-attachments/assets/d1bb7424-8850-413a-99b1-f49a40898478)
+![20241214_20h03m04s_grim](https://github.com/user-attachments/assets/2fbb1aa3-e2c0-4a13-b943-923dacaa4b48)
+
 
 Note: 
 
