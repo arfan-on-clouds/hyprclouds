@@ -18,7 +18,7 @@ file-manager: nautilus
 
 Lockscreen: hyprlock
 
-I have used PYWAL colors and for material you it will generate colors from current wallpapaer and impliment it on everywhere
+I have used HELLWAL colors and for material you it will generate colors from current wallpapaer and impliment it on everywhere
 
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
 ![20241126_21h55m19s_grim](https://github.com/user-attachments/assets/21469574-2a9c-408c-ad43-a2772d357146)
