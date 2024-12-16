@@ -39,7 +39,9 @@ FIREFOX THEME & HOMETAB:
 
 THEME👉
 https://github.com/Naezr/ShyFox
-Spotify theme (for colors & minimal theme)👉
-https://spicetify.app/
+
+FOR SPOTIFY👉
+Spotify theme https://spicetify.app/ (colors are from hellwal with my own touch)
+
 
 ENJOY😁
