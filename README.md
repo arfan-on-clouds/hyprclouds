@@ -11,7 +11,7 @@ Notification daemon & panel: swaync
 
 Bar: waybar
 
-Logout menu: wloglout
+Logout menu: wlogout
 
 Launcher : rofi & wofi both
 
