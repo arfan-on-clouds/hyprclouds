@@ -28,7 +28,6 @@ I have used HELLWAL colors and for material you it will generate colors from cur
 ![20250118_00h05m14s_grim](https://github.com/user-attachments/assets/7e0a358a-a408-439f-a0bd-7ee3d6f845d9)
 ![20250118_00h07m20s_grim](https://github.com/user-attachments/assets/2880ae28-6418-4524-a94a-e9ab8e53439f)
 ![20250118_00h08m45s_grim](https://github.com/user-attachments/assets/b8e33854-8f83-4304-9560-5cb05fc60cdb)
-![Uploading 20250117_23h38m44s_grim.png…]()
 
 
 
