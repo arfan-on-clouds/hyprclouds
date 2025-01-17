@@ -1,17 +1,16 @@
-@import url("/home/alien/.config/material-you/waybar-colors2.css");
+@import url("/home/alien/.cache/wal/colors-waybar.css");
 
 #window {
     margin: 0px;
-    border-radius: 18px;
-    background-color: alpha(@dark-background,1.0);
-    color:@dark-background;
-
+    border-radius: 5px;
+    background-color: alpha(@color0,0.8);
+    color:@color5;
 }
 
 #input {
     margin: 10px;
-    background-color: alpha(@dark-on-secondary-fixed-variant, 0.7);
-    color: @dark-on-background;
+    background-color: alpha(@color1, 1.0);
+    color: @foreground;
     border-radius: 25px;
     border: 0px solid #83a598;
 }
@@ -26,8 +25,7 @@
 
 #entry:selected {
     /*background-color: /*rgb(245, 98, 36);*/
-    background-color:  alpha(@dark-primary, 1.0);
-    color: @dark-background;
+    background-color:  alpha(@color1, 1.0);
     border-radius: 10px;
     border: none;
     outline: none;

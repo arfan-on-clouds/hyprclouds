@@ -3,14 +3,14 @@
 #window {
     margin: 0px;
     border-radius: 18px;
-    background-color: alpha(@dark-background,1.0);
-    color:@dark-background;
+    background-color: alpha(@light-surface-container-highest,1.0);
+    color:@dark-on-background;
 
 }
 
 #input {
     margin: 10px;
-    background-color: alpha(@dark-on-secondary-fixed-variant, 0.7);
+    background-color: alpha(@light-primary, 0.7);
     color: @dark-on-background;
     border-radius: 25px;
     border: 0px solid #83a598;
@@ -26,8 +26,8 @@
 
 #entry:selected {
     /*background-color: /*rgb(245, 98, 36);*/
-    background-color:  alpha(@dark-primary, 1.0);
-    color: @dark-background;
+    background-color:  alpha(@light-primary, 1.0);
+    color: @dark-on-background;
     border-radius: 10px;
     border: none;
     outline: none;
