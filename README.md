@@ -24,13 +24,13 @@ Lockscreen: hyprlock
 I have used HELLWAL colors and for material you it will generate colors from current wallpapaer and impliment it on everywhere
 
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
-![20241126_21h55m19s_grim](https://github.com/user-attachments/assets/21469574-2a9c-408c-ad43-a2772d357146)
-![20241123_23h07m46s_grim](https://github.com/user-attachments/assets/d95d5b53-0013-4f98-b4ba-d7afc03dd4a4)
-![20241214_20h08m47s_grim](https://github.com/user-attachments/assets/f560c5e6-019e-4f6a-9a41-c729e925846b)
-![20241214_20h07m30s_grim](https://github.com/user-attachments/assets/a7118740-d8d8-4afd-bf74-a6aa7d85e30b)
-![20241214_20h05m44s_grim](https://github.com/user-attachments/assets/dcb13f3d-fcd6-46fa-9fcb-d2e3f16af2b9)
-![20241214_20h04m01s_grim](https://github.com/user-attachments/assets/d1bb7424-8850-413a-99b1-f49a40898478)
-![20241214_20h03m04s_grim](https://github.com/user-attachments/assets/2fbb1aa3-e2c0-4a13-b943-923dacaa4b48)
+![20250118_00h46m37s_grim](https://github.com/user-attachments/assets/fddd75f0-d106-4f2f-84d1-eedf185a8642)
+![20250118_00h05m14s_grim](https://github.com/user-attachments/assets/7e0a358a-a408-439f-a0bd-7ee3d6f845d9)
+![20250118_00h07m20s_grim](https://github.com/user-attachments/assets/2880ae28-6418-4524-a94a-e9ab8e53439f)
+![20250118_00h08m45s_grim](https://github.com/user-attachments/assets/b8e33854-8f83-4304-9560-5cb05fc60cdb)
+
+
+
 
 
 Note: 
