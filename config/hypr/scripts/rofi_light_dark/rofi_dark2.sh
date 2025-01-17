@@ -107,7 +107,7 @@ window {
 
     /* properties for all widgets */
     enabled:                     true;
-    border-radius:               10px;
+    border-radius:               0px;
     cursor:                      "default";
     background-color:            @background;
 }

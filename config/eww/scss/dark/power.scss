@@ -1,0 +1,16 @@
+
+.power {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    background-color: $dark-primary;
+    color: $dark-surface;
+    border-radius: 2rem;
+    padding: 0 8 0.0rem;
+    margin-left: 1.2rem;
+    margin-right: 0.8rem;
+    transition: 0.3s;
+}
+
+.power:hover {
+    background-color: mix($dark-primary, $dark-on-surface, 70%);
+}

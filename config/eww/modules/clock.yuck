@@ -1,0 +1,17 @@
+ (defwidget clock []
+ (button :onclick "/home/alien/.config/eww/scripts/toggle_calendar.sh" :class "clock"
+    ;; Display small clock in HH:MM AM/PM format and run a script on click
+    (label :class "clock-lable" :text {formattime(EWW_TIME, "%I:%M %p")}
+
+)
+ )
+)
+(defwidget big_clock []
+(button :onclick "/home/alien/.config/eww/scripts/toggle_calendar.sh" :class "clock"
+    ;; Display larger clock in HH MM AM/PM format and run a script on click
+    (box :class "big_clock_box" :orientation "h" :space-evenly false
+        (label :class "big_clock_label" :text {formattime(EWW_TIME, "%I %M %p")}
+    )
+)
+)
+)

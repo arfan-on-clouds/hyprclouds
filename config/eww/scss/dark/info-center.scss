@@ -1,0 +1,85 @@
+@import "/home/alien/Downloads/dotfiles2/.config/eww/colors.scss";
+
+.info-center {
+  .widget {
+    @include floating-widget;
+
+    .notification-center {
+      @include notification-center;
+    }
+
+    .calendar {
+      @include calendar;
+    }
+
+    .date {
+      @include date($size: 5rem);
+      margin-bottom: 5px;
+    }
+
+    .separator {
+      background-color: transparentize($fg-color, 0.92);
+      min-width: 2px;
+      margin: 0 10px 0 2px;
+    }
+
+    .weather {
+      @include widget;
+
+      .current {
+        .icon {
+          font-size: 3rem;
+          text-shadow: $text-shadow;
+          margin-right: 10px;
+
+          .clouds {
+            color: white;
+          }
+          @include image($size: 6rem);
+          margin-right: 5rem;
+        }
+
+        .temp {
+          font-size: 3rem;
+          font-weight: bold;
+
+          &.celcius {
+            font-size: 2rem;
+          }
+
+        }
+
+        .description {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .feels-like,
+        .humidity {
+          color: transparentize($fg-color, 0.25);
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+
+      .forecast {
+        .i {
+          .dt {
+            color: transparentize($fg-color, 0.25);
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: -3px;
+          }
+
+          .icon {
+            @include image($size: 2.5rem);
+          }
+
+          .temp {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

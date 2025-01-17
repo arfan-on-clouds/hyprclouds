@@ -1,0 +1,40 @@
+(defwindow taskbar-left
+  :stacking "overlay"
+  :monitor 0
+  :geometry (geometry 
+              :x "0px"        ;; Align to the left edge of the screen
+              :y "50%"        ;; Center vertically
+              :anchor "center left") ;; Anchor to the left-center of the screen
+   (box :orientation "v" 
+         :space-evenly false 
+         :class "taskbar-window"
+       (taskbar)))
+
+       (defwindow corner2
+  :stacking "overlay"
+  :monitor 0
+  :geometry (geometry 
+              :y "240px"
+              :anchor "bottom left")
+  (box :class "corner2")  
+)
+
+(defwindow corner1
+  :stacking "overlay"
+  :monitor 0
+  :geometry (geometry 
+              :y "240px"
+              :anchor "top left")
+  (box :class "corner1")  
+)
+
+
+(defwidget taskbar []
+    (box :orientation "v" :space-evenly false :class "taskbar"
+        (for app in {apps.pinned}
+            (button :class "taskbar-item" :onclick "cd ~ && gtk-launch ${app.desktop} & scripts/toggle_launcher.sh close &"
+                (image :path {app.icon} :image-width 32 :image-height 32)
+            )
+        )
+    )
+)

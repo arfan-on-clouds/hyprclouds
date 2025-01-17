@@ -5,7 +5,7 @@ import re
 source_file = os.path.expanduser("~/.cache/material-you/colors.css")
 target_files = [
     os.path.expanduser("~/.themes/Material-wal/gtk-3.0/colors.css"),
-    os.path.expanduser("/home/alien/.config/gtk-4.0/colors1.css")
+    os.path.expanduser("~/.config/gtk-4.0/colors1.css")
 ]
 
 # Ensure the source file exists

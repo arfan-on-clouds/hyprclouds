@@ -1,0 +1,12 @@
+.expand {
+    background-color: $dark-on-secondary;
+    font-size: 1.25rem;
+    padding: 0 1.2rem;
+    margin: 0 0.75rem;
+    margin-top: 0.2rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+.expand:hover {
+    background-color: mix($dark-surface-variant, $dark-on-surface-variant, 70%);
+}

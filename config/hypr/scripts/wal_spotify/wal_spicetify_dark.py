@@ -1,15 +1,16 @@
 import re
+import subprocess
+import os
 
-# Path to your Spicetify color.ini file
+# Paths to your files
 color_ini_path = "/home/alien/.config/spicetify/Themes/Peace/color.ini"
-
-# Path to your CSS file
-css_file_path = "/home/alien/.cache/material-you/colors.css"
+css_file_path = "/home/alien/.config/material-you/waybar-colors2.css"
 
 # Function to extract color value from CSS
 def extract_color(css_content, variable_name):
-    match = re.search(rf'{variable_name}: (#\w+);', css_content)
-    return match.group(1)[1:] if match else None  # Remove the '#' symbol
+    # Improved regex pattern to match the variable name and color value
+    match = re.search(rf'{variable_name} #([a-fA-F0-9]+);', css_content)
+    return match.group(1) if match else None  # Return the color value without the '#'
 
 # Read CSS file content
 with open(css_file_path, 'r') as css_file:
@@ -17,27 +18,27 @@ with open(css_file_path, 'r') as css_file:
 
 # Extract colors from the CSS file
 colors = {
-    "text": extract_color(css_content, '--foreground'),
-    "subtext": extract_color(css_content, '--color6'),
-    "extratext": extract_color(css_content, '--color5'),
-    "main": extract_color(css_content, '--background'),
-    "main-elevated": extract_color(css_content, '--background'),  # Same as main
-    "highlight-elevated": extract_color(css_content, '--color7'),
-    "highlight": extract_color(css_content, '--color7'),
-    "sidebar": extract_color(css_content, '--background'),  # Same as main
-    "player": extract_color(css_content, '--color0'),  # Same as main
-    "sec-player": extract_color(css_content, '--color0'),  # Same as main
-    "card": extract_color(css_content, '--background'),  # Same as main
-    "sec-card": extract_color(css_content, '--color4'),
-    "shadow": extract_color(css_content, '--background'),  # Same as main
-    "selected-row": extract_color(css_content, '--color7'),
-    "button": extract_color(css_content, '--color8'),
-    "button-active": extract_color(css_content, '--color7'),
-    "button-disabled": extract_color(css_content, '--background'),  # Same as main
-    "tab-active": extract_color(css_content, '--color4'),
-    "notification": extract_color(css_content, '--color4'),
-    "notification-error": extract_color(css_content, '--color5'),
-    "misc": extract_color(css_content, '--color6')
+    "text": extract_color(css_content, '@define-color dark-secondary'),
+    "subtext": extract_color(css_content, '@define-color dark-secondary'),
+    "extratext": extract_color(css_content, '@define-color dark-secondary'),
+    "main": extract_color(css_content, '@define-color dark-background'),
+    "main-elevated": extract_color(css_content, '@define-color dark-background'),  # Same as main
+    "highlight-elevated": extract_color(css_content, '@define-color dark-primary'),
+    "highlight": extract_color(css_content, '@define-color dark-surface'),
+    "sidebar": extract_color(css_content, '@define-color dark-background'),  # Same as main
+    "player": extract_color(css_content, '@define-color light-on-background'),  # Same as main
+    "sec-player": extract_color(css_content, '@define-color dark-surface'),  # Same as main
+    "card": extract_color(css_content, '@define-color light-on-background'),  # Same as main
+    "sec-card": extract_color(css_content, '@define-color light-secondary'),
+    "shadow": extract_color(css_content, '@define-color dark-background'),  # Same as main
+    "selected-row": extract_color(css_content, '@define-color dark-primary'),
+    "button": extract_color(css_content, '@define-color dark-on-primary'),
+    "button-active": extract_color(css_content, '@define-color dark-primary'),
+    "button-disabled": extract_color(css_content, '@define-color dark-background'),  # Same as main
+    "tab-active": extract_color(css_content, '@define-color light-secondary'),
+    "notification": extract_color(css_content, '@define-color light-secondary'),
+    "notification-error": extract_color(css_content, '@define-color dark-error'),
+    "misc": extract_color(css_content, '@define-color dark-error')
 }
 
 # Check if all colors are extracted correctly
@@ -53,8 +54,6 @@ with open(color_ini_path, 'w') as color_ini_file:
         color_ini_file.write(f"{key} = {value}\n")
 
 # Run Spicetify to apply the changes
-import subprocess
-
 result = subprocess.run(["spicetify", "apply"], capture_output=True, text=True)
 
 if result.returncode == 0:

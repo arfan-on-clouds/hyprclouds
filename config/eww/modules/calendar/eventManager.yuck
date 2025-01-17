@@ -1,0 +1,31 @@
+(defwidget eventEntry [icon date content ?urgency]
+  (box
+    :class "eventBox"
+    :space-evenly false
+    :spacing 10
+    
+    (label
+      :text icon
+      :class "icon eventIcon ${strlength(urgency) > 0 ? urgency : 'default'}"
+    )
+
+    (box
+      :orientation "v"
+      :space-evenly false
+      
+      
+      (label
+        :class "eventDate"
+        :xalign 0
+        :text date
+      )
+      (label
+        :class "eventContent"
+        :xalign 0
+        :text content
+        :wrap true
+        :limit-width 23
+      )
+    )
+  )
+)

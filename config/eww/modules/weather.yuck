@@ -1,0 +1,7 @@
+(defwidget weathery []
+    (box :orientation "h" :space-evenly false :class "weathery"
+        (label :class "weathery-error" :text "󰤨" :visible {weather == "null" ? true : false})
+        (label :class "weathery-icon" :halign "start" :text {weather.icon})
+        (label :class "weathery-temp" :halign "start" :text {weather.temp})
+    )
+)

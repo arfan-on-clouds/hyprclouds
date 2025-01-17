@@ -53,7 +53,7 @@ FOREGROUND=$(hex_to_rgba $FOREGROUND 1.0)
 CURSOR=$(hex_to_rgba $CURSOR 0.8)
 
 COLOR0=$(hex_to_rgba $BACKGROUND 0.8)
-COLOR1=$(hex_to_rgba $COLOR2 0.8)
+COLOR1=$(hex_to_rgba $COLOR1 1.0)
 COLOR2=$(hex_to_rgba $COLOR2 0.8)
 COLOR3=$(hex_to_rgba $COLOR3 0.8)
 COLOR4=$(hex_to_rgba $COLOR4 0.8)
@@ -88,7 +88,7 @@ configuration {
     background:                  $FOREGROUND;
     background-alt:              $COLOR4;
     foreground:                  $BACKGROUND;
-    selected:                    $COLOR8;
+    selected:                    $COLOR1;
     active:                      #2E3F34;
     urgent:                      #D08261;
 }
@@ -107,7 +107,7 @@ window {
 
     /* properties for all widgets */
     enabled:                     true;
-    border-radius:               10px;
+    border-radius:               0px;
     cursor:                      "default";
     background-color:            @background;
 }
@@ -261,7 +261,7 @@ message {
 }
 textbox {
     padding:                     12px;
-    border-radius:               100%;
+    border-radius:               50%;
     background-color:            @background-alt;
     text-color:                  @foreground;
     vertical-align:              0.5;

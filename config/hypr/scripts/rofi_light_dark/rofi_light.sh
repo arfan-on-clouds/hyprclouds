@@ -97,7 +97,7 @@ window {
     y-offset:                    0px;
     enabled:                     true; 
     border:                      0px solid;
-    border-radius:               10px;
+    border-radius:               0px;
     border-color:                $COLOR3;
     cursor:                      "default";
     background-color:            $FOREGROUND;

@@ -1,0 +1,12 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+.notifications-popup-body {
+    @include window;
+    min-width: 35rem;
+    border-radius: 1rem;
+    border: 0.1rem solid $light-primary;
+    box-shadow: 0 0 0px 0px #000000;
+    background-color: $light-secondary-fixed-dim;
+    color: $light-on-background;
+    padding: 0rem;
+}

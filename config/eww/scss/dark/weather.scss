@@ -1,0 +1,29 @@
+.weathery {
+
+    background-color: $dark-on-secondary;
+    margin-left: 1rem;
+    border-radius: 1rem;
+   
+}
+.weathery:hover {
+    background-color: mix($dark-surface-variant, $dark-on-surface-variant, 70%);
+}
+
+.weathery-icon {
+    color: $dark-primary;
+    margin-left: 1rem;
+    font-size: 1.8rem
+}
+
+.weathery-temp {
+    color: $dark-on-background;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.weathery-error {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    font-size: 1.5rem
+}

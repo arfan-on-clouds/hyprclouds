@@ -1,0 +1,23 @@
+(defvar brightness-control "false")
+(defpoll current-brightness :interval "1s" :initial "0" "echo $(( $(brightnessctl get) * 100 / $(brightnessctl max) ))")
+
+(defwidget brightness []
+  (eventbox :onhover "eww update brightness-control=true"
+            :onhoverlost "eww update brightness-control=false"
+            :cursor "pointer"
+    (box  :class "brightness"
+          :tooltip "Brightness: ${current-brightness}%"
+          :orientation "horizontal"
+          :space-evenly "false"
+          :spacing "2"
+      (button :class "brightness-icon" "󰖨")
+      (revealer :transition "slideleft"
+                :reveal brightness-control
+                :duration "300ms"
+        (scale :class "brightnessbar"
+               :value current-brightness
+               :orientation "horizontal"
+               :max 101
+               :min 0
+               :onchange "brightnessctl s {}%")))))
+

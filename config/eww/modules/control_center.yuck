@@ -1,0 +1,18 @@
+
+(defwidget control_center []
+  (box :orientation "v" 
+       :space-evenly false
+  
+    (box :orientation "v" 
+         :space-evenly false 
+         :class "control-center"
+            (pfp)
+      (music)
+      (notifications)
+    (user)
+      (volume_control_center)
+      (quick_settings)
+    
+    )
+  )
+)

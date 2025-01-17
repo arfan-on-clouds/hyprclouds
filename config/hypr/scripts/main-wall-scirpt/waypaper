@@ -1,0 +1,60 @@
+#!/usr/bin/bash
+# Update terminal colors with Pywal, setting a custom background color
+hellwal -i "$1"
+wal -i "$1" # -b "#000000"
+
+# Run Material You scripts
+python /home/alien/.config/material-you/c.py  "$1"
+python /home/alien/.config/material-you/c2.py "$1"
+python /home/alien/.config/material-you/c3.py "$1"
+python /home/alien/.config/material-you/c4.py "$1"
+
+# Reload Eww to apply new configurations or styles
+eww reload
+pkill dunst
+
+python /home/alien/.cache/material-you/c1.py
+python /home/alien/.cache/material-you/c.py
+python /home/alien/.cache/material-you/c2.py
+python /home/alien/.cache/material-you/c3.py
+
+# Update cached Material You colors
+cp -f ~/.cache/material-you/colors.json ~/.cache/wal/
+cp -f ~/.cache/material-you/colors.css ~/.cache/wal/
+cp -f ~/.cache/material-you/colors ~/.cache/wal/
+
+# Parse CSS for Hyprland
+python3 /home/alien/.config/hypr/scripts/parse_css_to_hyprland.py "$1"
+
+# Determine current theme
+current_theme=$(cat /home/alien/.config/kitty/current_theme.txt)
+if [ "$current_theme" == "dark" ]; then
+    /home/alien/.config/hypr/scripts/rofi_light_dark/rofi_dark.sh "$1"
+else
+    /home/alien/.config/hypr/scripts/rofi_light_dark/rofi_light.sh "$1"
+fi
+
+# Apply colors to various applications
+wal-telegram -r
+python /home/alien/.config/hypr/scripts/material-colors/export-colrs.py
+python /home/alien/.config/hypr/scripts/material-colors/export-colrsW.py
+python /home/alien/.config/hypr/scripts/kitty-colors/kitty-dark.py
+python /home/alien/.config/hypr/scripts/kitty-colors/kitty-light.py
+python /home/alien/.config/hypr/scripts/kitty-colors/selector.py
+/home/alien/.config/hypr/scripts/Discord/dark.sh
+/home/alien/.cache/material-you/color-generator.sh
+/home/alien/.config/hypr/scripts/rofi_light_dark/lightcolors.sh
+/home/alien/.config/hypr/scripts/rofi_light_dark/darkcolors.sh
+wal-telegram --palette '/home/alien/.cache/material-you/colors.sh'
+
+# Update Rofi and Firefox wallpapers
+ROFI_WALLPAPER_PATH="/home/alien/.config/rofi/launchers/type-6/current-wallpaper.png"
+FIREFOX_WALLPAPER_PATH="/home/alien/.mozilla/firefox/n5hfb426.new1/chrome/wallpaper.png"
+FIREFOX_LIGHT_WALLPAPER_PATH="/home/alien/.mozilla/firefox/n5hfb426.new1/chrome/wallpaper-light.png"
+
+rm -f "$ROFI_WALLPAPER_PATH"
+cp "$1" "$ROFI_WALLPAPER_PATH"
+cp "$1" "$FIREFOX_WALLPAPER_PATH"
+cp "$1" "$FIREFOX_LIGHT_WALLPAPER_PATH"
+
+echo "Rofi, Firefox wallpapers updated, and Eww reloaded successfully."

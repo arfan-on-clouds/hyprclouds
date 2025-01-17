@@ -1,0 +1,23 @@
+;; Variable to control the expand state
+(defvar show_picker false)
+
+;; Expand button widget with tools
+(defwidget expand []
+ (eventbox :onhover "eww update show_picker=true"
+          :onhoverlost "eww update show_picker=false"
+ (box :orientation "horizontal"
+     :space-evenly false
+     (button :class "expand"
+             (label :text ""))
+     (revealer :transition "slideleft"
+              :reveal show_picker
+              (box :orientation "horizontal"
+                   :space-evenly false
+                   :class "tools-box"
+                   (button :class "picker"
+                          :onclick "sleep 0.1 && scripts/picker.sh &"
+                          (label :text "󰃉"))
+                   (button :class "screenshot"
+                          :onclick "sleep 0.1 && scripts/screenshot &"
+                          (label :text "")))))))
+                          

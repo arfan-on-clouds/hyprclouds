@@ -1,0 +1,41 @@
+@import "/home/alien/.config/material-you/colors.scss";
+* {
+    all: unset;
+    font-family: "SF Pro Display Bold";
+    box-shadow: 0 0 0 0rem;
+    font-weight: bold;
+}
+@import "scripts/colors/colors.scss";
+@import "scss/lib.scss";
+
+@import "scss/dark/bar.scss";
+@import "scss/dark/powermenu.scss";
+@import "scss/dark/launcher.scss";
+
+@import "scss/dark/control_center.scss";
+@import "scss/notifications_popup.scss";
+
+
+
+@import "scss/dark/language.scss";
+@import "scss/dark/taskbar.scss";
+@import "scss/dark/clock.scss";
+@import "scss/dark/calendar.scss";
+@import "scss/dark/logo.scss";
+@import "scss/dark/quick_settings.scss";
+@import "scss/dark/user.scss";
+@import "scss/dark/volume.scss";
+@import "scss/dark/backlight.scss";
+@import "scss/dark/workspaces.scss";
+@import "scss/dark/tray.scss";
+@import "scss/dark/music.scss";
+@import "scss/dark/indicator.scss";
+@import "scss/dark/notifications.scss";
+@import "scss/dark/recorder_menu.scss";
+@import "scss/dark/picker.scss";
+@import "scss/dark/power.scss";
+@import "scss/dark/weather.scss";
+@import "scss/dark/screenshot.scss";
+@import "scss/dark/expand.scss";
+@import "scss/dark/info.scss";
+

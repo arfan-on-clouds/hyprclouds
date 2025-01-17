@@ -1,0 +1,47 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+.tray_box {
+    background-color: $dark-background;
+    border-radius: 1rem;
+    min-width: 5rem;
+    min-height: .5rem;
+    margin-left: 5rem;
+}
+
+.tray_button {
+    
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+    margin: 0 0.95rem;
+    transition: 0.3s;
+    font-size: 1.5rem;
+}
+
+.tray_button:hover {
+    background-color: mix($dark-surface-variant, $dark-on-surface-variant, 70%);
+}
+
+tooltip {
+    background-color: $dark-background;
+    color: $dark-on-surface;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+menu {
+    background-color: $dark-surface-variant;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    color: $dark-on-surface;
+    font-size: 1.1rem;
+}
+
+menu>menuitem {
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+
+menu>menuitem:hover {
+    background-color: mix($dark-surface-variant, $dark-on-surface-variant, 70%);
+}

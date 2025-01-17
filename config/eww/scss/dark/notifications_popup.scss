@@ -1,0 +1,11 @@
+
+.notifications-popup-body {
+    @include window;
+    min-width: 35rem;
+    border-radius: 1rem;
+    border: 0.1rem solid $dark-primary;
+    box-shadow: 0 0 0px 0px #000000;
+    background-color: $dark-on-secondary;
+    color: $dark-on-surface;
+    padding: 0rem;
+}

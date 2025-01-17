@@ -1,0 +1,26 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+.clock {
+    background-color: $dark-on-secondary;
+    color: $dark-on-background;
+    border-radius: 1rem;
+    padding: 0 0.9rem;
+    margin: 0 0.25rem;
+    transition: background-color 0.3s;  // Specify which property should transition
+    font-size: 1.5rem;
+
+    &:hover { // Nesting hover inside .clock for better specificity
+        background-color: mix($dark-surface-variant, $dark-on-surface-variant, 70%);
+    }
+}
+
+.big_clock_box {
+    @include window;
+    margin-top: 20rem;
+    margin-right: 20rem;
+    border-radius: 2rem;
+}
+
+.big_clock_label {
+    font-size: 10rem;
+}

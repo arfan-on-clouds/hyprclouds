@@ -1,0 +1,38 @@
+(include "./modules/calendar/dateCalendar.yuck")
+(include "./modules/calendar/eventManager.yuck")
+(defwidget pfp []
+    (box :orientation "h" :space-evenly true :class "pfp-box"
+        (box :orientation "h" :space-evenly false :halign "start"
+            (box :orientation "h" :space-evenly false :class "pfp-image")
+            (button :class "name" :onclick "eww open powermenu" "アルファン |")
+                (button :class "lowername" :onclick "eww open powermenu" "re/Hyprland")
+              
+        )
+    ) )
+(defwindow calendar []
+  :geometry (geometry
+    :x "-9px"
+    :y "-14px"
+    :width "250px"
+    :anchor "bottom left"
+  )
+  
+  :monitor 0
+  :windowtype "dock"
+  :stacking "fg"
+  
+    (eventbox
+      :onhoverlost "eww close weather"
+      (box  :orientation "v" 
+        :class "weatherMainBox"
+        :space-evenly false
+        :halign "center"
+
+        (dateCalendar)
+
+
+ 
+          
+      )
+    )
+  )

@@ -1,0 +1,70 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+.music {
+    border-radius: 2rem;
+    padding: 1rem;
+    color: $light-surface-container-highest;
+    /*box-shadow: 0 0 4px 2px #000000;*/
+    margin: 1rem;
+    
+    background-color: $light-secondary-fixed-dim;
+}
+
+.music-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 7rem;
+    min-width: 7rem;
+    border-radius: 2rem;
+}
+
+.music-text {
+    margin-left: 1rem;
+    color: $light-background;
+}
+
+.music-title {
+    color: $light-on-primary-container;
+    font-size: 1.2rem;
+}
+
+.music-artist {
+    color:$light-primary;
+}
+
+.music-name {
+    background-color: $light-primary;
+    color: $light-surface-container-highest;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.music-action {
+    color: $light-primary;
+    font-size: 2rem;
+    min-width: 3rem;
+}
+
+.music-scale {
+    margin-top: 1rem;
+}
+
+.music-scale trough {
+    background-color:$light-surface-container-highest;
+    border-radius: 1rem;
+    min-height: 0.5rem;
+}
+
+
+.music-scale highlight {
+    background-color:$light-primary;
+    border-radius: 1rem;
+    min-height: 0.5rem;
+}
+
+.music-strtime {
+    color: $light-primary;
+    margin-top: 0.25rem;
+}

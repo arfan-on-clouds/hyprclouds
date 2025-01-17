@@ -1,0 +1,12 @@
+.language {
+    background-color: $dark-on-secondary;
+    border-radius: 1rem;
+    padding: 0 0.9rem;
+    margin: 0 0.25rem;
+    transition: 0.3s;
+    font-size: 1.3rem;
+}
+
+.language:hover {
+    background-color: mix($dark-surface-variant, $dark-on-surface-variant, 70%);
+}

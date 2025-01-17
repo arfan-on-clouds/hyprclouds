@@ -32,7 +32,7 @@ new_colors = {
     'foreground': foreground,  # Desired foreground color
     'background': background,  # Desired background color
     'cursor': cursor,          # Desired cursor color
-    'color0': colors[0],       # Custom color0
+    'color0': colors[7],       # Custom color0
     'color1': colors[1],       # Custom color1
     'color2': colors[2],       # Custom color2
     'color3': colors[3],       # Custom color3

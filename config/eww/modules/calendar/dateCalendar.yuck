@@ -1,0 +1,45 @@
+(defwidget dateCalendar []
+  (box
+    :orientation "v"
+    :space-evenly false
+
+    ;; Add a horizontal box for the pfp widget and the clock
+    (box
+      :orientation "h"
+      :space-evenly false
+      :halign "center"
+      :spacing 10 ;; Adjust spacing between pfp and clock if needed
+      
+      ;; Include the existing pfp widget
+      
+      ;; Clock and Date Box
+      (box
+        :orientation "v"
+        :space-evenly false
+        
+        (label
+          :text {formattime(EWW_TIME, "%I:%M")}
+          :class "bigClock"
+        )
+        (label :text {formattime(EWW_TIME, "%B %d")}
+         :class "date"
+      )
+    )
+    )
+
+    ;; Calendar Box
+    (box
+      :space-evenly false
+      :class "calendar"
+      :halign "center"
+      
+      (calendar
+        :show-heading false
+        :tooltip {formattime(EWW_TIME, "%B %d %Y")}
+        :day {formattime(EWW_TIME, "%d")}
+        :month {formattime(EWW_TIME, "%m")}
+        :year {formattime(EWW_TIME, "%Y")}
+      )
+    )
+  )
+)

@@ -1,0 +1,14 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+.control-center {
+    @include window;
+    box-shadow: 0 0 0 0rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-left: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgba($color: $dark-background, $alpha: 1.7);
+}

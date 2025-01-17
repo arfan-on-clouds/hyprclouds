@@ -1,0 +1,68 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+.quick_settings_button {
+    transition: 500ms;
+    background-color: $light-secondary-fixed-dim;
+
+    color: $light-on-background;
+    border-radius: 1.9rem;
+    padding:8 50 10 1.75rem;
+    font-size: 1.3rem;
+}
+
+.quick_settings_button:hover {
+    background-color: mix($light-on-secondary, $light-secondary, 70%);
+    
+}
+
+.quick_settings_button_toggled {
+    background-color: $light-primary;
+    color: $light-surface;
+}
+
+.quick_settings_button_toggled:hover {
+    background-color: mix($light-primary, $light-secondary, 70%);
+}
+
+.quick_settings_box {
+    margin-top: 1rem;
+    
+}
+
+.quick-settings-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.quick-settings-info {
+    margin-left: 1rem;
+}
+
+.quick-settings-state {
+    font-size: 0.9rem;
+    color:$light-on-primary-fixed-variant;
+}
+
+.quick-settings-state-enabled {
+    color: $light-secondary-container;
+}
+
+.left-top-plite {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.left-bottom-plite {
+    margin-right: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.right-top-plite {
+    margin-left: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.right-bottom-plite {
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}

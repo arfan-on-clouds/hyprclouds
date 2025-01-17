@@ -1,0 +1,12 @@
+;; First, declare the variable to control the slider
+(defvar show_clock false)
+
+;; The power widget with sliding clock
+(defwidget power []
+  (eventbox :onhover "eww update show_clock=true"
+            :onhoverlost "eww update show_clock=false"
+    (box :orientation "horizontal"
+         :space-evenly false
+      (button :class "power" 
+              :onclick "/home/alien/.config/eww/scripts/powermenu.sh &"
+        (label :text "⏻")))))

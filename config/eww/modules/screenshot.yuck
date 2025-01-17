@@ -1,0 +1,3 @@
+(defwidget wallpaper []
+    (button :onclick "scripts/screenshot.sh " :class "screenshot" "")
+)

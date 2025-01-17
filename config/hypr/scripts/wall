@@ -7,31 +7,28 @@ swww init
 cursor=$(hyprctl cursorpos | tr -d ' ')  
 swww img "$1" --transition-type grow --transition-pos "$cursor" --invert-y --transition-duration 2  --fps 120
 
-# Update terminal colors with Pywal, setting a custom background color
-wal -i "$1" -b "#000000"
+hellwal -i "$1"
 
-# Reload swaync
+wal -i "$1" #-b "#000000"
+
+python /home/alien/.cache/material-you/c1.py
+python /home/alien/.cache/material-you/c.py
+python /home/alien/.cache/material-you/c2.py
+python /home/alien/.cache/material-you/c3.py
+
+cp -f .cache/material-you/colors.json .cache/wal/
+cp -f .cache/material-you/colors.css .cache/wal/
+cp -f .cache/material-you/colors .cache/wal/
+
+# Override the foreground color with white
+# Modify the generated colors file to set the foreground color to white
+# sed -i 's/^color7 .*/color7 = "#ffffff"/' "${HOME}/.cache/wal/colors-waybar.css"
+
 swaync-client -rs "$1"
-
-# Check and run Python scripts
-python_scripts=(
-    "/home/alien/.config/hypr/scripts/parse_css_to_hyprland.py"
-    "/home/alien/.config/hypr/scripts/material-colors/export-colors.py"
-    "/home/alien/.config/hypr/scripts/material-colors/export-colorsW.py"
-    "/home/alien/.config/hypr/scripts/kitty-colors.py"
-)
-
-for script in "${python_scripts[@]}"; do
-    if [ -f "$script" ]; then
-        echo "Running $script"
-        python3 "$script" "$1"
-    else
-        echo "Script $script not found or not executable."
-    fi
-done
+python3 /home/alien/.config/hypr/scripts/parse_css_to_hyprland.py "$1"
 
 # Determine theme from current_theme.txt
-current_theme=$(cat /home/alien/.config/current_theme.txt)
+current_theme=$(cat /home/alien/.config/kitty/current_theme.txt)
 
 if [ "$current_theme" == "dark" ]; then
     /home/alien/.config/hypr/scripts/rofi_light_dark/rofi_dark.sh "$1"
@@ -39,16 +36,21 @@ else
     /home/alien/.config/hypr/scripts/rofi_light_dark/rofi_light.sh "$1"
 fi
 
-# Update PywalFox
 pywalfox update
-
-# Update wal-telegram
 wal-telegram -r
-# vesktop wal
+python /home/alien/.config/hypr/scripts/material-colors/export-colors.py
+python /home/alien/.config/hypr/scripts/material-colors/export-colorsW.py
+python /home/alien/.config/hypr/scripts/kitty-colors/kitty-dark.py
+python /home/alien/.config/hypr/scripts/kitty-colors/kitty-light.py
+python /home/alien/.config/hypr/scripts/kitty-colors/selector.py
 /home/alien/.config/hypr/scripts/Discord/dark.sh
+/home/alien/.cache/material-you/color-generator.sh
+wal-telegram --palette '/home/alien/.cache/material-you/colors.sh'
 
 # Define the Rofi wallpaper path
 ROFI_WALLPAPER_PATH="/home/alien/.config/rofi/launchers/type-6/current-wallpaper.png"
+FIREFOX_WALLPAPER_PATH="/home/alien/.mozilla/firefox/n5hfb426.new1/chrome/wallpaper.png"
+FIREFOX_LIGHT_WALLPAPER_PATH="/home/alien/.mozilla/firefox/n5hfb426.new1/chrome/wallpaper-light.png"
 
 # Remove the old current wallpaper if it exists
 if [ -e "$ROFI_WALLPAPER_PATH" ]; then
@@ -58,10 +60,24 @@ fi
 # Copy the new wallpaper to the Rofi configuration directory
 cp "$1" "$ROFI_WALLPAPER_PATH"
 
-# Check if the file exists
-if [ -f "$ROFI_WALLPAPER_PATH" ]; then
-    echo "Rofi wallpaper updated successfully."
-else
-    echo "Failed to update the Rofi wallpaper."
+# Copy the new wallpaper to the Firefox configuration directories
+cp "$1" "$FIREFOX_WALLPAPER_PATH"
+cp "$1" "$FIREFOX_LIGHT_WALLPAPER_PATH"
+
+# Verify the symbolic link if needed
+if [ ! -L "$ROFI_WALLPAPER_PATH" ]; then
+    echo "Failed to create the symbolic link for the wallpaper."
     exit 1
 fi
+
+# Copy the new wallpaper to the Firefox configuration directories
+cp "$1" "$FIREFOX_WALLPAPER_PATH"
+cp "$1" "$FIREFOX_LIGHT_WALLPAPER_PATH"
+
+# Verify the symbolic links if needed
+if [ ! -L "$FIREFOX_WALLPAPER_PATH" ] || [ ! -L "$FIREFOX_LIGHT_WALLPAPER_PATH" ]; then
+    echo "Failed to create the symbolic links for the Firefox wallpapers."
+    exit 1
+fi
+
+echo "Rofi and Firefox wallpapers updated successfully."

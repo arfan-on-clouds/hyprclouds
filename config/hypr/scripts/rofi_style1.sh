@@ -48,7 +48,7 @@ COLOR14=$(grep -oP '(?<=--color14: ).*' "$COLORS_FILE")
 COLOR15=$(grep -oP '(?<=--color15: ).*' "$COLORS_FILE")
 
 # Convert hex colors to rgba
-BACKGROUND=$(hex_to_rgba $BACKGROUND 0.8)
+BACKGROUND=$(hex_to_rgba $BACKGROUND 0.2)
 FOREGROUND=$(hex_to_rgba $FOREGROUND 1.0)
 CURSOR=$(hex_to_rgba $CURSOR 0.8)
 
@@ -56,7 +56,7 @@ COLOR0=$(hex_to_rgba $COLOR0 0.8)
 COLOR1=$(hex_to_rgba $COLOR1 0.8)
 COLOR2=$(hex_to_rgba $COLOR2 0.8)
 COLOR3=$(hex_to_rgba $COLOR3 0.8)
-COLOR4=$(hex_to_rgba $COLOR4 0.8)
+COLOR4=$(hex_to_rgba $COLOR4 0.2)
 COLOR5=$(hex_to_rgba $COLOR5 0.8)
 COLOR6=$(hex_to_rgba $COLOR6 0.8)
 COLOR7=$(hex_to_rgba $COLOR7 1.0)
@@ -66,7 +66,7 @@ COLOR10=$(hex_to_rgba $COLOR10 0.8)
 COLOR11=$(hex_to_rgba $COLOR11 0.8)
 COLOR12=$(hex_to_rgba $COLOR12 0.8)
 COLOR13=$(hex_to_rgba $COLOR13 0.8)
-COLOR14=$(hex_to_rgba $COLOR14 0.8)
+COLOR14=$(hex_to_rgba $COLOR14 1.0)
 COLOR15=$(hex_to_rgba $COLOR15 0.8)
 
 # Create or update the rofi.rasi file with extracted colors
@@ -130,7 +130,7 @@ listbox {
     spacing:                     0em;
     padding:                     0em;
     children:                    [ "dummyt" , "listview" , "dummyb" ];
-    background-color:            $BACKGROUND;
+    background-color:            $COLOR0;
     border-radius:               0em 0em 1em 1em;
 }
 listview {
@@ -174,7 +174,7 @@ element {
 }
 element selected.normal {
     background-color:            $COLOR14;
-    text-color:                  $BACKGROUND;
+    text-color:                  $COLOR0;
 }
 element-icon {
     size:                        2em;
