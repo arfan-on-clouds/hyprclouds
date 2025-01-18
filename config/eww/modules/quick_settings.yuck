@@ -66,7 +66,7 @@
 )
 
 (defwidget theme []
-    (quick_settings_button  :condition {current_theme == "light"} 
+    (quick_settings_button  :condition {current_theme == "dark"} 
                             :action "/home/alien/.config/hypr/scripts/dark_light --toggle &"
                             :icon "󱎖"
                             :label "Dark mode"
