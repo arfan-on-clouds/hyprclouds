@@ -1,0 +1,5 @@
+(defwidget logo []
+    (button :class "logo" :onclick "wofi &"
+        (box :orientation "h" :space-evenly false :class "logo-image")
+    )
+)

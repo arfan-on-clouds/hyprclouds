@@ -1,0 +1,69 @@
+#!/usr/bin/bash
+
+dir="/home/$(whoami)/.config/eww/scripts"
+
+FOCUSED_DESKTOP=$(bspc query -D -d focused --names)
+LAYOUT=$(bsp-layout get $FOCUSED_DESKTOP)
+json="{\"icon\": \"\", \"layout\": \"$LAYOUT\"}"
+
+layoutjson='{
+		"floating": "./img/layouts/floating.png",
+		"magnifier": "./img/layouts/magnifier.png",
+		"max": "./img/layouts/max.png",
+		"fullscreen": "./img/layouts/fullscreen.png",
+		"tile": "./img/layouts/tile.png",
+		"tileleft": "./img/layouts/tileleft.png",
+		"tilebottom": "./img/layouts/tilebottom.png",
+		"tiletop": "./img/layouts/tiletop.png",
+		"fairv": "./img/layouts/fairv.png",
+		"fairh": "./img/layouts/fairh.png",
+		"spiral": "./img/layouts/spiral.png",
+		"dwindle": "./img/layouts/dwindle.png",
+		"cornernw": "./img/layouts/cornernw.png"
+		}'
+
+case $1 in
+	"--icon")
+		case $LAYOUT in
+			tall)
+				echo $layoutjson | jq -r .tile
+				;;
+			rtall)
+				echo $layoutjson | jq -r .tileleft
+				;;
+			wide)
+				echo $layoutjson | jq -r .tilebottom
+				;;
+			rwide)
+				echo $layoutjson | jq -r .tiletop
+				;;
+			grid)
+				echo $layoutjson | jq -r .fairh
+				;;
+			rgrid)
+				echo $layoutjson | jq -r .fairv
+				;;
+			tiled)
+				echo $layoutjson | jq -r .dwindle
+				;;
+			even)
+				echo $layoutjson | jq -r .cornernw
+				;;
+			monocle)
+				echo $layoutjson | jq -r .magnifier
+				;;
+			*)
+				echo "Layout no reconocido: $layout"
+				;;
+		esac
+		;;
+	"--set")
+		bsp-layout next --layouts rtall,wide,grid,tiled --master-size 40 --desktop $FOCUSED_DESKTOP
+		;;
+	"--reset")
+		bsp-layout set tiled $FOCUSED_DESKTOP
+		;;
+
+esac
+
+

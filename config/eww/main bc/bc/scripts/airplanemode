@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Verifica si el parámetro --toggle está presente
+if [ "$1" == "--toggle" ]; then
+    if rfkill list wifi | grep -q "Soft blocked: yes"; then
+        eww update airplaneMode=false &
+        rfkill unblock wifi
+        rfkill unblock bluetooth
+    else
+        eww update airplaneMode=true
+        rfkill block wifi
+        rfkill block bluetooth
+    fi
+    elif [[ "$1" == "--get" ]]; then
+    if rfkill list wifi | grep -q "Soft blocked: yes"; then
+        eww update airplaneMode=false
+    else
+        eww update airplaneMode=true
+    fi
+    
+else
+    echo "Uso: $0 --toggle para activar/desactivar el modo avión"
+    
+    
+fi

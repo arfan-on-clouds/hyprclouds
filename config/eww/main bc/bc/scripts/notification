@@ -1,0 +1,23 @@
+
+#!/bin/bash
+
+# Create necessary directories
+mkdir -p ~/.config/eww/scripts
+mkdir -p ~/.config/eww/yuck
+
+# Copy files to their locations
+cp notification_server.py ~/.config/eww/scripts/
+cp notifications.yuck ~/.config/eww/yuck/
+
+# Make the script executable
+chmod +x ~/.config/eww/scripts/notification_server.py
+
+# Kill any existing notification daemon
+killall dunst 2>/dev/null
+systemctl --user stop xfce4-notifyd 2>/dev/null
+
+# Start eww daemon if not running
+eww daemon
+
+# Open the notifications window
+eww open notifications

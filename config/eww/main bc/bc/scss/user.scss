@@ -1,0 +1,90 @@
+@import "/home/alien/.config/material-you/colors.scss";
+.name {
+    font-size: 1.8rem;
+    margin-left: -55rem;  
+    margin-top: 0rem;
+    color: $dark-primary;
+    font-family: "SF Pro Display Bold";
+}
+
+.wm {
+   font-size: 1.8rem;
+   margin-left: -55rem;  
+   margin-top: 0rem;
+   color: $dark-primary;
+}
+
+.user {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+	background-size: 50px;
+        min-width:  50px;
+        min-height: 50px;
+        margin-right: 0rem;
+        border-radius: 100%;
+        border: 2rem;
+        border-color: #000000;
+}
+
+.network {
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: center;
+    min-height: 3rem;
+    min-width: 3rem;
+    margin-left: -3rem;
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+
+.open-powermenu-button {
+    background-repeat: no-repeat;
+    background-size: 0.5rem;
+    background-position: left;
+    min-height: 0rem;
+    min-width: 0rem;
+    margin-right: 0rem;
+    color: $dark-primary;
+    border-radius:50%;
+    font-size: 15px;
+    font-family: "SF Pro Display Bold";
+}
+
+
+.open-settings-button {
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: center;
+    min-height: 3rem;
+    min-width: 3rem;
+    border-radius: 100%;
+    font-size: 15px;
+}
+.month {
+    color: $dark-on-background;
+    font-size: 15px;
+}
+.date {
+    color: $dark-on-background;
+    font-size: 15px;
+}
+.weather-temp{
+    color: $dark-on-background;
+    font-size: 15px;
+    font-family: "SF Pro Display Bold";
+    margin-right: 1rem;
+}
+.weather-icon{
+    color: $dark-on-background;
+    font-size: 15px;
+    margin-right: 1rem;
+    font-family: "SF Pro Display Bold";
+
+}
+.weather-error{
+    color: $dark-on-background;
+    font-size: 15px;
+    font-family: "SF Pro Display Bold";
+}

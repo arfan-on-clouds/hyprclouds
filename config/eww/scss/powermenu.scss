@@ -1,0 +1,43 @@
+.powermenu-box {
+
+    background-color: $light-surface-container-highest;
+    box-shadow: 0 0 0 0px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+
+
+}
+
+.powermenu-entry {
+    margin: 0 0.5rem;
+}
+
+.powermenu-button {
+    background-color: $light-secondary-fixed-dim;
+    transition: 0.3s;
+    padding: 1.2rem 2.9rem;
+    color:$light-primary;
+    border-radius: 10rem;
+}
+
+.powermenu-button:hover {
+    background-color: $light-primary;
+    color: $light-surface-container-highest;
+}
+
+.powermenu-icon {
+    font-size: 5rem;
+    margin-right: 0.5rem;
+}
+
+.powermenu-text {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: $light-primary;
+}

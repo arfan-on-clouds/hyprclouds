@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+
+bspc subscribe desktop node_geometry node_transfer | while read -r _ ; do
+
+    STATE=$(eww windows | grep topbar | awk '{print substr ($0, 0, 1)}')
+    current_window_id=$(bspc query -N -n focused)
+
+    # Verificar si current_window_id no está vacío o nulo
+    if [ -n "$current_window_id" ]; then
+        if xprop -id "$current_window_id" _NET_WM_STATE | grep -q _NET_WM_STATE_FULLSCREEN; then
+            if [[ $STATE == '*' ]]; then
+                eww close topbar
+            fi
+        else
+            if [[ $STATE != '*' ]]; then
+                eww open topbar
+            fi
+        fi
+    fi
+done

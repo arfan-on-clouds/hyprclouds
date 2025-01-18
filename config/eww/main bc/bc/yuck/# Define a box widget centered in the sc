@@ -1,0 +1,12 @@
+# Define a box widget centered in the screen
+(def l-spacer
+  (box
+    :width 100     ;; Set width of the box
+    :height 100    ;; Set height of the box
+    :background "#fb4934"  ;; Set background color
+    :align :center))  ;; Center the box widget
+
+# Define a container or window that holds the centered box
+(def window
+  (container
+    :center l-spacer))  ;; Place the box in the center

@@ -1,17 +1,19 @@
-@import ".config/eww/colors.scss";
+@import "/home/alien/.config/material-you/colors.scss";
 * {
     all: unset;
     font-family: "SF Pro Display Bold";
     box-shadow: 0 0 0 0rem;
     font-weight: bold;
 }
+@import "scripts/colors/colors.scss";
+@import "scss/dark/lib.scss";
 
 @import "scss/dark/bar.scss";
 @import "scss/dark/powermenu.scss";
 @import "scss/dark/launcher.scss";
 
 @import "scss/dark/control_center.scss";
-@import "scss/notifications_popup.scss";
+@import "scss/dark/notifications_popup.scss";
 
 
 

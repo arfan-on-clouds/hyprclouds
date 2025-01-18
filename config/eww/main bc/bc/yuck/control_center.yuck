@@ -1,0 +1,11 @@
+(defwidget control_center []
+    (revealer :reveal {open_control_center == true ? true : false}
+        (box :orientation "v" :space-evenly false
+                (music)  
+            (box :orientation "v" :space-evenly false :class "control-center"
+                (user)
+                (quick_settings)
+            )
+        )
+    )
+)

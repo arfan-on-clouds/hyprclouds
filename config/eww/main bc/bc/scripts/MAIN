@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+dir="/home/tokyob0t/.config/eww/scripts"
+
+
+killall eww
+
+eww daemon
+eww open topbar
+eww open wallpaper
+
+
+bash $dir/airplanemode --get > /dev/null 2>&1 &
+
+
+
+# Unstable
+# # # ## If you are in bspwm then uncomment
+# # # # # # bash $dir/bspwm_hideTopbar  > /dev/null 2>&1 &

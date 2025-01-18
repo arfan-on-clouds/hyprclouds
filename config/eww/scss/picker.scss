@@ -1,0 +1,14 @@
+.picker {
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+    margin: 0 0.25rem;
+    margin-top: 0.2rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+    padding-left: 1rem;
+    color: $light-on-background;
+    padding-right: 1rem;
+}
+.picker:hover {
+    background-color: mix($light-surface-variant, $light-on-surface-variant, 70%);
+}

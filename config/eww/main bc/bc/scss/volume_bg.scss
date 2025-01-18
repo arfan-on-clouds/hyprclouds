@@ -1,0 +1,39 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+// Your existing control center styles remain the same
+
+// New styles for top bar volume
+.volume-top {
+    // Similar styling to volume-control-center
+    margin-top: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    
+    .volume-scale-top {
+        trough {
+            background-color: $dark-on-secondary;
+            border-radius: 1rem;
+            min-height: 2.25rem;
+        }/home/alien/.config/eww/scss/volume.scss
+        
+        trough highlight {
+            background-color: $dark-primary;
+            border-radius: 1rem;
+            min-height: 2.25rem;
+        }
+    }
+    
+    .volume-icon-top {
+        margin-left: 0.75rem;
+        font-size: 1.5rem;
+        
+        &.less {
+            color: $dark-background;
+        }
+        
+        &.more {
+            color: $dark-background;
+        }
+    }
+}

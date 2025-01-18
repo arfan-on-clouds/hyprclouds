@@ -1,0 +1,29 @@
+(include "./modules/calendar/dateCalendar.yuck")
+(include "./modules/calendar/eventManager.yuck")
+(defwindow calendar []
+  :geometry (geometry
+    :x "0.5%"
+    :y "1.0%"
+    :width "250px"
+    :anchor "bottom center"
+  )
+  
+  :monitor 0
+  :windowtype "dock"
+  :stacking "fg"
+  
+    (eventbox
+      :onhoverlost "eww close weather"
+      (box  :orientation "v" 
+        :class "weatherMainBox"
+        :space-evenly false
+        :halign "center"
+        (user)
+        (dateCalendar)
+
+         
+ 
+          
+      )
+    )
+  )

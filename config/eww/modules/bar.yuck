@@ -29,12 +29,44 @@
     
 )
 
+(defwindow topside-edge
+ :exclusive true
+  :monitor 0
+  :geometry (geometry 
+              :x "0px"
+                :y "-16px"
+              :anchor "center top")
+  (box :class "topside edge")  
+)
+
+
+(defwindow leftside-edge
+ :exclusive true
+  :monitor 0
+  :geometry (geometry 
+              :x "-16px"
+                :y "0px"
+              :anchor "center left")
+  (box :class "leftside edge")  
+)
+
+(defwindow rightside-edge
+ :exclusive true
+  :monitor 0
+  :geometry (geometry 
+              :x "-16px"
+                :y "0px"
+              :anchor "center right")
+  (box :class "rightside edge")  
+)
+
+
 (defwindow corner-left
   :stacking "fg"
   :monitor 0
   :geometry (geometry 
               :x "362"
-              :y "-8px"
+              :y "-0px"
               :anchor "bottom left")
   (box :class "corner left")  
 )
@@ -45,16 +77,35 @@
   :monitor 0
   :geometry (geometry 
               :x "348"
-              :y "-8px"
+              :y "-0px"
               :anchor "bottom right")
   (box :class "corner right")  
+)
+(defwindow topbgcorner-left
+  :stacking "fg"
+  :monitor 0
+  :geometry (geometry 
+              :y "-0px"
+              :anchor "top left")
+  (box :class "topbgcorner left")  
+)
+
+(defwindow topbgcorner-right
+
+  :stacking "fg"
+  :monitor 0
+  :geometry (geometry 
+              :x "0"
+              :y "0px"
+              :anchor "top right")
+  (box :class "topbgcorner right")  
 )
 
 (defwindow bgcorner-left
   :stacking "fg"
   :monitor 0
   :geometry (geometry 
-              :y "-8px"
+              :y "-0px"
               :anchor "bottom left")
   (box :class "bgcorner left")  
 )
@@ -65,7 +116,7 @@
   :monitor 0
   :geometry (geometry 
               :x "0"
-              :y "-8px"
+              :y "0px"
               :anchor "bottom right")
   (box :class "bgcorner right")  
 )
@@ -73,7 +124,7 @@
   :stacking "fg"
   :monitor 0
   :geometry (geometry 
-              :y "369px"
+              :y "383px"
               :anchor "bottom left")
   (box :class "bgcorner left")  
 )
@@ -84,7 +135,7 @@
   :monitor 0
   :geometry (geometry 
               :x "0"
-              :y "556px"
+              :y "566px"
               :anchor "bottom right")
   (box :class "bgcorner right")  
 )
@@ -92,8 +143,8 @@
   :stacking "fg"
   :monitor 0
   :geometry (geometry 
-               :x "795"
-              :y "-10"
+               :x "792"
+              :y "0"
               :anchor "bottom left")
   (box :class "bgcorner left")  
 )
@@ -103,8 +154,8 @@
   :stacking "fg"
   :monitor 0
   :geometry (geometry 
-              :x "795"
-              :y "-10"
+              :x "792"
+              :y "0"
               :anchor "bottom right")
   (box :class "bgcorner right")  
 )
@@ -112,7 +163,7 @@
   :stacking "fg"
   :monitor 0
   :geometry (geometry 
-              :x "353"
+              :x "349"
               :y "-0px"
               :anchor "top left")
   (box :class "powercorner left")  
@@ -123,7 +174,7 @@
   :stacking "fg"
   :monitor 0
   :geometry (geometry 
-              :x "353"
+              :x "349"
                 :y "-0px"
               :anchor "top right")
   (box :class "powercorner right")  

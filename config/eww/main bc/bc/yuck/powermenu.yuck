@@ -1,0 +1,7 @@
+(defwindow powermenu
+  :monitor 0 ;; wayland users may need this
+  :stacking "fg"
+  :windowtype "overlay"
+  :wm-ignore true
+  :geometry (geometry :width "100%" :height "100%")
+  (powermenu_layout))

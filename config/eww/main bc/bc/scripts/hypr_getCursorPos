@@ -1,0 +1,18 @@
+#!/usr/bin/python
+
+import subprocess
+import os
+import json
+
+
+
+SIGNATURE = os.environ.get("HYPRLAND_INSTANCE_SIGNATURE")
+
+proc = subprocess.Popen(["socat", "-u", f"UNIX-CONNECT:/tmp/hypr/{SIGNATURE}/.socket2.sock", "-"], stdout=subprocess.PIPE, text=True)
+
+def updateEww(data):
+    subprocess.run(f"eww update jqMenu_cursorPos='{data}'", shell=True)
+
+if __name__ == "__main__":
+    out = subprocess.getoutput("hyprctl cursorpos -j")
+    updateEww(out)
