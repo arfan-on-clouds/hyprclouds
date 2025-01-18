@@ -1,27 +1,3 @@
-WARNING: I HAVE MADE THIS RICE JUST FOR MYSELF, I WOULD NOT SUGGEST YOU TO USE MY DOT BLINDLY
-
-
-Window Manager: Hyprland
-
-Distro(OS): fedora
-
-Wallpaper utility: swww
-
-Notification daemon & panel: swaync
-
-Bar: waybar
-
-Logout menu: wlogout
-
-Launcher : rofi & wofi both
-
-Terminal: kitty
-
-file-manager: nautilus
-
-Lockscreen: hyprlock
-
-I have used HELLWAL colors and for material you it will generate colors from current wallpapaer and impliment it on everywhere
 
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
 ![20250118_00h46m37s_grim](https://github.com/user-attachments/assets/fddd75f0-d106-4f2f-84d1-eedf185a8642)
