@@ -1,7 +1,11 @@
 Compositor: hyprland
+
 Widgets: eww
+
 launchers: wofi and rofi
+
 Colors: matugen
+
 Distro: fedora
 
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
