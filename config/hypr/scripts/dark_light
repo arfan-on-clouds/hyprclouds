@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Paths to the theme directories and configuration files
-wofi_source_dir="/home/alien/.config/wofi"
-kitty_source_dir="/home/alien/.config/kitty"
-current_theme_file="/home/alien/.config/kitty/current_theme.txt"
-rofi_dark_script="/home/alien/.config/hypr/scripts/rofi_light_dark/rofi_dark.sh"
-rofi_light_script="/home/alien/.config/hypr/scripts/rofi_light_dark/rofi_light.sh"
-gtk_css_main_dir="/home/alien/.config/gtk-4.0"
-eww_main_dir="/home/alien/.config/eww"
-yuck_file="/home/alien/.config/eww/modules/quick_settings.yuck"
+wofi_source_dir="${HOME}/.config/wofi"
+kitty_source_dir="${HOME}/.config/kitty"
+current_theme_file="${HOME}/.config/kitty/current_theme.txt"
+rofi_dark_script="${HOME}/.config/hypr/scripts/rofi_light_dark/rofi_dark.sh"
+rofi_light_script="${HOME}/.config/hypr/scripts/rofi_light_dark/rofi_light.sh"
+gtk_css_main_dir="${HOME}/.config/gtk-4.0"
+eww_main_dir="${HOME}/.config/eww"
+yuck_file="${HOME}/.config/eww/modules/quick_settings.yuck"
 
 # GTK-4.0 paths
 gtk_light_css="$gtk_css_main_dir/light/gtk.css"
@@ -26,7 +26,7 @@ if pgrep eww > /dev/null; then
 fi
 
 # Run toggle_control_center.sh at the start
-/home/alien/.config/eww/scripts/toggle_control_center.sh
+${HOME}/.config/eww/scripts/toggle_control_center.sh
 
 # Check if the current_theme.txt file exists, if not, create it with the default theme
 if [[ ! -f "$current_theme_file" ]]; then
@@ -111,7 +111,7 @@ function switch_theme() {
   update_quick_settings_yuck "$theme"
 
   # Reload Eww to apply changes
-  /home/alien/.config/eww/scripts/start.sh
+  ${HOME}/.config/eww/scripts/start.sh
   echo "Eww: Reloaded to apply the changes."
 }
 

@@ -3,8 +3,8 @@ import subprocess
 import os
 
 # Paths to your files
-color_ini_path = "/home/alien/.config/spicetify/Themes/Peace/color.ini"
-css_file_path = "/home/alien/.config/material-you/waybar-colors2.css"
+color_ini_path = ".config/spicetify/Themes/Peace/color.ini"
+css_file_path = ".config/material-you/waybar-colors2.css"
 
 # Function to extract color value from CSS
 def extract_color(css_content, variable_name):

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# Folder containing wallpapers
+WALLPAPER_DIR="/home/alien/Documents/colorswall/gruvwalls"
+
+# Initialize swww if not already initialized
+if ! pgrep -x "swww" > /dev/null; then
+    swww init
+fi
+
+# Function to set the wallpaper and run associated commands
+set_wallpaper() {
+    local wallpaper="$1"
+    swww img "$wallpaper" --transition-type wipe --transition-angle 30 --transition-duration 1
+    wal -i "$wallpaper"
+    swaync-client -rs "$wallpaper"
+    python3 /home/alien/.config/hypr/scripts/parse_css_to_hyprland.py "$wallpaper"
+    /home/alien/.config/hypr/scripts/generate_rofi_config.sh "$wallpaper"
+    pywalfox update
+    wal-telegram -r
+    kitty @ set-colors --all /home/alien/.cache/wal/colors-kitty.conf
+
+    # Update Rofi wallpaper
+    local ROFI_WALLPAPER_PATH="/home/alien/.config/rofi/launchers/type-6/current-wallpaper.png"
+    [ -e "$ROFI_WALLPAPER_PATH" ] && rm "$ROFI_WALLPAPER_PATH"
+    cp "$wallpaper" "$ROFI_WALLPAPER_PATH"
+}
+
+# Get a list of wallpapers
+wallpapers=("$WALLPAPER_DIR"/*)
+
+# Check if there are any wallpapers in the directory
+if [ ${#wallpapers[@]} -eq 0 ]; then
+    echo "No wallpapers found in $WALLPAPER_DIR"
+    exit 1
+fi
+
+# Get the current wallpaper index from a temporary file, default to 0
+INDEX_FILE="/tmp/current_wallpaper_index"
+if [ -f "$INDEX_FILE" ]; then
+    current_index=$(cat "$INDEX_FILE")
+else
+    current_index=0
+fi
+
+# Set the next wallpaper
+set_wallpaper "${wallpapers[$current_index]}"
+
+# Update the index for the next run
+next_index=$(( (current_index + 1) % ${#wallpapers[@]} ))
+echo "$next_index" > "$INDEX_FILE"

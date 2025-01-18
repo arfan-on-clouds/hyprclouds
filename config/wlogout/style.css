@@ -2,13 +2,13 @@
 
 /* Importing pywal colors */
 
-@import url("/home/alien/.cache/hellwal/waybar-colors.css");
+@import url("~/.config/material-you/waybar-colors2.css");
 
 window {
     font-family: Fira Code Medium;
     font-size: 10px;
     color:  @foreground; /* text */
-    background-color: rgba(24, 27, 32, 0.2);
+    background-color: alpha(@dark-background,0.2);
 
 } 
 
@@ -32,7 +32,7 @@ button:focus {
 button:hover {
     background-size: 35%;
     box-shadow: 0 0 10px 3px rgba(0,0,0,.4);
-    background-color: @color6;
+    background-color: @dark-primary;
     color: transparent;
     transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
 }

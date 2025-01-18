@@ -1,4 +1,4 @@
-@import "/home/alien/.config/material-you/colors.scss";
+@import "colors.scss";
 * {
     all: unset;
     font-family: "SF Pro Display Bold";
@@ -25,13 +25,11 @@
 @import "scss/dark/quick_settings.scss";
 @import "scss/dark/user.scss";
 @import "scss/dark/volume.scss";
-@import "scss/dark/backlight.scss";
 @import "scss/dark/workspaces.scss";
 @import "scss/dark/tray.scss";
 @import "scss/dark/music.scss";
 @import "scss/dark/indicator.scss";
 @import "scss/dark/notifications.scss";
-@import "scss/dark/recorder_menu.scss";
 @import "scss/dark/picker.scss";
 @import "scss/dark/power.scss";
 @import "scss/dark/weather.scss";

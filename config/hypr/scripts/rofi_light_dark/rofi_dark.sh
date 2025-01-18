@@ -5,9 +5,9 @@ WALLPAPER="$1"
 # Add your logic here to set the wallpaper
 
 # Update Rofi configuration with the new wallpaper
-ROFI_WALLPAPER_PATH="/home/alien/.config/rofi/launchers/type-6/current-wallpaper.png"
+ROFI_WALLPAPER_PATH="${HOME}/.config/rofi/launchers/type-6/current-wallpaper.png"
 COLORS_FILE="$HOME/.config/material-you/colors2.css"
-ROFI_FILE="/home/alien/.config/rofi/launchers/type-6/style-9.rasi"
+ROFI_FILE="${HOME}/.config/rofi/launchers/type-6/style-9.rasi"
 
 # Remove the old wallpaper link if it exists
 if [ -L "$ROFI_WALLPAPER_PATH" ]; then

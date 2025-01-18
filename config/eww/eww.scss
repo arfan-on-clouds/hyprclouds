@@ -1,4 +1,4 @@
-@import ".config/eww/colors.scss";
+@import "/home/alien/.config/material-you/colors.scss";
 * {
     all: unset;
     font-family: "SF Pro Display Bold";
@@ -6,36 +6,34 @@
     font-weight: bold;
 }
 @import "scripts/colors/colors.scss";
-@import "scss/light/lib.scss";
+@import "scss/dark/lib.scss";
 
-@import "scss/light/bar.scss";
-@import "scss/light/powermenu.scss";
-@import "scss/light/launcher.scss";
+@import "scss/dark/bar.scss";
+@import "scss/dark/powermenu.scss";
+@import "scss/dark/launcher.scss";
 
-@import "scss/light/control_center.scss";
-@import "scss/light/notifications_popup.scss";
+@import "scss/dark/control_center.scss";
+@import "scss/dark/notifications_popup.scss";
 
 
 
-@import "scss/light/language.scss";
-@import "scss/light/taskbar.scss";
-@import "scss/light/clock.scss";
-@import "scss/light/calendar.scss";
-@import "scss/light/logo.scss";
-@import "scss/light/quick_settings.scss";
-@import "scss/light/user.scss";
-@import "scss/light/volume.scss";
-@import "scss/light/backlight.scss";
-@import "scss/light/workspaces.scss";
-@import "scss/light/tray.scss";
-@import "scss/light/music.scss";
-@import "scss/light/indicator.scss";
-@import "scss/light/notifications.scss";
-@import "scss/light/recorder_menu.scss";
-@import "scss/light/picker.scss";
-@import "scss/light/power.scss";
-@import "scss/light/weather.scss";
-@import "scss/light/screenshot.scss";
-@import "scss/light/expand.scss";
-@import "scss/light/info.scss";
+@import "scss/dark/language.scss";
+@import "scss/dark/taskbar.scss";
+@import "scss/dark/clock.scss";
+@import "scss/dark/calendar.scss";
+@import "scss/dark/logo.scss";
+@import "scss/dark/quick_settings.scss";
+@import "scss/dark/user.scss";
+@import "scss/dark/volume.scss";
+@import "scss/dark/workspaces.scss";
+@import "scss/dark/tray.scss";
+@import "scss/dark/music.scss";
+@import "scss/dark/indicator.scss";
+@import "scss/dark/notifications.scss";
+@import "scss/dark/picker.scss";
+@import "scss/dark/power.scss";
+@import "scss/dark/weather.scss";
+@import "scss/dark/screenshot.scss";
+@import "scss/dark/expand.scss";
+@import "scss/dark/info.scss";
 

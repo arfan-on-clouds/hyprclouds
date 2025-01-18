@@ -1,5 +1,0 @@
-(defwidget power []
-    (button :class "power" :onclick "/home/alien/.config/rofi/applets/bin/powermenu.sh &"
-        (label :text "⏻")
-    )
-)

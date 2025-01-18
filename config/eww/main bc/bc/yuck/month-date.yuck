@@ -1,8 +1,0 @@
-(defwidget month-date []
-  (box
-    :class "month-date-box"
-    :orientation "horizontal"
-    :space-evenly "false"
-    (label :class "month-date" :text {formattime(EWW_TIME, "%B %d")})
-  )
-) 

@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Paths to the theme directories and configuration
+source_dir="/home/alien/.config/wofi"  # Adjust this to your Wofi theme directory
+config_dir="/home/alien/.config/wofi"
+current_theme_file="$config_dir/current_theme.txt"
+
+# Check if the current_theme.txt file exists, if not, create it with the default theme
+if [[ ! -f "$current_theme_file" ]]; then
+  echo "light" > "$current_theme_file"
+fi
+
+# Read the current theme from the file
+current_theme=$(cat "$current_theme_file")
+
+function switch_theme() {
+  local theme="$1"
+  local theme_dir="$source_dir/$theme"
+
+  # Check if the theme directory exists
+  if [[ -d "$theme_dir" ]]; then
+    # Copy the theme's style.css to the config directory
+    cp "$theme_dir/style.css" "$config_dir/style.css"
+    echo "Switched to $theme theme"
+
+    # Update the current theme in the file
+    echo "$theme" > "$current_theme_file"
+  else
+    echo "Theme $theme not found"
+  fi
+}
+
+# Toggle the theme
+if [[ "$current_theme" == "light" ]]; then
+  switch_theme "dark"
+else
+  switch_theme "light"
+fi
+

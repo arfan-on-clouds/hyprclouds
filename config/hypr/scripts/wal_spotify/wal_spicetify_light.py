@@ -1,10 +1,10 @@
 import re
 
 # Path to your Spicetify color.ini file
-color_ini_path = "/home/alien/.config/spicetify/Themes/Peace/color.ini"
+color_ini_path = ".config/spicetify/Themes/Peace/color.ini"
 
 # Path to your CSS file
-css_file_path = "/home/alien/.config/material-you/colors2.css"
+css_file_path = ".config/material-you/colors2.css"
 
 # Function to extract color value from CSS
 def extract_color(css_content, variable_name):

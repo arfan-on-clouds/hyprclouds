@@ -1,0 +1,65 @@
+#!/usr/bin/bash
+
+# Initialize swww
+swww init
+
+# Set the wallpaper with swww
+cursor=$(hyprctl cursorpos | tr -d ' ')  
+swww img "$1" --transition-type grow --transition-pos "$cursor" --invert-y --transition-duration 2
+
+# Update terminal colors with Pywal
+wal -i "$1"
+
+# Reload swaync
+swaync-client -rs "$1"
+
+# Check and run Python scripts
+python_scripts=(
+    "/home/alien/.config/hypr/scripts/parse_css_to_hyprland.py"
+    "/home/alien/.config/hypr/scripts/material-colors/export-colors.py"
+    "/home/alien/.config/hypr/scripts/material-colors/export-colorsW.py"
+    "/home/alien/.config/hypr/scripts/kitty-colors.py"
+)
+
+for script in "${python_scripts[@]}"; do
+    if [ -f "$script" ]; then
+        echo "Running $script"
+        python3 "$script" "$1"
+    else
+        echo "Script $script not found or not executable."
+    fi
+done
+
+# Determine theme from current_theme.txt
+current_theme=$(cat /home/alien/.config/current_theme.txt)
+
+if [ "$current_theme" == "dark" ]; then
+    /home/alien/.config/hypr/scripts/rofi_light_dark/rofi_dark.sh "$1"
+else
+    /home/alien/.config/hypr/scripts/rofi_light_dark/rofi_light.sh "$1"
+fi
+
+# Update PywalFox
+pywalfox update
+
+# Update wal-telegram
+wal-telegram -r
+
+# Define the Rofi wallpaper path
+ROFI_WALLPAPER_PATH="/home/alien/.config/rofi/launchers/type-6/current-wallpaper.png"
+
+# Remove the old current wallpaper if it exists
+if [ -e "$ROFI_WALLPAPER_PATH" ]; then
+    rm "$ROFI_WALLPAPER_PATH"
+fi
+
+# Copy the new wallpaper to the Rofi configuration directory
+cp "$1" "$ROFI_WALLPAPER_PATH"
+
+# Check if the file exists
+if [ -f "$ROFI_WALLPAPER_PATH" ]; then
+    echo "Rofi wallpaper updated successfully."
+else
+    echo "Failed to update the Rofi wallpaper."
+    exit 1
+fi
