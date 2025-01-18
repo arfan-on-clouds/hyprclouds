@@ -1,0 +1,9 @@
+;; Full backlight OSD with transition
+(defwidget backlight_osd []
+    (revealer :transition "slideup" :reveal {open_osd} :duration {ANIM_DURATION}
+        (box :orientation "h" :class "backlight-osd" :space-evenly false
+            (backlight_scale)  ; Controls the backlight slider
+        )
+    )
+)
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ ! $(pgrep stalonetray) ]]; then
+    stalonetray --config=/home/tokyob0t/.config/stalonetray/stalonetrayrc &
+    eww update tray_icon=""
+else
+    killall stalonetray 2> /dev/null
+    eww update tray_icon=""
+fi

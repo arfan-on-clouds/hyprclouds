@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# Función para obtener el icono del volumen
+icon() {
+    local value="$1"
+    local value2="$2"
+
+    if [[ $value2 == "no" ]]; then
+        if ((value < 30)); then
+            echo ""
+        elif ((value < 65)); then
+            echo ""
+        else
+            echo ""
+        fi
+    else
+        echo "󰝟"
+    fi
+}
+
+dir="/home/$(whoami)/.config/eww/scripts"
+vol=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1)
+muted=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
+icon=$(icon "$vol" "$muted")
+
+
+if [[ $1  == "--get" ]]; then
+    pactl subscribe | grep --line-buffered "on sink" | while read -r _ ; do
+            vol=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1)
+            muted=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
+            icon=$(icon "$vol" "$muted")
+            echo "{\"icon\": \"$icon\", \"value\": \"$vol\"}"
+    done
+
+elif [[ $1 == "--set" ]]; then
+    
+    if (( $2 >= 0 && $2 <= 100 )); then
+        pactl set-sink-volume @DEFAULT_SINK@ $2%
+    fi
+    
+elif [[ $1 == "--up" ]]; then
+
+    new_volume=$((vol + 5))
+    
+    if (( new_volume <= 100 )); then
+        pactl set-sink-volume @DEFAULT_SINK@ +5%
+        vol=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1)
+        icon=$(icon "$vol" "$muted")
+
+        zsh "$dir/osd" "$icon" "$vol" "int" > /dev/null 2>&1 &
+    fi
+
+elif [[ $1 == "--down" ]]; then
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+    vol=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1)
+    icon=$(icon "$vol" "$muted")
+
+    zsh "$dir/osd" "$icon" "$vol" "int" > /dev/null 2>&1 &
+    
+elif [[ $1 == "--toggle" ]]; then
+        pactl set-sink-mute @DEFAULT_SINK@ toggle
+        muted=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
+        vol=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1)
+        icon=$(icon "$vol" "$muted")
+
+        zsh "$dir/osd" "$icon" "$vol" "int" > /dev/null 2>&1 &
+fi

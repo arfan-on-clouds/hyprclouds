@@ -1,0 +1,48 @@
+.slider-box {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgba(30, 30, 30, 0.6);
+  border-radius: 12px;
+  
+  .label-box {
+    margin-right: 10px;
+    min-width: 100px;
+    
+    .value-text {
+      margin-left: 5px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  
+  scale {
+    min-width: 200px;
+    
+    trough {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      min-height: 10px;
+      
+      highlight {
+        background-color: #ff69b4;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.mute-button {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgba(30, 30, 30, 0.6);
+  border-radius: 12px;
+  min-width: 40px;
+  min-height: 40px;
+  
+  &.muted {
+    color: #ff69b4;
+  }
+  
+  &:hover {
+    background-color: rgba(40, 40, 40, 0.7);
+  }
+}

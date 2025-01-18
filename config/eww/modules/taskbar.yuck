@@ -14,7 +14,7 @@
   :stacking "overlay"
   :monitor 0
   :geometry (geometry 
-              :y "240px"
+              :y "241px"
               :anchor "bottom left")
   (box :class "corner2")  
 )
@@ -23,7 +23,7 @@
   :stacking "overlay"
   :monitor 0
   :geometry (geometry 
-              :y "240px"
+              :y "241px"
               :anchor "top left")
   (box :class "corner1")  
 )

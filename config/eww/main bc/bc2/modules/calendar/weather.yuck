@@ -1,0 +1,72 @@
+
+(defwidget calendar []
+    (box
+      :space-evenly false
+      :spacing 10
+      :class "weatherWidget"
+      :width 350
+
+      (box
+        :orientation "v"
+        :space-evenly false
+        
+        (box
+          :space-evenly false
+          :orientation "v"
+          
+          (box
+            :space-evenly false
+            :class "weatherTop"
+            :spacing 20
+            :halign "center"
+            
+            (label
+              :text {weather.icon}
+              :style "color: ${weather.hex};"
+              :xalign 0
+              :class "icon"
+            )
+            
+            (box
+              :space-evenly false
+              :orientation "v"
+              :valign "center"
+              :halign "end"
+              
+              (box
+                :space-evenly false
+                :spacing 5
+                :halign "end"
+                (label :text {weather.temperature} :xalign 1)
+                (label :text "" :class "icon" :style "color: ${weather.hex};" :xalign 1)
+              )
+              
+              (label
+                :text {weather.description}
+                :xalign 1
+              )
+            )
+          )
+          (box
+            :class "weatherQuoteBox"
+            :orientation "v"
+            :space-evenly false
+            
+            (label
+              :text {weather.quoteOne}
+              :wrap true
+              :halign "center"
+              :class "quoteOne"
+            )
+            
+            (label
+              :class "quoteTwo"
+              :text {weather.quoteTwo}
+              :wrap true
+              :halign "center"
+            )
+          )
+        )
+      )
+    )
+  )

@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+
+playerctl --follow metadata --format {{title}} | while read -r _; do
+    line=$(playerctl metadata --format "{\"length\":\"{{mpris:length}}\",\"artist\":\"{{xesam:artist}}\",\"title\":\"$(playerctl metadata title | sed 's/"/\\"/g')\",\"artUrl\":\"{{mpris:artUrl}}\"}")
+    echo $line
+
+    eww update playerctl="$line"
+
+done

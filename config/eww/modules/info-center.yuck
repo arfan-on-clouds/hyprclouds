@@ -1,0 +1,121 @@
+(defwidget calendar-info-center []
+  (box
+    :class "calendar"
+    (calendar 
+      :day {date.day}
+      :month {date.month}
+      :year {date.year}
+    )
+  )
+)
+
+(defwidget clock-info-center []
+  (box
+    :class "date"
+    :space-evenly false
+    :orientation "v"
+    (clock)
+    (label :class "today" 
+      :text {formattime(EWW_TIME, "%A, %B %d", "America/Sao_Paulo")}
+    )
+  )
+)
+
+(defwidget grau []
+  (label :class "celcius" :text "°")
+)
+
+(defwidget weather []
+  (box
+    :class "weather" 
+    :space-evenly false
+    :orientation "v"
+    :spacing 8
+    :hexpand true
+    (box
+      :class "current"
+      :space-evenly false
+      :spacing 10
+      (box
+        :class "temp"
+        :space-evenly false
+        :valign "end"
+        (label :text {round(weather.current.temp, 0)})
+        (label 
+          :class "temp celcius" 
+          :text "°"
+          :valign "start"
+        )
+      )
+      (box
+        :orientation "v"
+        :space-evenly false
+        (label 
+          :class "description"
+          :text {weather.current.description}
+          :xalign 0
+        )
+        (box
+          :space-evenly false
+          (label 
+            :class "feels-like" 
+            :text "Feels like ${round(weather.current.feels_like, 0)}"
+            :xalign 0
+          )
+          (grau)
+        )
+        (box
+          :space-evenly false
+          (label 
+            :class "humidity"
+            :text "Humidity ${round(weather.current.humidity, 0)}%"
+            :xalign 0
+          )
+        )
+      )
+      (overlay
+        :hexpand true 
+        :vexpand true
+        :halign "end"
+        (box :width 0)
+        (button
+          :class "current icon"
+          :style "background-image: url('${weather.current.icon_image}');"
+          :halign "center"
+          :valign "center"
+          :onclick "eww update forecast_rev=${!forecast_rev}"
+        )
+      )
+    )
+    (box :class "separator" :visible forecast_rev)
+    (box
+      :class "forecast"
+      :visible forecast_rev
+      (for i in {weather[interval]}
+        (box
+          :class "i"
+          :orientation "v"
+          :space-evenly false
+          (label 
+            :class "dt" 
+            :text "${formattime(i.dt, interval == "daily" ? "%a" : "%I%p", "America/Sao_Paulo")}"
+          )
+          (button 
+            :class "icon" 
+            :style "background-image: url('${i.icon_image}')"
+            :tooltip {i.description}
+            :onclick {interval == "daily" ? "eww update interval=hourly" : "eww update interval=daily"}
+          )
+          (box 
+            :space-evenly false
+            :halign "center"
+            (label :class "temp" :text {round(interval == "daily" ? i.temp_max : i.temp, 0)})
+            (grau)
+          )
+        )
+      )
+    )
+  )
+)
+
+(defvar forecast_rev false)

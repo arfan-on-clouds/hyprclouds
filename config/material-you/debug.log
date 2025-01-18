@@ -17618,3 +17618,729 @@ Run with RUST_BACKTRACE=full to include source snippets.
 2025-01-18 00:43:50,883 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
 2025-01-18 00:43:50,884 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
 2025-01-18 00:43:50,885 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2024-12-21 05:32:47,836 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:32:47,838 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:32:47,838 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2024-12-21 05:32:47,842 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2024-12-21 05:32:48,070 - INFO - Conf file generated successfully
+2024-12-21 05:32:48,117 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:32:48,118 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:32:48,118 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2024-12-21 05:32:48,118 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2024-12-21 05:32:48,319 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:32:48,319 - INFO - Return code: 0
+2024-12-21 05:32:48,325 - INFO - CSS file generated successfully
+2024-12-21 05:32:48,364 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:32:48,364 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:32:48,364 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2024-12-21 05:32:48,553 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:32:48,553 - INFO - Return code: 0
+2024-12-21 05:32:48,554 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2024-12-21 05:32:48,554 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2024-12-21 05:32:48,556 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2024-12-21 05:32:48,558 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2024-12-21 05:32:48,559 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2024-12-21 05:36:21,020 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:36:21,020 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:36:21,020 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2024-12-21 05:36:21,020 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2024-12-21 05:36:21,216 - INFO - Conf file generated successfully
+2024-12-21 05:36:21,263 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:36:21,263 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:36:21,263 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2024-12-21 05:36:21,263 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2024-12-21 05:36:21,457 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:36:21,457 - INFO - Return code: 0
+2024-12-21 05:36:21,458 - INFO - CSS file generated successfully
+2024-12-21 05:36:21,501 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:36:21,501 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:36:21,501 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2024-12-21 05:36:21,694 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2024-12-21 05:36:21,694 - INFO - Return code: 0
+2024-12-21 05:36:21,694 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2024-12-21 05:36:21,695 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2024-12-21 05:36:21,695 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2024-12-21 05:36:21,695 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2024-12-21 05:36:21,695 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 09:21:07,996 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:21:07,996 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:21:07,996 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 09:21:07,996 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:21:08,219 - INFO - Conf file generated successfully
+2025-01-18 09:21:08,266 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:21:08,266 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:21:08,267 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 09:21:08,267 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:21:08,473 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:21:08,473 - INFO - Return code: 0
+2025-01-18 09:21:08,474 - INFO - CSS file generated successfully
+2025-01-18 09:21:08,518 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:21:08,518 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:21:08,518 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:21:08,717 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:21:08,717 - INFO - Return code: 0
+2025-01-18 09:21:08,718 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 09:21:08,718 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 09:21:08,718 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 09:21:08,719 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 09:21:08,719 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 09:49:35,619 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:49:35,619 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:49:35,619 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 09:49:35,620 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:49:35,906 - INFO - Conf file generated successfully
+2025-01-18 09:49:35,954 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:49:35,954 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:49:35,954 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 09:49:35,954 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:49:36,208 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:49:36,208 - INFO - Return code: 0
+2025-01-18 09:49:36,209 - INFO - CSS file generated successfully
+2025-01-18 09:49:36,265 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:49:36,265 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:49:36,265 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:49:36,543 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 09:49:36,543 - INFO - Return code: 0
+2025-01-18 09:49:36,543 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 09:49:36,544 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 09:49:36,544 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 09:49:36,544 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 09:49:36,545 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 09:53:30,758 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 09:53:30,758 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 09:53:30,758 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 09:53:30,758 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:53:30,942 - INFO - Conf file generated successfully
+2025-01-18 09:53:30,984 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 09:53:30,984 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 09:53:30,984 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 09:53:30,984 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:53:31,189 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 09:53:31,189 - INFO - Return code: 0
+2025-01-18 09:53:31,189 - INFO - CSS file generated successfully
+2025-01-18 09:53:31,234 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 09:53:31,234 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 09:53:31,234 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:53:31,410 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 09:53:31,410 - INFO - Return code: 0
+2025-01-18 09:53:31,411 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 09:53:31,411 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 09:53:31,411 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 09:53:31,412 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 09:53:31,412 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 09:54:28,725 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1323580.png
+2025-01-18 09:54:28,726 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323580.png
+2025-01-18 09:54:28,726 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 09:54:28,726 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:54:28,849 - INFO - Conf file generated successfully
+2025-01-18 09:54:28,904 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1323580.png
+2025-01-18 09:54:28,904 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323580.png
+2025-01-18 09:54:28,904 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 09:54:28,904 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:54:29,023 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1323580.png
+2025-01-18 09:54:29,023 - INFO - Return code: 0
+2025-01-18 09:54:29,024 - INFO - CSS file generated successfully
+2025-01-18 09:54:29,073 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1323580.png
+2025-01-18 09:54:29,074 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323580.png
+2025-01-18 09:54:29,074 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:54:29,176 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1323580.png
+2025-01-18 09:54:29,176 - INFO - Return code: 0
+2025-01-18 09:54:29,177 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 09:54:29,177 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 09:54:29,177 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 09:54:29,177 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 09:54:29,178 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 09:54:32,307 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 09:54:32,307 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 09:54:32,307 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 09:54:32,307 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:54:32,372 - INFO - Conf file generated successfully
+2025-01-18 09:54:32,419 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 09:54:32,419 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 09:54:32,419 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 09:54:32,419 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:54:32,478 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 09:54:32,479 - INFO - Return code: 0
+2025-01-18 09:54:32,479 - INFO - CSS file generated successfully
+2025-01-18 09:54:32,523 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 09:54:32,523 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 09:54:32,523 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:54:32,584 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 09:54:32,584 - INFO - Return code: 0
+2025-01-18 09:54:32,585 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 09:54:32,585 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 09:54:32,585 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 09:54:32,585 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 09:54:32,585 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 09:58:23,672 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 09:58:23,672 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 09:58:23,672 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 09:58:23,673 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:58:24,859 - INFO - Conf file generated successfully
+2025-01-18 09:58:24,984 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 09:58:24,984 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 09:58:24,984 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 09:58:24,984 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:58:25,656 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 09:58:25,656 - INFO - Return code: 0
+2025-01-18 09:58:25,656 - INFO - CSS file generated successfully
+2025-01-18 09:58:25,725 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 09:58:25,725 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 09:58:25,725 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:58:26,370 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 09:58:26,370 - INFO - Return code: 0
+2025-01-18 09:58:26,371 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 09:58:26,371 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 09:58:26,371 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 09:58:26,371 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 09:58:26,372 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 09:59:07,095 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/Sif.png
+2025-01-18 09:59:07,095 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Sif.png
+2025-01-18 09:59:07,095 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 09:59:07,095 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:59:07,198 - INFO - Conf file generated successfully
+2025-01-18 09:59:07,249 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/Sif.png
+2025-01-18 09:59:07,249 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Sif.png
+2025-01-18 09:59:07,249 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 09:59:07,249 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:59:07,357 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/Sif.png
+2025-01-18 09:59:07,357 - INFO - Return code: 0
+2025-01-18 09:59:07,358 - INFO - CSS file generated successfully
+2025-01-18 09:59:07,401 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/Sif.png
+2025-01-18 09:59:07,402 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Sif.png
+2025-01-18 09:59:07,402 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 09:59:07,526 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/Sif.png
+2025-01-18 09:59:07,527 - INFO - Return code: 0
+2025-01-18 09:59:07,527 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 09:59:07,527 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 09:59:07,527 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 09:59:07,528 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 09:59:07,528 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 10:08:10,252 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 10:08:10,252 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 10:08:10,252 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 10:08:10,253 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:10,494 - INFO - Conf file generated successfully
+2025-01-18 10:08:10,547 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 10:08:10,547 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 10:08:10,547 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 10:08:10,547 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:10,805 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 10:08:10,805 - INFO - Return code: 0
+2025-01-18 10:08:10,805 - INFO - CSS file generated successfully
+2025-01-18 10:08:10,855 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 10:08:10,855 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 10:08:10,855 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:11,126 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 10:08:11,126 - INFO - Return code: 0
+2025-01-18 10:08:11,126 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 10:08:11,127 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 10:08:11,127 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 10:08:11,127 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 10:08:11,127 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 10:08:20,810 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:20,810 - INFO - Full image path: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:20,810 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 10:08:20,810 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:20,879 - INFO - Conf file generated successfully
+2025-01-18 10:08:20,924 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:20,924 - INFO - Full image path: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:20,924 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 10:08:20,924 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:20,991 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:20,991 - INFO - Return code: 0
+2025-01-18 10:08:20,992 - INFO - CSS file generated successfully
+2025-01-18 10:08:21,043 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:21,043 - INFO - Full image path: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:21,043 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:21,119 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:21,119 - INFO - Return code: 0
+2025-01-18 10:08:21,121 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 10:08:21,122 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 10:08:21,122 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 10:08:21,123 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 10:08:21,124 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 10:08:47,448 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:47,448 - INFO - Full image path: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:47,448 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 10:08:47,448 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:47,519 - INFO - Conf file generated successfully
+2025-01-18 10:08:47,564 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:47,564 - INFO - Full image path: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:47,564 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 10:08:47,564 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:47,632 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:47,632 - INFO - Return code: 0
+2025-01-18 10:08:47,633 - INFO - CSS file generated successfully
+2025-01-18 10:08:47,679 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:47,680 - INFO - Full image path: /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:47,680 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 10:08:47,746 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/flowers.jpg
+2025-01-18 10:08:47,746 - INFO - Return code: 0
+2025-01-18 10:08:47,747 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 10:08:47,748 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 10:08:47,748 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 10:08:47,749 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 10:08:47,750 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 11:07:18,151 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:07:18,151 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:07:18,151 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 11:07:18,151 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:07:18,432 - INFO - Conf file generated successfully
+2025-01-18 11:07:18,473 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:07:18,473 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:07:18,473 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 11:07:18,473 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:07:18,746 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:07:18,747 - INFO - Return code: 0
+2025-01-18 11:07:18,747 - INFO - CSS file generated successfully
+2025-01-18 11:07:18,796 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:07:18,796 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:07:18,796 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:07:19,072 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:07:19,072 - INFO - Return code: 0
+2025-01-18 11:07:19,073 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 11:07:19,073 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 11:07:19,073 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 11:07:19,074 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 11:07:19,076 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 11:07:23,347 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/pfp2.png
+2025-01-18 11:07:23,347 - INFO - Full image path: /home/alien/Documents/colorswall/blank/pfp2.png
+2025-01-18 11:07:23,347 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 11:07:23,347 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:07:23,600 - INFO - Conf file generated successfully
+2025-01-18 11:07:23,648 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/pfp2.png
+2025-01-18 11:07:23,648 - INFO - Full image path: /home/alien/Documents/colorswall/blank/pfp2.png
+2025-01-18 11:07:23,648 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 11:07:23,648 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:07:23,900 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/pfp2.png
+2025-01-18 11:07:23,900 - INFO - Return code: 0
+2025-01-18 11:07:23,900 - INFO - CSS file generated successfully
+2025-01-18 11:07:23,950 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/pfp2.png
+2025-01-18 11:07:23,950 - INFO - Full image path: /home/alien/Documents/colorswall/blank/pfp2.png
+2025-01-18 11:07:23,950 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:07:24,210 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/pfp2.png
+2025-01-18 11:07:24,210 - INFO - Return code: 0
+2025-01-18 11:07:24,210 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 11:07:24,211 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 11:07:24,211 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 11:07:24,211 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 11:07:24,211 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 11:09:41,366 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:09:41,366 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:09:41,367 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 11:09:41,367 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:41,630 - INFO - Conf file generated successfully
+2025-01-18 11:09:41,675 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:09:41,675 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:09:41,675 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 11:09:41,675 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:41,926 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:09:41,926 - INFO - Return code: 0
+2025-01-18 11:09:41,926 - INFO - CSS file generated successfully
+2025-01-18 11:09:41,974 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:09:41,974 - INFO - Full image path: /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:09:41,974 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:42,236 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/Bocchi_1.png
+2025-01-18 11:09:42,236 - INFO - Return code: 0
+2025-01-18 11:09:42,236 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 11:09:42,237 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 11:09:42,237 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 11:09:42,237 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 11:09:42,237 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 11:09:46,672 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/GN7Yhb4Puu6q0Yw.png
+2025-01-18 11:09:46,673 - INFO - Full image path: /home/alien/Documents/colorswall/blank/GN7Yhb4Puu6q0Yw.png
+2025-01-18 11:09:46,673 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 11:09:46,673 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:46,998 - INFO - Conf file generated successfully
+2025-01-18 11:09:47,045 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/GN7Yhb4Puu6q0Yw.png
+2025-01-18 11:09:47,045 - INFO - Full image path: /home/alien/Documents/colorswall/blank/GN7Yhb4Puu6q0Yw.png
+2025-01-18 11:09:47,045 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 11:09:47,045 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:47,335 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/GN7Yhb4Puu6q0Yw.png
+2025-01-18 11:09:47,335 - INFO - Return code: 0
+2025-01-18 11:09:47,335 - INFO - CSS file generated successfully
+2025-01-18 11:09:47,373 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/GN7Yhb4Puu6q0Yw.png
+2025-01-18 11:09:47,373 - INFO - Full image path: /home/alien/Documents/colorswall/blank/GN7Yhb4Puu6q0Yw.png
+2025-01-18 11:09:47,373 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:47,657 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/GN7Yhb4Puu6q0Yw.png
+2025-01-18 11:09:47,657 - INFO - Return code: 0
+2025-01-18 11:09:47,658 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 11:09:47,658 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 11:09:47,658 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 11:09:47,659 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 11:09:47,659 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 11:09:49,604 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/7KCnXLS.png
+2025-01-18 11:09:49,604 - INFO - Full image path: /home/alien/Documents/colorswall/blank/7KCnXLS.png
+2025-01-18 11:09:49,604 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 11:09:49,604 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:49,904 - INFO - Conf file generated successfully
+2025-01-18 11:09:49,953 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/7KCnXLS.png
+2025-01-18 11:09:49,954 - INFO - Full image path: /home/alien/Documents/colorswall/blank/7KCnXLS.png
+2025-01-18 11:09:49,954 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 11:09:49,954 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:50,220 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/7KCnXLS.png
+2025-01-18 11:09:50,220 - INFO - Return code: 0
+2025-01-18 11:09:50,221 - INFO - CSS file generated successfully
+2025-01-18 11:09:50,273 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/7KCnXLS.png
+2025-01-18 11:09:50,273 - INFO - Full image path: /home/alien/Documents/colorswall/blank/7KCnXLS.png
+2025-01-18 11:09:50,274 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:50,562 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/7KCnXLS.png
+2025-01-18 11:09:50,562 - INFO - Return code: 0
+2025-01-18 11:09:50,563 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 11:09:50,563 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 11:09:50,563 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 11:09:50,563 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 11:09:50,564 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 11:09:54,258 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/8X1nDlvIry1LSG1.png
+2025-01-18 11:09:54,258 - INFO - Full image path: /home/alien/Documents/colorswall/blank/8X1nDlvIry1LSG1.png
+2025-01-18 11:09:54,258 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 11:09:54,258 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:54,397 - INFO - Conf file generated successfully
+2025-01-18 11:09:54,445 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/8X1nDlvIry1LSG1.png
+2025-01-18 11:09:54,445 - INFO - Full image path: /home/alien/Documents/colorswall/blank/8X1nDlvIry1LSG1.png
+2025-01-18 11:09:54,445 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 11:09:54,445 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:54,577 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/8X1nDlvIry1LSG1.png
+2025-01-18 11:09:54,577 - INFO - Return code: 0
+2025-01-18 11:09:54,578 - INFO - CSS file generated successfully
+2025-01-18 11:09:54,624 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/8X1nDlvIry1LSG1.png
+2025-01-18 11:09:54,624 - INFO - Full image path: /home/alien/Documents/colorswall/blank/8X1nDlvIry1LSG1.png
+2025-01-18 11:09:54,624 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 11:09:54,759 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/8X1nDlvIry1LSG1.png
+2025-01-18 11:09:54,760 - INFO - Return code: 0
+2025-01-18 11:09:54,760 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 11:09:54,761 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 11:09:54,761 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 11:09:54,761 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 11:09:54,762 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:26:18,905 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/RDT_20240407_1130068694981548195430408.png
+2025-01-18 12:26:18,905 - INFO - Full image path: /home/alien/Documents/colorswall/blank/RDT_20240407_1130068694981548195430408.png
+2025-01-18 12:26:18,905 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:26:18,905 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:26:19,062 - INFO - Conf file generated successfully
+2025-01-18 12:26:19,108 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/RDT_20240407_1130068694981548195430408.png
+2025-01-18 12:26:19,108 - INFO - Full image path: /home/alien/Documents/colorswall/blank/RDT_20240407_1130068694981548195430408.png
+2025-01-18 12:26:19,108 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:26:19,109 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:26:19,283 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/RDT_20240407_1130068694981548195430408.png
+2025-01-18 12:26:19,283 - INFO - Return code: 0
+2025-01-18 12:26:19,284 - INFO - CSS file generated successfully
+2025-01-18 12:26:19,357 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/RDT_20240407_1130068694981548195430408.png
+2025-01-18 12:26:19,357 - INFO - Full image path: /home/alien/Documents/colorswall/blank/RDT_20240407_1130068694981548195430408.png
+2025-01-18 12:26:19,357 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:26:19,510 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/RDT_20240407_1130068694981548195430408.png
+2025-01-18 12:26:19,510 - INFO - Return code: 0
+2025-01-18 12:26:19,511 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:26:19,511 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:26:19,511 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:26:19,511 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:26:19,512 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:26:28,622 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/wallpaper7.png
+2025-01-18 12:26:28,622 - INFO - Full image path: /home/alien/Documents/colorswall/blank/wallpaper7.png
+2025-01-18 12:26:28,622 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:26:28,622 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:26:28,736 - INFO - Conf file generated successfully
+2025-01-18 12:26:28,783 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/wallpaper7.png
+2025-01-18 12:26:28,783 - INFO - Full image path: /home/alien/Documents/colorswall/blank/wallpaper7.png
+2025-01-18 12:26:28,783 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:26:28,783 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:26:28,902 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/wallpaper7.png
+2025-01-18 12:26:28,902 - INFO - Return code: 0
+2025-01-18 12:26:28,903 - INFO - CSS file generated successfully
+2025-01-18 12:26:28,950 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/wallpaper7.png
+2025-01-18 12:26:28,951 - INFO - Full image path: /home/alien/Documents/colorswall/blank/wallpaper7.png
+2025-01-18 12:26:28,951 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:26:29,070 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/wallpaper7.png
+2025-01-18 12:26:29,070 - INFO - Return code: 0
+2025-01-18 12:26:29,071 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:26:29,071 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:26:29,071 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:26:29,072 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:26:29,072 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:30:14,447 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:30:14,448 - INFO - Full image path: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:30:14,448 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:30:14,448 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:30:14,548 - INFO - Conf file generated successfully
+2025-01-18 12:30:14,596 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:30:14,596 - INFO - Full image path: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:30:14,596 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:30:14,596 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:30:14,695 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:30:14,695 - INFO - Return code: 0
+2025-01-18 12:30:14,696 - INFO - CSS file generated successfully
+2025-01-18 12:30:14,744 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:30:14,744 - INFO - Full image path: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:30:14,744 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:30:14,844 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:30:14,844 - INFO - Return code: 0
+2025-01-18 12:30:14,845 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:30:14,845 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:30:14,845 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:30:14,845 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:30:14,846 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:37:13,912 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:37:13,913 - INFO - Full image path: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:37:13,913 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:37:13,913 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:37:14,014 - INFO - Conf file generated successfully
+2025-01-18 12:37:14,060 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:37:14,060 - INFO - Full image path: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:37:14,060 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:37:14,060 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:37:14,164 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:37:14,164 - INFO - Return code: 0
+2025-01-18 12:37:14,164 - INFO - CSS file generated successfully
+2025-01-18 12:37:14,213 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:37:14,213 - INFO - Full image path: /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:37:14,213 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:37:14,319 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/blank/a_2.jpg
+2025-01-18 12:37:14,320 - INFO - Return code: 0
+2025-01-18 12:37:14,321 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:37:14,321 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:37:14,321 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:37:14,321 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:37:14,322 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:37:33,786 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1377761.png
+2025-01-18 12:37:33,787 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377761.png
+2025-01-18 12:37:33,787 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:37:33,787 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:37:34,454 - INFO - Conf file generated successfully
+2025-01-18 12:37:34,500 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377761.png
+2025-01-18 12:37:34,500 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377761.png
+2025-01-18 12:37:34,500 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:37:34,500 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:37:35,172 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377761.png
+2025-01-18 12:37:35,172 - INFO - Return code: 0
+2025-01-18 12:37:35,172 - INFO - CSS file generated successfully
+2025-01-18 12:37:35,241 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377761.png
+2025-01-18 12:37:35,241 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377761.png
+2025-01-18 12:37:35,241 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:37:35,858 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377761.png
+2025-01-18 12:37:35,858 - INFO - Return code: 0
+2025-01-18 12:37:35,859 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:37:35,859 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:37:35,859 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:37:35,859 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:37:35,860 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:40:20,128 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:40:20,128 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:40:20,129 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:40:20,129 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:40:20,347 - INFO - Conf file generated successfully
+2025-01-18 12:40:20,406 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:40:20,406 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:40:20,406 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:40:20,406 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:40:20,614 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:40:20,614 - INFO - Return code: 0
+2025-01-18 12:40:20,615 - INFO - CSS file generated successfully
+2025-01-18 12:40:20,676 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:40:20,676 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:40:20,676 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:40:20,908 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:40:20,908 - INFO - Return code: 0
+2025-01-18 12:40:20,909 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:40:20,909 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:40:20,909 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:40:20,909 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:40:20,910 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:40:26,457 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 12:40:26,457 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 12:40:26,457 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:40:26,457 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:40:26,664 - INFO - Conf file generated successfully
+2025-01-18 12:40:26,720 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 12:40:26,720 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 12:40:26,720 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:40:26,720 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:40:26,930 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 12:40:26,930 - INFO - Return code: 0
+2025-01-18 12:40:26,931 - INFO - CSS file generated successfully
+2025-01-18 12:40:26,989 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 12:40:26,989 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 12:40:26,989 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:40:27,186 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 12:40:27,186 - INFO - Return code: 0
+2025-01-18 12:40:27,186 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:40:27,187 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:40:27,187 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:40:27,187 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:40:27,187 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:42:33,863 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:42:33,863 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:42:33,863 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:42:33,863 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:42:34,080 - INFO - Conf file generated successfully
+2025-01-18 12:42:34,139 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:42:34,140 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:42:34,140 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:42:34,140 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:42:34,353 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:42:34,353 - INFO - Return code: 0
+2025-01-18 12:42:34,354 - INFO - CSS file generated successfully
+2025-01-18 12:42:34,421 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:42:34,421 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:42:34,421 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:42:34,635 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1358202.png
+2025-01-18 12:42:34,635 - INFO - Return code: 0
+2025-01-18 12:42:34,637 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:42:34,640 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:42:34,647 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:42:34,649 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:42:34,650 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:42:47,253 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:42:47,253 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:42:47,253 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:42:47,254 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:42:48,137 - INFO - Conf file generated successfully
+2025-01-18 12:42:48,200 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:42:48,200 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:42:48,200 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:42:48,200 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:42:48,915 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:42:48,915 - INFO - Return code: 0
+2025-01-18 12:42:48,915 - INFO - CSS file generated successfully
+2025-01-18 12:42:48,966 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:42:48,966 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:42:48,966 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:42:49,561 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:42:49,561 - INFO - Return code: 0
+2025-01-18 12:42:49,562 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:42:49,562 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:42:49,562 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:42:49,562 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:42:49,563 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:44:05,220 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 12:44:05,220 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 12:44:05,220 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:44:05,220 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:44:05,448 - INFO - Conf file generated successfully
+2025-01-18 12:44:05,506 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 12:44:05,506 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 12:44:05,506 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:44:05,506 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:44:05,730 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 12:44:05,730 - INFO - Return code: 0
+2025-01-18 12:44:05,731 - INFO - CSS file generated successfully
+2025-01-18 12:44:05,800 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 12:44:05,800 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 12:44:05,800 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:44:06,056 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1348496.png
+2025-01-18 12:44:06,056 - INFO - Return code: 0
+2025-01-18 12:44:06,056 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:44:06,056 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:44:06,057 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:44:06,057 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:44:06,057 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:45:25,789 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 12:45:25,789 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 12:45:25,789 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:45:25,789 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:45:25,857 - INFO - Conf file generated successfully
+2025-01-18 12:45:25,912 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 12:45:25,912 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 12:45:25,912 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:45:25,912 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:45:25,984 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 12:45:25,985 - INFO - Return code: 0
+2025-01-18 12:45:25,985 - INFO - CSS file generated successfully
+2025-01-18 12:45:26,044 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 12:45:26,044 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 12:45:26,045 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:45:26,112 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1323672.png
+2025-01-18 12:45:26,113 - INFO - Return code: 0
+2025-01-18 12:45:26,114 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:45:26,116 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:45:26,117 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:45:26,117 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:45:26,118 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 12:46:18,473 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:46:18,473 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:46:18,474 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 12:46:18,474 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:46:19,368 - INFO - Conf file generated successfully
+2025-01-18 12:46:19,425 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:46:19,425 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:46:19,425 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 12:46:19,425 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:46:20,076 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:46:20,076 - INFO - Return code: 0
+2025-01-18 12:46:20,077 - INFO - CSS file generated successfully
+2025-01-18 12:46:20,149 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:46:20,149 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:46:20,149 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 12:46:20,720 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 12:46:20,720 - INFO - Return code: 0
+2025-01-18 12:46:20,721 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 12:46:20,721 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 12:46:20,721 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 12:46:20,721 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 12:46:20,722 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 13:12:07,151 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:12:07,151 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:12:07,151 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 13:12:07,151 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:12:07,333 - INFO - Conf file generated successfully
+2025-01-18 13:12:07,379 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:12:07,379 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:12:07,379 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 13:12:07,379 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:12:07,607 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:12:07,607 - INFO - Return code: 0
+2025-01-18 13:12:07,610 - INFO - CSS file generated successfully
+2025-01-18 13:12:07,660 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:12:07,660 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:12:07,660 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:12:07,839 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:12:07,839 - INFO - Return code: 0
+2025-01-18 13:12:07,840 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 13:12:07,841 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 13:12:07,841 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 13:12:07,841 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 13:12:07,842 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 13:13:37,772 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 13:13:37,772 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 13:13:37,772 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 13:13:37,772 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:13:38,718 - INFO - Conf file generated successfully
+2025-01-18 13:13:38,813 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 13:13:38,814 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 13:13:38,814 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 13:13:38,814 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:13:39,538 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 13:13:39,539 - INFO - Return code: 0
+2025-01-18 13:13:39,540 - INFO - CSS file generated successfully
+2025-01-18 13:13:39,586 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 13:13:39,586 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 13:13:39,586 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:13:40,209 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1377777.png
+2025-01-18 13:13:40,209 - INFO - Return code: 0
+2025-01-18 13:13:40,209 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 13:13:40,210 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 13:13:40,211 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 13:13:40,211 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 13:13:40,212 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss
+2025-01-18 13:55:50,766 - INFO - Starting RGB conf generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:55:50,766 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:55:50,766 - INFO - Full output path: /home/alien/.config/material-you/colors.conf
+2025-01-18 13:55:50,766 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:55:50,951 - INFO - Conf file generated successfully
+2025-01-18 13:55:51,003 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:55:51,003 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:55:51,003 - INFO - Full output path: /home/alien/.config/material-you/colors2.css
+2025-01-18 13:55:51,003 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:55:51,184 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:55:51,184 - INFO - Return code: 0
+2025-01-18 13:55:51,184 - INFO - CSS file generated successfully
+2025-01-18 13:55:51,244 - INFO - Starting CSS generation for image: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:55:51,244 - INFO - Full image path: /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:55:51,244 - INFO - Using matugen at: /home/alien/.cargo/bin/matugen
+2025-01-18 13:55:51,425 - INFO - Command executed: /home/alien/.cargo/bin/matugen --json rgba image /home/alien/Documents/colorswall/cat/1386525.png
+2025-01-18 13:55:51,425 - INFO - Return code: 0
+2025-01-18 13:55:51,426 - INFO - CSS file generated successfully: /home/alien/.config/material-you/waybar-colors2.css
+2025-01-18 13:55:51,427 - INFO - CSS file generated successfully: /home/alien/.config/gtk-3.0/colors.css
+2025-01-18 13:55:51,427 - INFO - CSS file generated successfully: /home/alien/.config/gtk-4.0/colors1.css
+2025-01-18 13:55:51,427 - INFO - JSON file generated successfully: /home/alien/.config/material-you/colors.json
+2025-01-18 13:55:51,428 - INFO - SCSS file generated successfully: /home/alien/.config/material-you/colors.scss

@@ -12,7 +12,7 @@
 (defwindow calendar []
   :geometry (geometry
     :x "-9px"
-    :y "-14px"
+    :y "-0px"
     :width "250px"
     :anchor "bottom left"
   )

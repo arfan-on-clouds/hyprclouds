@@ -1,0 +1,108 @@
+#!/usr/bin/python
+
+import subprocess, json
+
+# Set the value of hide_wifi to show or hide networks with the same SSID
+hide_wifi = True
+
+# Get the Wi-Fi information from nmcli and split it into lines and columns
+
+# Use subprocess to run the 'nmcli' command to get Wi-Fi information and remove the header row
+wifi_output = subprocess.getoutput("nmcli --fields SSID,BSSID,BARS,SECURITY device wifi list | sed 1d").strip()
+
+# Split the 'wifi_output' into a list of lines
+
+wifi_output = wifi_output.split("\n")
+# Split each line into a list of columns, creating a list of lists
+
+wifi_output = [line.split() for line in wifi_output]
+
+# # # Get the list of known Wi-Fi connections
+# Use subprocess to run the 'nmcli' command to get a list of known Wi-Fi connections filtered by 'wifi'
+
+known_wifi_output = subprocess.getoutput("nmcli connection show | grep 'wifi' | awk '{print $1}'").strip()
+known_wifi_output = known_wifi_output.split("\n")
+
+
+# Create a set to keep track of processed SSIDs
+processed_ssids = set()
+
+# Create a list to store network information
+networkList = []
+
+# Iterate through the Wi-Fi information
+for line in wifi_output:
+    sigIcon, secIcon = None, None
+
+    lenline = len(line) - 1
+
+
+    if 'WPA1' in line or 'WPA2' in line or 'WPA3' in line:
+        # Extract SSID from the line and join its parts with spaces
+        # Extract BSSID, signal strength, and security from the line
+        ssid = line[0:lenline - 2]
+        ssid = " ".join(ssid)
+        bssid = line[lenline - 2]
+        signal = line[lenline - 1]
+        security = line[lenline]
+
+        if 'WPA1' in line and 'WPA2' in line or 'WPA2' in line and 'WPA3' in line:
+            ssid = line[0:lenline - 3]
+            ssid = " ".join(ssid)
+            bssid = line[lenline - 3]
+            signal = line[lenline - 2]
+            security = 'WPA2, WPA3' if 'WPA3' in line else 'WPA1, WPA2'
+
+    else:
+        ssid = line[0:lenline - 1]
+        ssid = " ".join(ssid)
+        bssid = line[lenline - 1]
+        signal = line[lenline]
+        security = "None"
+
+    # Check if the network should be hidden based on the hide_wifi setting and if it's already processed
+    # Check if the SSID is invalid and skip it
+
+    if hide_wifi and ssid in processed_ssids or ssid == '--':
+        continue
+
+    # Assign signal strength icons based on the provided signal strength indicators
+    if signal ==  "--" or ssid == "--":
+        continue
+
+    if signal == "▂▄▆█":
+        sigIcon = "󰤨"
+    elif signal == "▂▄▆_":
+        sigIcon = "󰤥"
+    elif signal == "▂▄__":
+        sigIcon = "󰤢"
+    elif signal == "▂___":
+        sigIcon = "󰤟"
+    else:
+        sigIcon = "󰤯"
+
+    # Combine WPA1 and WPA2 into one entry
+
+    processed_ssids.add(ssid)
+
+    # Assign a security icon based on whether the network is a known connection
+    if ssid not in known_wifi_output:
+        secIcon = ""
+    else:
+        secIcon = ""
+
+    # Create a dictionary with network information and add it to the networkList
+    dict = {
+        "BSSID": bssid,
+        "SSID": ssid,
+        "SIGNAL": signal,
+        "SIGNAL_ICON": sigIcon,
+        "SECURITY": security,
+        "SECURITY_ICON": secIcon,
+    }
+
+    networkList.append(dict)
+
+# Update the Eww widget with the updated network list in JSON format
+print(networkList)
+subprocess.run(f"eww update wifiList='{json.dumps(networkList)}'", shell=True)

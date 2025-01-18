@@ -1,0 +1,81 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+.quick_settings_button {
+    transition: 400ms;
+    background-color: $dark-on-secondary;
+    border-radius: 2.0rem;
+    padding:1rem;
+    margin: 0.3rem;
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: "SF Pro Display Bold";
+}
+
+.quick_settings_button:hover {
+    background-color: mix($dark-background, $dark-primary, 50%);
+}
+
+.quick_settings_button_toggled {
+    background-color: $dark-primary;
+    color:$dark-background;
+}
+
+.quick_settings_button_toggled:hover {
+    background-color: mix($dark-background, $dark-primary, 50%);
+}
+
+.quick_settings_box {
+    margin-top: 2.2rem;
+}
+
+.quick-settings-icon {
+    font-size: 1.8rem;
+}
+
+.quick-settings-info {
+    margin-left: 3rem;
+    margin-right: 4rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.quick-settings-state {
+    font-size: 0.9rem;
+    color: $dark-outline;
+}
+
+.quick-settings-state-enabled {
+    color: $dark-secondary-container;
+}
+
+.left-top-plite {
+    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.left-center-plite {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.left-bottom-plite {
+    margin-right: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.right-top-plite {
+    margin-left: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.right-center-plite {
+    margin-left: 0.25rem;
+    margin-bottom: 0.35rem;
+}
+
+.right-bottom-plite {
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}

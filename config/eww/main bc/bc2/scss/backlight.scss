@@ -1,0 +1,35 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+.brightness-osd {
+   @include window;
+   min-width: 25rem;
+}
+
+.brightness-scale trough {
+    background-color: $dark-on-secondary;
+    border-radius: 1rem;
+    min-height: 2.25rem;
+}
+
+.brightness-scale trough highlight {
+    background-color: $dark-primary;
+    border-radius: 1rem;
+    min-height: 2.25rem;
+}
+
+.brightness-icon {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+
+    &.low {
+        color: $dark-on-surface;
+    };
+
+    &.medium {
+        color: $dark-surface;
+    };
+
+    &.high {
+        color: $dark-primary;
+    };
+}

@@ -1,4 +1,3 @@
-@import "/home/alien/.config/material-you/colors.scss";
 
 .music {
     border-radius: 2rem;
@@ -33,7 +32,7 @@
 
 .music-name {
     background-color: $dark-primary;
-    color: #32302f;
+    color: $dark-background;
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
     font-size: 1rem;

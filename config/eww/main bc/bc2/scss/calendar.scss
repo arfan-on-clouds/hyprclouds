@@ -1,0 +1,95 @@
+@import "/home/alien/.config/material-you/colors.scss";
+
+
+.eventBox {
+  background:$dark-background;
+  border-radius: 10px;
+  padding: 5px;
+
+  .eventIcon {
+    color:$dark-on-secondary;
+    padding: 10px 12.5px;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  .eventIcon.default {
+    background: $dark-error-container;
+  }
+
+  .eventIcon.mid {
+    background-image: linear-gradient(45deg, $dark-outline, $dark-error);
+  }
+
+  .eventIcon.high {
+    background: $dark-error;
+  }
+
+  .eventContent {
+    color: $dark-surface-bright;
+  }
+}
+
+// Calendar styles
+.weatherMainBox {
+  background:$dark-background;
+  border: 1px solid $dark-inverse-on-surface;
+  padding: 10px;
+  border-radius: 20px;
+
+  .weatherWidget {
+    border-radius: 10px;
+    background: $dark-background;
+    padding: 5px 10px;
+  }
+
+  .bigClock {
+    font-size: 45px;
+  }
+
+  .weatherTop {
+    > .icon {
+      font-size: 100px;
+    }
+  }
+  .weatherQuoteBox {
+    padding: 5px 10px;
+    // background: $base01;
+    border-radius: 10px;
+
+    .quoteTwo {
+      font-family: roboto;
+      font-style: italic;
+      font-weight: bolder;
+      color: $dark-on-secondary;
+    }
+  }
+
+  .calendar {
+    border-radius: 20px;
+    font-size: 1.5rem;
+  }
+
+  calendar {
+    color: $dark-primary;
+    padding: 8px;
+
+    .header {
+      color: $dark-primary;
+    }
+
+    .button {
+      color: transparent;
+    }
+  }
+
+  calendar:indeterminate {
+    color:$dark-inverse-on-surface;
+  }
+
+  calendar:selected {
+    background-color: $dark-primary;
+    border-radius:30%;
+    padding-bottom: 10rem;
+    color:$dark-background;
+  }
+}

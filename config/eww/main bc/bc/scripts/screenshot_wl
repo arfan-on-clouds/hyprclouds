@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Close the dashboard window if it's open (this depends on your environment)
+eww close dashboardWindow_right > /dev/null 2>&1
+
+SCREENSHOT_DIR="$HOME/Pictures/Screenshots"
+FILE_NAME="Screenshot_$(date +'%Y_%m_%d__%H_%M_%S').png"
+FILE_PATH="$SCREENSHOT_DIR/$FILE_NAME"
+
+# Function to capture a screenshot based on the selected mode
+capture_screenshot() {
+    mode="$1"
+    if [ "$mode" = "--sel" ]; then
+        grim -g "$(slurp)" "$FILE_PATH"
+    elif [ "$mode" = "--all" ]; then
+        grim "$FILE_PATH"
+    else
+        echo "Invalid mode. Use --sel to select a region or --all to capture the entire screen."
+        exit 1
+    fi
+}
+
+# Check the command line arguments
+if [ "$#" -ne 1 ]; then
+    exit 1
+fi
+
+# Capture a screenshot based on the specified mode
+capture_screenshot "$1"
+
+# Check if the captured file exists and has a size greater than zero
+if [ -s "$FILE_PATH" ]; then
+    # Copy the screenshot to the clipboard using wl-copy
+    wl-copy < "$FILE_PATH"
+
+    # Display a notification with the screenshot as an icon and a custom "appname"
+    notify-send -i "$FILE_PATH" -a "Screenshot" "Screenshot captured successfully" "The screenshot was saved to $FILE_PATH and copied to the clipboard."
+else
+    # Delete the empty file if it exists
+    [ -e "$FILE_PATH" ] && rm "$FILE_PATH"
+fi

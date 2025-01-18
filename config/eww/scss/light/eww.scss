@@ -6,14 +6,14 @@
     font-weight: bold;
 }
 @import "scripts/colors/colors.scss";
-@import "scss/lib.scss";
+@import "scss/light/lib.scss";
 
 @import "scss/light/bar.scss";
 @import "scss/light/powermenu.scss";
 @import "scss/light/launcher.scss";
 
 @import "scss/light/control_center.scss";
-@import "scss/notifications_popup.scss";
+@import "scss/light/notifications_popup.scss";
 
 
 

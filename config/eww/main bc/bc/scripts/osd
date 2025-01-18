@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+
+STATE=$(eww windows | grep osd_window | awk '{print substr ($0, 0, 1)}')
+
+if [[ $1 == '--close' ]]; then
+	if [[ $STATE == '*' ]]; then
+		eww close osd_window
+	fi
+else
+
+	eww update osd="{ \"icon\": \"$1\", \"value\": \"$2\", \"valueType\": \"$3\" }"
+
+	if [[ $STATE != '*' ]]; then
+		eww open osd_window
+	fi
+
+	sleep 3
+
+	if [[ $STATE == '*' ]]; then
+		eww close osd_window
+	fi
+fi

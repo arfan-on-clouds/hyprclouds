@@ -1,0 +1,11 @@
+@import "/home/alien/.cache/wal/colors.scss";
+
+*{
+  all: unset;
+  font-family: "Mononoki";
+  font-weight: bold;
+}
+
+@import "scss/bar.scss";
+@import "scss/side-bar.scss";
+@import "scss/wallpaper.scss";
