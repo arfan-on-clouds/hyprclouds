@@ -1,3 +1,12 @@
+Compositor: hyprland
+
+Widgets: eww
+
+launchers: wofi and rofi
+
+Colors: matugen
+
+Distro: fedora
 
 🖼️𝐒𝐂𝐑𝐄𝐄𝐍𝐒𝐇𝐎𝐓🖼️
 ![20250118_12h40m02s_grim](https://github.com/user-attachments/assets/36fa1e2b-2948-4e92-bad4-fda8777b9828)
