@@ -40,9 +40,10 @@
     :monitor 0
     :stacking "overlay"
     :geometry (geometry
-                    :anchor "top center"
+                    :anchor "top right"
                     :width "2px"
                     :height "2px"
+                    :y "0px"
                 )
     :namespace "eww"
     (notifications_popup_widget)
@@ -60,7 +61,6 @@
     :namespace "eww"
     (volume_osd)
 )
-
 (defwindow powermenu
     :monitor 0
     :stacking "fg"

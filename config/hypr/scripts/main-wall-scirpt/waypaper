@@ -10,9 +10,8 @@ python ${HOME}/.config/material-you/c3.py "$1"
 python ${HOME}/.config/material-you/c4.py "$1"
 
 # Reload Eww to apply new configurations or styles
-pkill eww 
-.config/eww/scripts/start.sh
-pkill dunst
+eww reload
+
 
 python ${HOME}/.cache/material-you/c1.py
 python ${HOME}/.cache/material-you/c.py

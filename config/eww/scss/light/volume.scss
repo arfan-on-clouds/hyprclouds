@@ -1,5 +1,4 @@
 
-
 .volume-osd {
    @include window;
    background-color: $light-surface-container-highest ;
@@ -14,12 +13,14 @@
 .volume-control-center {
     background-color: $light-surface-container-highest ;
     margin-top: 1rem;
+    padding-left: 1rem;
 }
 
 .volume-scale trough {
     background-color: $light-secondary-fixed-dim;
     border-radius: 1rem;
     min-height: 2.25rem;
+    
 }
 
 

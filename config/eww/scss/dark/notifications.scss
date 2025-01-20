@@ -4,14 +4,14 @@
   box-shadow: 0 0 0 0rem;
   border-radius: 2rem;
 
-  background-color: $dark-background;
+  background-color: $dark-on-secondary;
 }
 
 .notification-box {
-  background-color: $dark-on-secondary;
-  border: 0.1rem solid $dark-on-primary;
-  color: $dark-on-surface;  // Changed from $onSurface
-  border-radius: 1rem;
+  background-color: $dark-background;
+  border: 0.1rem solid $dark-inverse-primary;
+  color: $dark-primary;  // Changed from $onSurface
+  border-radius: 2rem;
   margin-top: 1rem;
 }
 
@@ -32,7 +32,10 @@
 
 .notification-summary {
   font-weight: bold;
-  font-size: 1.1rem;
+  color: $dark-on-primary-container;
+  font-size: 1.4rem;
+  
+
 }
 
 .notification-body {
@@ -46,8 +49,8 @@
 }
 
 .notifications-clear-button {
-  background-color: $dark-on-secondary;
-  color: $dark-on-surface;  // Changed from $onSurface
+  background-color: $dark-primary;
+  color: $dark-surface;  // Changed from $onSurface
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   transition: 0.3s;

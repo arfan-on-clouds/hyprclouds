@@ -1,7 +1,7 @@
 import re
 
 # Path to your Spicetify color.ini file
-color_ini_path = ".config/spicetify/Themes/Peace/color.ini"
+color_ini_path = ".config/spicetify/Themes//home/alien/Documents/GitHub/hyprclouds/hyprclouds/config/spicetify/Themes/material-colors-spotify/color.ini"
 
 # Path to your CSS file
 css_file_path = ".config/material-you/colors2.css"

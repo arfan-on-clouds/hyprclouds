@@ -4,14 +4,14 @@
   box-shadow: 0 0 0 0rem;
   border-radius: 2rem;
 
-  background-color: $light-surface-container-highest;
+  background-color: $light-secondary-fixed-dim;
 }
 
 .notification-box {
-  background-color: $light-secondary-fixed-dim;
-  border: 0.1rem solid $light-source-color;
+  background-color: $light-surface-container-highest;
+  border: 0.2rem solid $light-primary;
   color: $light-on-surface;  // Changed from $onSurface
-  border-radius: 1rem;
+  border-radius: 2rem;
   margin-top: 1rem;
 }
 
@@ -32,12 +32,14 @@
 
 .notification-summary {
   font-weight: bold;
-  font-size: 1.1rem;
+  color: $light-on-primary-container;
+  font-size: 1.4rem;
 }
 
 .notification-body {
-  color: $light-on-surface-variant;
+  color: $light-primary;
   font-weight: normal;
+  
 }
 
 .notifications-scroll {
@@ -46,8 +48,8 @@
 }
 
 .notifications-clear-button {
-  background-color: $light-secondary-fixed-dim;
-  color: $light-on-surface;  // Changed from $onSurface
+  background-color: $light-primary;
+  color: $light-background;  // Changed from $onSurface
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   transition: 0.3s;

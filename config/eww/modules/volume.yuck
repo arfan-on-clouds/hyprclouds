@@ -20,3 +20,4 @@
         (button :class "volume-arrow" :onclick "scripts/toggle_control_center.sh close && pavucontrol &" "󰅂")
     )
 )
+

@@ -105,7 +105,7 @@
   calendar:selected {
     background-color: $light-primary;
     border-radius:30%;
-    padding-bottom: 10rem;
+    padding-top: 10rem;
     color:$light-surface-container-highest;
   }
 }
@@ -121,18 +121,19 @@
 }
 
 .pfp-image {
-  background-image: url("/home/alien/Documents/sketch/P file/pfd (Copy).png");
+  background-image: url("pfp.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 7rem;
   min-width: 7rem;
   padding-top: 0rem;
-  margin-left: 0rem;
+  margin-left: 2rem;
   border-radius: 50%;
 }
 .lowername {
   color: $light-on-primary-container;
+  margin-top: 0.5rem;
 }
 
 .name {

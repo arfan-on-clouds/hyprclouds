@@ -19,15 +19,18 @@
 
 .music-text {
     margin-left: 1rem;
+    color: $dark-background;
+    
 }
 
 .music-title {
     color: $light-inverse-primary;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .music-artist {
     color:$dark-tertiary-fixed-dim;
+    font-size: 1.1rem;
 }
 
 .music-name {

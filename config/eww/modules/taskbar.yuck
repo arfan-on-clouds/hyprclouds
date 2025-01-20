@@ -2,7 +2,7 @@
   :stacking "overlay"
   :monitor 0
   :geometry (geometry 
-              :x "0px"        ;; Align to the left edge of the screen
+              :x "-4px"        ;; Align to the left edge of the screen
               :y "50%"        ;; Center vertically
               :anchor "center left") ;; Anchor to the left-center of the screen
    (box :orientation "v" 
@@ -14,6 +14,7 @@
   :stacking "overlay"
   :monitor 0
   :geometry (geometry 
+               :x "-4px"  
               :y "241px"
               :anchor "bottom left")
   (box :class "corner2")  
@@ -23,6 +24,7 @@
   :stacking "overlay"
   :monitor 0
   :geometry (geometry 
+                :x "-4px"  
               :y "241px"
               :anchor "top left")
   (box :class "corner1")  

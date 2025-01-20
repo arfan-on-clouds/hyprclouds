@@ -3,7 +3,7 @@ import subprocess
 import os
 
 # Paths to your files
-color_ini_path = ".config/spicetify/Themes/Peace/color.ini"
+color_ini_path = ".config/spicetify/Themes//home/alien/Documents/GitHub/hyprclouds/hyprclouds/config/spicetify/Themes/material-colors-spotify/color.ini"
 css_file_path = ".config/material-you/waybar-colors2.css"
 
 # Function to extract color value from CSS

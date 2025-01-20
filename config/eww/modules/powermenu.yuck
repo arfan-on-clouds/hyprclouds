@@ -9,14 +9,15 @@
 (defwidget powermenu []
     (box :orientation "h" :space-evenly true :valign "center" :halign "center" :class "powermenu-box"
         (powermenu_entry    :label "Power off" 
-                            :icon "󰐥" 
+                            :icon "󰤆" 
                             :onclick "systemctl poweroff")
+                            
         (powermenu_entry    :label "Reboot" 
-                            :icon "󰜉" 
+                            :icon "" 
                             :onclick "systemctl reboot")
         (powermenu_entry    :label "Lock" 
-                            :icon "" 
-                            :onclick "sleep 0.1 && gtklock & eww close powermenu &")
+                            :icon "󰌾" 
+                            :onclick "eww close powermenu powercorner-left powercorner-right && sleep 1 & hyprlock")
 
         (powermenu_entry    :label "Suspend" 
                             :icon "󰤄" 

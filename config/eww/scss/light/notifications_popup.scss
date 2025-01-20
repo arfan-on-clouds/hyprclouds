@@ -2,10 +2,11 @@
 .notifications-popup-body {
     @include window;
     min-width: 35rem;
-    border-radius: 1rem;
-    border: 0.1rem solid $light-primary;
+    border-radius: 2rem;
+    border: 0.3rem solid $light-secondary-fixed-dim;
     box-shadow: 0 0 0px 0px #000000;
-    background-color: $light-secondary-fixed-dim;
+    background-color: $light-surface-container-highest;
     color: $light-on-background;
     padding: 0rem;
+    font-size: 1.2rem;
 }

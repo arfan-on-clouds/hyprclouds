@@ -1,13 +1,12 @@
 #!/bin/bash
 
 # Change system wallpaper
-# Assuming your original script logic for changing the wallpaper is here
 WALLPAPER="$1"
 # Add your logic here to set the wallpaper
 
 # Update Rofi configuration with the new wallpaper
 ROFI_WALLPAPER_PATH="${HOME}/.config/rofi/launchers/type-6/current-wallpaper.png"
-COLORS_FILE="$HOME/.cache/material-you/colors.css"
+COLORS_FILE="$HOME/.config/material-you/colors2.css"
 ROFI_FILE="${HOME}/.config/rofi/launchers/type-6/style-9.rasi"
 
 # Remove the old wallpaper link if it exists
@@ -26,29 +25,34 @@ hex_to_rgba() {
 }
 
 # Extract colors from colors.css
-BACKGROUND=$(grep -oP '(?<=--background: ).*' "$COLORS_FILE")
-FOREGROUND=$(grep -oP '(?<=--foreground: ).*' "$COLORS_FILE")
-CURSOR=$(grep -oP '(?<=--cursor: ).*' "$COLORS_FILE")
+extract_color() {
+    local color_name="$1"
+    grep -oP "(?<=--$color_name: ).*" "$COLORS_FILE"
+}
 
-COLOR0=$(grep -oP '(?<=--color0: ).*' "$COLORS_FILE")
-COLOR1=$(grep -oP '(?<=--color1: ).*' "$COLORS_FILE")
-COLOR2=$(grep -oP '(?<=--color2: ).*' "$COLORS_FILE")
-COLOR3=$(grep -oP '(?<=--color3: ).*' "$COLORS_FILE")
-COLOR4=$(grep -oP '(?<=--color4: ).*' "$COLORS_FILE")
-COLOR5=$(grep -oP '(?<=--color5: ).*' "$COLORS_FILE")
-COLOR6=$(grep -oP '(?<=--color6: ).*' "$COLORS_FILE")
-COLOR7=$(grep -oP '(?<=--color7: ).*' "$COLORS_FILE")
-COLOR8=$(grep -oP '(?<=--color8: ).*' "$COLORS_FILE")
-COLOR9=$(grep -oP '(?<=--color9: ).*' "$COLORS_FILE")
-COLOR10=$(grep -oP '(?<=--color10: ).*' "$COLORS_FILE")
-COLOR11=$(grep -oP '(?<=--color11: ).*' "$COLORS_FILE")
-COLOR12=$(grep -oP '(?<=--color12: ).*' "$COLORS_FILE")
-COLOR13=$(grep -oP '(?<=--color13: ).*' "$COLORS_FILE")
-COLOR14=$(grep -oP '(?<=--color14: ).*' "$COLORS_FILE")
-COLOR15=$(grep -oP '(?<=--color15: ).*' "$COLORS_FILE")
+BACKGROUND=$(extract_color "light-surface-container-highest")
+FOREGROUND=$(extract_color "light-on-background")
+CURSOR=$(extract_color "dark-primary")
+
+COLOR0=$(extract_color "light-surface-container-highest")
+COLOR1=$(extract_color "dark-secondary")
+COLOR2=$(extract_color "dark-tertiary")
+COLOR3=$(extract_color "dark-outline")
+COLOR4=$(extract_color "dark-error")
+COLOR5=$(extract_color "dark-on-error")
+COLOR6=$(extract_color "dark-on-background")
+COLOR7=$(extract_color "light-primary")
+COLOR8=$(extract_color "light-primary")
+COLOR9=$(extract_color "dark-secondary")
+COLOR10=$(extract_color "dark-tertiary")
+COLOR11=$(extract_color "dark-outline")
+COLOR12=$(extract_color "dark-error")
+COLOR13=$(extract_color "dark-on-error")
+COLOR14=$(extract_color "light-primary")
+COLOR15=$(extract_color "dark-on-surface")
 
 # Convert hex colors to rgba
-BACKGROUND=$(hex_to_rgba $BACKGROUND 0.8)
+BACKGROUND=$(hex_to_rgba $BACKGROUND 1.0)
 FOREGROUND=$(hex_to_rgba $FOREGROUND 1.0)
 CURSOR=$(hex_to_rgba $CURSOR 0.8)
 
@@ -60,14 +64,14 @@ COLOR4=$(hex_to_rgba $COLOR4 0.8)
 COLOR5=$(hex_to_rgba $COLOR5 0.8)
 COLOR6=$(hex_to_rgba $COLOR6 0.8)
 COLOR7=$(hex_to_rgba $COLOR7 1.0)
-COLOR8=$(hex_to_rgba $COLOR8 1.0)
+COLOR8=$(hex_to_rgba $COLOR8 0.8)
 COLOR9=$(hex_to_rgba $COLOR9 0.8)
-COLOR10=$(hex_to_rgba $COLOR20 0.8)
-COLOR11=$(hex_to_rgba $COLOR21 0.8)
-COLOR12=$(hex_to_rgba $COLOR22 0.8)
-COLOR13=$(hex_to_rgba $COLOR23 0.8)
-COLOR14=$(hex_to_rgba $COLOR24 0.8)
-COLOR15=$(hex_to_rgba $COLOR25 0.8)
+COLOR10=$(hex_to_rgba $COLOR10 0.8)
+COLOR11=$(hex_to_rgba $COLOR11 0.8)
+COLOR12=$(hex_to_rgba $COLOR12 0.8)
+COLOR13=$(hex_to_rgba $COLOR13 0.8)
+COLOR14=$(hex_to_rgba $COLOR14 1.0)
+COLOR15=$(hex_to_rgba $COLOR15 0.8)
 
 # Create or update the rofi.rasi file with extracted colors
 cat <<EOL > "$ROFI_FILE"
@@ -97,10 +101,10 @@ window {
     y-offset:                    0px;
     enabled:                     true; 
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               15px;
     border-color:                $COLOR3;
     cursor:                      "default";
-    background-color:            $FOREGROUND;
+    background-color:            $BACKGROUND;
 }
 
 /*****----- Main Box -----*****/
@@ -139,7 +143,7 @@ inputbar {
     padding:                     10px;
     border-radius:               15px;
     background-color:            transparent;
-    text-color:                  $BACKGROUND;
+    text-color:                  $FOREGROUND;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 textbox-prompt-colon {
@@ -147,7 +151,7 @@ textbox-prompt-colon {
     expand:                      false;
     str:                         "";
     background-color:            inherit;
-    text-color:                  $FOREGROUND;
+    text-color:                  $BACKGROUND;
 }
 entry {
     enabled:                     true;
@@ -155,7 +159,7 @@ entry {
     text-color:                  inherit;
     cursor:                      text;
     placeholder:                 "Search";
-    placeholder-color:           $FOREGROUND;
+    placeholder-color:            $BACKGROUND;
 }
 
 /*****----- Mode Switcher -----*****/
@@ -163,18 +167,18 @@ mode-switcher {
     enabled:                     true;
     spacing:                     20px;
     background-color:            transparent;
-    text-color:                 $FOREGROUND;
+    text-color:                $BACKGROUND;
 }
 button {
    padding:                     17px;
     border-radius:               30px;
-    background-color:            $FOREGROUND;
-    text-color:                  $BACKGROUND;
+    background-color:            $BACKGROUND;
+    text-color:                  $FOREGROUND;
     cursor:                      pointer;
 }
 button selected {
-    background-color:            $COLOR8;
-    text-color:                 $FOREGROUND;
+    background-color:            $COLOR14;
+    text-color:                 $BACKGROUND;
     padding:                     15px;
     border-radius:               30px;
 }
@@ -193,7 +197,7 @@ listview {
     fixed-columns:               true;
      spacing:                     5px;
     background-color:            transparent;
-    text-color:                  $BACKGROUND;
+    text-color:                  $FOREGROUND;
     cursor:                      "default";
 }
 
@@ -204,7 +208,7 @@ element {
     padding:                     8px;
     border-radius:               15px;
     background-color:            transparent;
-    text-color:                  $BACKGROUND;
+    text-color:                   $FOREGROUND;
     cursor:                      pointer;
 }
 element normal.normal {
@@ -212,24 +216,24 @@ element normal.normal {
     text-color:                  inherit;
 }
 element normal.urgent {
-    background-color:            $COLOR8;
-    text-color:                 $FOREGROUND;
+    background-color:            $COLOR14;
+    text-color:                   $BACKGROUND;
 }
 element normal.active {
-    background-color:            $COLOR8;
-    text-color:                  $FOREGROUND;
+    background-color:            $COLOR14;
+    text-color:                  $BACKGROUND;
 }
 element selected.normal {
-    background-color:            $COLOR8;
-    text-color:                 $FOREGROUND;
+    background-color:            $COLOR14;
+    text-color:                 $BACKGROUND;
 }
 element selected.urgent {
-    background-color:            $COLOR8;
-    text-color:                  $FOREGROUND;
+    background-color:            $COLOR14;
+    text-color:                  $BACKGROUND;
 }
 element selected.active {
-    background-color:            $COLOR8;
-    text-color:                 $FOREGROUND;
+    background-color:            $COLOR14;
+    text-color:                 $BACKGROUND;
 }
 element-icon {
     background-color:            transparent;
@@ -252,8 +256,8 @@ message {
 textbox {
     padding:                     15px;
     border-radius:               10px;
-    background-color:            $COLOR1;
-    text-color:                 $FOREGROUND;
+    background-color:            $COLOR14;
+    text-color:                 $BACKGROUND;
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }

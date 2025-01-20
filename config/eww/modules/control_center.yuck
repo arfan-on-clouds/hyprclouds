@@ -1,4 +1,5 @@
 
+
 (defwidget control_center []
   (box :orientation "v" 
        :space-evenly false
@@ -7,6 +8,7 @@
          :space-evenly false 
          :class "control-center"
             (pfp)
+
       (music)
       (notifications)
     (user)
